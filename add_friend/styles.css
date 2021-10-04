@@ -1,0 +1,62 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+.fromContacts {
+  background-color: #b2b3b8;
+  margin: 30px 30px;
+  padding: 10px;
+}
+
+.fromContacts h3 {
+  text-align: center;
+}
+
+.inviteFriend {
+  background-color: #b2b3b8;
+  margin: 30px 30px;
+  padding: 10px;
+}
+
+.personalCode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.personalCode {
+  margin-top: 40px;
+}
+
+.personalCode h4 {
+  text-align: left;
+  padding-left: 30px;
+}
+
+.codeNumber {
+  background-color: #e2ecf1;
+  margin: 5px 30px;
+  padding: 20px;
+  text-align: left;
+  color: #b2b3b8;
+}
+
+.codeNumber .copyBtn {
+  padding: 10px;
+  float: right;
+}
+
+.addFriendBtn {
+  background-color: #b2b3b8;
+  color: white;
+  margin-top: 200px;
+  padding: 10px 150px;
+}

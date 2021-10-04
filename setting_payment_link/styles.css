@@ -1,0 +1,157 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+body {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body header main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.firstRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.firstRow .bcHydro {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 30px;
+      flex-basis: 30px;
+  padding: 60px 20px;
+  border: black dotted;
+  margin: 10px;
+}
+
+.firstRow .bcMsp {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 30px;
+      flex-basis: 30px;
+  padding: 60px 20px;
+  border: black dotted;
+  margin: 10px;
+}
+
+.secondRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.secondRow .mobile {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 30px;
+      flex-basis: 30px;
+  padding: 60px 20px;
+  border: black dotted;
+  margin: 10px;
+}
+
+.secondRow .netflix {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 30px;
+      flex-basis: 30px;
+  padding: 60px 20px;
+  border: black dotted;
+  margin: 10px;
+}
+
+.thirdRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.thirdRow .creditCard {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 30px;
+      flex-basis: 30px;
+  padding: 60px 20px;
+  border: black dotted;
+  margin: 10px;
+}
+
+.fourthRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fourthRow .internet {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 30px;
+      flex-basis: 30px;
+  padding: 60px 20px;
+  border: black dotted;
+  margin: 10px;
+}
+
+.fourthRow .cable {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 30px;
+      flex-basis: 30px;
+  padding: 60px 20px;
+  border: black dotted;
+  margin: 10px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 20px;
+}

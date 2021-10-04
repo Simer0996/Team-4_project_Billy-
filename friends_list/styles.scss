@@ -1,0 +1,91 @@
+$primaryColor: rgb(178, 179, 184);
+$btnColor: #095776;
+$white: white;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+main {
+    .searchBox {
+        background-color: $primaryColor;
+        margin: 10px 30px;
+        height: 30px;
+        text-align: left;
+    }
+
+    h4 {
+        text-align: left;
+        margin: 10px 30px;
+    }
+
+    div {
+        .dot {
+            height: 50px;
+            width: 50px;
+            background-color: $primaryColor;
+            border-radius: 50%;
+            display: inline-block;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+
+    .allFriends {
+        margin-top: 30px;
+    }
+    .addBtn {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background: $white;
+        cursor: pointer;
+        border: 2px solid $btnColor;
+        margin-left: 35px;
+        border-radius: 50%;
+    
+      }
+      .addBtn:after { 
+        content: '';
+        position: absolute;
+        transform: translate(-50%, -50%);
+        height: 4px;
+        width: 50%;
+        background: $btnColor;
+        top: 50%;
+        left: 50%;
+      }
+      .addBtn:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: $btnColor;
+        height: 50%;
+        width: 4px;
+      }
+
+      .addFriendText {
+          padding-top: 20px;
+          text-align: left;
+          padding-left: 100px;
+      }
+      
+      section {
+          margin-top: 30px;
+          
+          div {
+            background-color: $primaryColor;
+            text-align: left;
+            padding-left: 10px;
+            padding-top: 10px;
+            margin: 10px 30px;
+          }
+
+      }
+}

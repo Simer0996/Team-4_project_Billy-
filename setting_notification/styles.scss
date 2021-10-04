@@ -1,0 +1,103 @@
+$btnColor : rgb(131, 127, 127);
+$btnColorChecked : rgb(49, 95, 163);
+$white : white;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contentsWrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.reminder {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.newMessage {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.paymentRequest {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.paymentReceived {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.newFeatures {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 20px;
+    margin: 20px;
+}
+
+footer {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+
+// Toggle Button
+input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 50px;
+    height: 25px;
+    background: $btnColor;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+label:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    width: 20px;
+    height: 18px;
+    background: $white;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+input:checked+label {
+    background: $btnColorChecked;
+}
+
+input:checked+label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
