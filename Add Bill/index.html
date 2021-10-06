@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add bill</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="header">Billy</h1>
+    <i class="fas fa-angle-left"></i>
+    <form>
+        <div>
+        <label for="bills">Catagories</label>
+        <select name="bills" id="bills" value="Type of Bill">
+           <option value="BC Hydro">BC Hydro</option>
+           <option value="BC MSP">BC MSP</option>
+           <option value="Mobile">Mobile</option>
+           <option value="Internet">Internet</option>
+           <option value="TV/Cable">TV/Cable</option>
+           <option value="Netflix">Netflix</option>
+           <option value="Credit Card">Credit Card</option>
+           <option value="Add new">Add new</option>
+        </select>
+        </div>
+        <div>
+        <label for="amount">Amount</label>
+        <input type="text" id="amount" name="amount">
+        </div>
+        <div>
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date">
+        </div>
+        <div>
+        <label for="area">Memo</label>
+        <textarea name="area" id="area" cols="30" rows="20"></textarea>
+        </div>
+        <div class="buttons">
+            <button class="buttons btn1">CANCEL</button>
+            <button class="buttons btn2">ADD</button>
+        </div>
+    </form>
+</body>
+</html>
