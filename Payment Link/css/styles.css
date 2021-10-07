@@ -10,6 +10,14 @@
     text-align: center;
 }
 
+#user {
+    box-sizing: border-box;
+    background-color: aqua;
+    width: 7rem;
+    height:7rem;
+    border: 2px solid black;
+}
+
 .link {
     display: flex;
     flex-wrap: wrap;
