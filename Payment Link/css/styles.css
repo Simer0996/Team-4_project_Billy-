@@ -6,20 +6,21 @@
     /* padding:0; */
 }
 
+.parent {
+    display: flex;
+    flex-direction: column;
+}
+
 .head {
     text-align: center;
 }
 
-#user {
+/* #user {
     box-sizing: border-box;
     background-color: aqua;
     width: 7rem;
     height:7rem;
     border: 2px solid black;
-}
+} */
 
-.link {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
+
