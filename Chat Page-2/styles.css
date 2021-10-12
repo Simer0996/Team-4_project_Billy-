@@ -76,6 +76,7 @@ body {
   transition: background-color 200ms ease-in-out;
   float: left;
   margin-right: 7px;
+  cursor: pointer;
 }
 
 .icon-back:hover {
@@ -157,6 +158,7 @@ body {
   padding: 8px;
   -webkit-transition: background-color 150ms ease-in-out;
   transition: background-color 150ms ease-in-out;
+  cursor: pointer;
 }
 
 .btn-send:hover {
