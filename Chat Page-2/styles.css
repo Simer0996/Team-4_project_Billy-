@@ -56,11 +56,12 @@ body {
   padding: 10px;
 }
 
-.message {
+.messages {
   border-radius: 7px;
   background-color: #646464;
   padding: 5px;
-  width: calc(100% + -50px);
+  width: 80%;
+  height: 80%;
   margin-bottom: 10px;
 }
 
@@ -87,32 +88,12 @@ body {
   background-color: #646464;
 }
 
-.message:nth-child(odd) {
-  float: left;
-  background-color: #b2b3b8;
-}
-
-.message:nth-child(even) {
-  float: right;
-}
-
-.message span {
+.messages span {
   color: #646464;
   font-size: 11.5px;
   font-weight: 600;
   float: right;
   margin-top: 5px;
-}
-
-.chat::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-
-.chat::-webkit-scrollbar-thumb {
-  background-color: #070606;
-  border: 2px solid white;
-  border-radius: 10px;
 }
 
 .input {
@@ -159,12 +140,4 @@ body {
   -webkit-transition: background-color 150ms ease-in-out;
   transition: background-color 150ms ease-in-out;
   cursor: pointer;
-}
-
-.btn-send:hover {
-  background-color: #095776;
-}
-
-.btn-send:active {
-  background-color: #095776;
 }
