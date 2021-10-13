@@ -1,0 +1,23 @@
+{
+  "name": "team-4_project_billy-",
+  "version": "1.0.0",
+  "description": "modulation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Simer0996/Team-4_project_Billy-.git"
+  },
+  "author": "SimerSingh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Simer0996/Team-4_project_Billy-/issues"
+  },
+  "homepage": "https://github.com/Simer0996/Team-4_project_Billy-#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0"
+  }
+}
