@@ -12,11 +12,11 @@
     position: fixed;
     bottom: 0;
     margin: auto;
-   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    cursor: pointer;
+    padding: 5px;
 }
 
-.button {
-    cursor: pointer;
-    width: 15%;
-    height: 10%;
-}
+
