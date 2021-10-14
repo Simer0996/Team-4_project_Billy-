@@ -1,0 +1,22 @@
+/*Bottom navigation bar*/
+* {
+    font-family: "Quicksand" sans-serif;
+    width: 450px;
+    justify-content: center;
+    margin: auto;
+    padding: .2rem;
+}
+
+.btn {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    margin: auto;
+   
+}
+
+.button {
+    cursor: pointer;
+    width: 15%;
+    height: 10%;
+}

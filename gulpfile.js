@@ -19,7 +19,7 @@ async function includeHTML() {
         prefix: '@@',
         basepath: '@file'
     }))
-    .pipe(gulp.dest(paths.scripts.dest));
+    .pipe(gulp.dest(paths.script.dest));
 }
 
 exports.default = includeHTML;
