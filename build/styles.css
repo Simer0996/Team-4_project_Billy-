@@ -51,3 +51,80 @@
       height: 5%;
      
 }
+
+/* Add_Friend CSS START */
+.fromContacts {
+    background-color: #b2b3b8;
+    margin: 0 30px;
+    padding: 10px;
+  }
+  
+  .fromContacts h3 {
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .showContactList {
+    background-color: #e2ecf1;
+    margin: 0px 30px;
+    display: none;
+  }
+  
+  .showContactList ul {
+    list-style-type: none;
+  }
+  
+  .showContactList ul li {
+    padding: 10px;
+    border: solid 1px #b2b3b8;
+  }
+  
+  .inviteFriend {
+    background-color: #b2b3b8;
+    margin: 30px 30px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .personalCode {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  .personalCode {
+    margin-top: 10px;
+  }
+  
+  .personalCode h4 {
+    text-align: left;
+    padding-left: 30px;
+  }
+  
+  .codeNumber {
+    background-color: #e2ecf1;
+    margin: 5px 30px;
+    padding: 20px;
+    text-align: left;
+    color: #b2b3b8;
+    position: relative;
+  }
+  
+  .codeNumber .copyBtn {
+    padding: 10px;
+    position: absolute;
+    top: 19%;
+    left: 85%;
+  }
+  
+  .addFriendBtn {
+    background-color: #b2b3b8;
+    color: white;
+    margin-top: 200px;
+    padding: 10px 150px;
+  }
+  /* Add_Friend CSS END */
