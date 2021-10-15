@@ -16,35 +16,35 @@
     
 
 <main>
-    <h1 class="header">Manage Bill</h1>
+    <h1 class="header">Notification</h1>
     <i class="fas fa-angle-left"></i>
-    <form>
-        <div>
-        <label for="bills">Catagories</label>
-        <select name="bills" id="bills" value="Type of Bill">
-           <option value="BC Hydro">BC Hydro</option>
-           <option value="BC MSP">BC MSP</option>
-           <option value="Mobile">Mobile</option>
-           <option value="Internet">Internet</option>
-           <option value="TV/Cable">TV/Cable</option>
-           <option value="Netflix">Netflix</option>
-           <option value="Credit Card">Credit Card</option>
-           <option value="Add new">Add new</option>
-        </select>
+    <div class="contentsWrap">
+        <div class="reminder">
+            <div class="reminderText">Reminder</div>
+            <input type="checkbox" id="switch1" />
+            <label for="switch1">Toggle1</label>
         </div>
-        <div>
-        <label for="amount">Amount</label>
-        <input type="text" id="amount" name="amount">
+        <div class="newMessage">
+            <div class="newMessageText">New Message</div>
+            <input type="checkbox" id="switch2" />
+            <label for="switch2">Toggle2</label>
         </div>
-        <div>
-        <label for="date">Date</label>
-        <input type="date" name="date" id="date">
+        <div class="paymentRequest">
+            <div class="paymentRequestText">Payment Request</div>
+            <input type="checkbox" id="switch3" />
+            <label for="switch3">Toggle3</label>
         </div>
-        <div>
-        <label for="area">Memo</label>
-        <textarea name="area" id="area" cols="30" rows="20"></textarea>
+        <div class="paymentReceived">
+            <div class="paymentReceivedText">Payment Received</div>
+            <input type="checkbox" id="switch4" />
+            <label for="switch4">Toggle4</label>
         </div>
-    </form>
+        <div class="newFeatures">
+            <div class="newFeaturesText">New Features</div>
+            <input type="checkbox" id="switch5" />
+            <label for="switch5">Toggle5</label>
+        </div>
+    </div>
 </main>
 
 
