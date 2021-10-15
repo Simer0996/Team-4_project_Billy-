@@ -18,12 +18,36 @@
     padding: 5px;
 }
 
+.button>img {
+    width:20px;
+    height:20px;
+}
+
+.button>p {
+    width: 5%;
+   padding-right: 30%;
+}
+
 .button {
     cursor: pointer;
+   
 }
 
 .header {
     text-align: center;
 }
 
+.parentdiv img {
+    width: 6%;
+    height: 8%;
+    padding-left: 30px;
+    padding-top: 45px ;
+    cursor: pointer;
+  }
 
+ 
+  .firstdiv>img{
+      width: 5%;
+      height: 5%;
+     
+}
