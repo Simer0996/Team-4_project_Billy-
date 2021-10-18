@@ -1,5 +1,5 @@
-$('.fromContacts').on('click', () => {
+let addFriend = $('.fromContacts').on('click', () => {
     $('.showContactList').slideToggle();
 })
 
-export default addFriend;
+export default addFriend
