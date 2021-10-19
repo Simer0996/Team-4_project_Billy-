@@ -17,13 +17,9 @@ const firebaseConfig = {
 //const app = initializeApp(firebaseConfig);
 firebase.initializeApp(firebaseConfig);
 const auth=firebase.auth();
-console.log('this is test from harinder');
+
 //const array=[];
-login.addEventListener('click', ()=>{
-let email=document.getElementById('email').value;
-let password=document.getElementById('password').value;
-const promise=auth.signInwithEmailANDPassword(email.value, password.value);
-promise.catch(e=>alert(e.message));
-    email.value="";
-    password.value="";
+log.addEventListener('click', ()=>{
+auth.signOut();
+alert("Signout successfully");
 })

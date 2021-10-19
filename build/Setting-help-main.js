@@ -3,8 +3,9 @@ import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
+// Your web app's Firebase configuration*/
 const firebaseConfig = {
+  
   apiKey: "AIzaSyA588GyaRwUeolD6zmxbjvS8EU7Lq-EF_s",
   authDomain: "billy-payment-app.firebaseapp.com",
   projectId: "billy-payment-app",
@@ -17,13 +18,29 @@ const firebaseConfig = {
 //const app = initializeApp(firebaseConfig);
 firebase.initializeApp(firebaseConfig);
 const auth=firebase.auth();
-console.log('this is test from harinder');
-//const array=[];
-login.addEventListener('click', ()=>{
-let email=document.getElementById('email').value;
-let password=document.getElementById('password').value;
-const promise=auth.signInwithEmailANDPassword(email.value, password.value);
-promise.catch(e=>alert(e.message));
-    email.value="";
-    password.value="";
-})
+
+var messageRef=firebase.database().ref('messages');
+
+document.getElementById('sett').addEventListener('click', submitform);
+
+function submitform(e){
+    e.preventDefault();
+
+let subject=getInputVal('subject');
+let input=getInputVal('input');
+
+saveMessage(subject, input);
+}
+
+function getinput(id){
+    return document.getElementById(id).value;
+}
+
+function saveMessage(subject, input){
+    var newmessageref=messageRef.push();
+    newmessageref.set({
+        subject:subject,
+        input:input
+    });
+}
+
