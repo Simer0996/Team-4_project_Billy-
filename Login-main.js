@@ -18,7 +18,7 @@ const firebaseConfig = {
 //const app = initializeApp(firebaseConfig);
 firebase.initializeApp(firebaseConfig);
 const auth=firebase.auth();
-
+console.log('this is test from harinder');
 //const array=[];
 login.addEventListener('click', ()=>{
 let email=document.getElementById('email').value;
