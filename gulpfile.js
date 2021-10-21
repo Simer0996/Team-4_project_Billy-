@@ -1,4 +1,4 @@
-const gulp = require('gulp');
+const gulp        = require('gulp');
 const fileinclude = require('gulp-file-include');
 
 const paths = {
@@ -10,17 +10,16 @@ const paths = {
 
 async function includeHTML() {
     return gulp.src([
-        '*.html',
-        '*.css',
-        '!header.html', // ignore
-        '!footer.html', // ignore
-    ])
-    .pipe(fileinclude({
-        prefix: '@@',
-        basepath: '@file'
-    }))
-    .pipe(gulp.dest(paths.scripts.dest));
+            '*.html',
+            '*.css',
+            '!header.html', // ignore
+            '!footer.html', // ignore
+        ])
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: '@file'
+        }))
+        .pipe(gulp.dest(paths.scripts.dest));
 }
 
 exports.default = includeHTML;
-

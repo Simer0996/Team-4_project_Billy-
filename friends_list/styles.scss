@@ -16,6 +16,14 @@ main {
         margin: 10px 30px;
         height: 30px;
         text-align: left;
+
+        input {
+            background-color: $primaryColor;
+            margin: auto;
+            height: 25px;
+            width: 100%;
+            text-align: left;
+        }
     }
 
     h4 {
@@ -38,6 +46,7 @@ main {
     .allFriends {
         margin-top: 30px;
     }
+
     .addBtn {
         position: absolute;
         width: 50px;
@@ -47,9 +56,10 @@ main {
         border: 2px solid $btnColor;
         margin-left: 35px;
         border-radius: 50%;
-    
-      }
-      .addBtn:after { 
+
+    }
+
+    .addBtn:after {
         content: '';
         position: absolute;
         transform: translate(-50%, -50%);
@@ -58,8 +68,9 @@ main {
         background: $btnColor;
         top: 50%;
         left: 50%;
-      }
-      .addBtn:before {
+    }
+
+    .addBtn:before {
         content: '';
         position: absolute;
         top: 50%;
@@ -68,24 +79,24 @@ main {
         background: $btnColor;
         height: 50%;
         width: 4px;
-      }
+    }
 
-      .addFriendText {
-          padding-top: 20px;
-          text-align: left;
-          padding-left: 100px;
-      }
-      
-      section {
-          margin-top: 30px;
-          
-          div {
+    .addFriendText {
+        padding-top: 20px;
+        text-align: left;
+        padding-left: 100px;
+    }
+
+    section {
+        margin-top: 30px;
+
+        div {
             background-color: $primaryColor;
             text-align: left;
             padding-left: 10px;
             padding-top: 10px;
             margin: 10px 30px;
-          }
+        }
 
-      }
+    }
 }
