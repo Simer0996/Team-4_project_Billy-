@@ -26,16 +26,6 @@ main h4 {
   margin: 10px 30px;
 }
 
-main div .dot {
-  height: 50px;
-  width: 50px;
-  background-color: #b2b3b8;
-  border-radius: 50%;
-  display: inline-block;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
 main .allFriends {
   margin-top: 30px;
 }

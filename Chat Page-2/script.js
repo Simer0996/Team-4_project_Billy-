@@ -31,7 +31,7 @@ $(".btn-send").on('click', () => {
     addDiv.appendChild(addP);
     messages.appendChild(addDiv);
 
-})
+});
 
 $('.icon-back').on('click', () => {
     window.location.href = '../Chat Page-1/index.html'

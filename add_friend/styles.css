@@ -14,7 +14,6 @@
 
 .fromContacts h3 {
   text-align: center;
-  cursor: pointer;
 }
 
 .showContactList {
@@ -30,6 +29,14 @@
 .showContactList ul li {
   padding: 10px;
   border: solid 1px #b2b3b8;
+  cursor: pointer;
+}
+
+.showContactList ul li input {
+  border: none;
+  background-color: #e2ecf1;
+  font-family: sans-serif;
+  font-size: 11pt;
 }
 
 .inviteFriend {
@@ -77,6 +84,15 @@
 .addFriendBtn {
   background-color: #b2b3b8;
   color: white;
-  margin-top: 200px;
+  margin-top: 15%;
   padding: 10px 150px;
+}
+
+.pickedName {
+  border: solid 1px white;
+  padding: 5%;
+  width: 50%;
+  margin-left: 20%;
+  margin-top: 30%;
+  font-size: 25px;
 }

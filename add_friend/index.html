@@ -9,20 +9,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous" defer></script>
     <script src="./script.js" defer></script>
-    <script>
-        const firebaseConfig = {
-            apiKey: "AIzaSyBJd0zUZ_bPZ3NFAfUwt0NhlsDJMdwhftY",
-            authDomain: "billy-langara.firebaseapp.com",
-            projectId: "billy-langara",
-            storageBucket: "billy-langara.appspot.com",
-            messagingSenderId: "809749583925",
-            appId: "1:809749583925:web:afe89756b5dcff438e797c",
-            measurementId: "G-B85DSNX3C4"
-        };
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-    </script>
     <title>Add Friend</title>
 </head>
 
@@ -36,28 +22,24 @@
         </div>
         <div class="showContactList">
             <ul>
-                <li>Paula Valero</li>
-                <li>Simer Singh</li>
-                <li>Songhui Park</li>
-                <li>Harsimran Singh</li>
-                <li>Harinder Kaur</li>
+                <li><input class="friend1" value= "Paula Valero"></input></li>
+                <li><input class="friend2" value= "Simer Singh"></input></li>
+                <li><input class="friend3" value= "Songhui Park"></input></li>
+                <li><input class="friend4" value= "Harsimran Singh"></input></li>
+                <li><input class="friend5" value= "Harinder Kaur"></input></li>
+                <li><input class="friend6" value= "Namhyung Kim"></input></li>
+                <li><input class="friend7" value= "Rod Ornellas"></input></li>
+                <li><input class="friend8" value= "Tomoko Okochi"></input></li>
+                <li><input class="friend9" value= "Richard Wong"></input></li>
             </ul>
         </div>
-        <div class="inviteFriend">
-            <h3>Invite a Friend to Billy</h3>
-        </div>
-        <div class="personalCode">
-            <h4>Your Personal Code</h4>
-        </div>
-        <div class="codeNumber">
-            code number
-            <button class="copyBtn">copy</button>
-        </div>
 
-
+        <div class="pickedName">
+           
+        </div>
     </main>
     <footer>
-        <button class="addFriendBtn">Add Friend</button>
+        <button class="addFriendBtn" value="안녕">Add Friend</button>
     </footer>
 
 </body>
