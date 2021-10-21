@@ -32,9 +32,7 @@
   cursor: pointer;
 }
 
-.showContactList ul li input {
-  border: none;
-  background-color: #e2ecf1;
+.showContactList ul li div {
   font-family: sans-serif;
   font-size: 11pt;
 }

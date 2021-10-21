@@ -5,22 +5,22 @@ $('.fromContacts').on('click', () => {
 
 
 $('.friend1').on('click', () => {
-    let pickedFriendName = $('.friend1').val();
+    let pickedFriendName = $('.friend1').text();
     $('.pickedName').text(pickedFriendName);
 });
 
 $('.friend2').on('click', () => {
-    let pickedFriendName = $('.friend2').val();
+    let pickedFriendName = $('.friend2').text();
     $('.pickedName').text(pickedFriendName);
 });
 
 $('.friend3').on('click', () => {
-    let pickedFriendName = $('.friend3').val();
+    let pickedFriendName = $('.friend3').text();
     $('.pickedName').text(pickedFriendName);
 });
 
 $('.friend4').on('click', () => {
-    let pickedFriendName = $('.friend4').val();
+    let pickedFriendName = $('.friend4').text();
     $('.pickedName').text(pickedFriendName);
 });
 
