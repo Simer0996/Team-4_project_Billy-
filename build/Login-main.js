@@ -1,29 +1,44 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+//import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+firebase.auth().onAuthStateChanged(function(User){
+  if(User){
+    //document.getElementById("loginform").style.display="block";
+    document.getElementById("inputfieldnew").style.display = "none";
+  }
+  else{
+    document.getElementById("inputfieldnew").style.display = "block";
+    //document.getElementById("loginform").style.display="none";
+  }
+});
+//const auth = getAuth();
+//function userlog(){
+  login.addEventListener('click', ()=>{
+  let useremail=document.getElementById('email').value;
+  let userpassword=document.getElementById('password').value;
+  //console.log( `${useremail}`);})
 
-// Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyA588GyaRwUeolD6zmxbjvS8EU7Lq-EF_s",
-  authDomain: "billy-payment-app.firebaseapp.com",
-  projectId: "billy-payment-app",
-  storageBucket: "billy-payment-app.appspot.com",
-  messagingSenderId: "716948441529",
-  appId: "1:716948441529:web:d7d954ed60d569ddcf0e68"
-};
+  firebase.auth().signInWithEmailAndPassword(useremail, userpassword).catch(function(error){
+  let errorCode=error.code;
+  let errorMessage=error.message;
 
-// Initialize Firebase
-//const app = initializeApp(firebaseConfig);
-firebase.initializeApp(firebaseConfig);
-const auth=firebase.auth();
-console.log('this is test from harinder');
-//const array=[];
-login.addEventListener('click', ()=>{
-let email=document.getElementById('email').value;
-let password=document.getElementById('password').value;
+  window.alert("Error:" + errorMessage);
+});
+})
+
+/*signInWithEmailAndPassword(auth, useremail, userpassword)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+  });*/
+
+
+/*
 const promise=auth.signInwithEmailANDPassword(email.value, password.value);
 promise.catch(e=>alert(e.message));
     email.value="";
     password.value="";
-})
+})*/

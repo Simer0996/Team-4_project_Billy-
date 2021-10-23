@@ -25,13 +25,12 @@ signup.addEventListener('click', ()=>{
     let uconfirmpassword=document.getElementById("confirmpassword");
     let umobile=document.getElementById("mobile");
 
-    auth.createUserWithEmailAndPassword(uemail.value, upassword.value)
+    auth.createUserWithEmailAndPassword(uemail.value, upassword.value, ufullname, uconfirmpassword, umobile)
     .then(()=>{
       console.log('User has been created');
+      alert("Sign Up successfull");
     })
     .catch((error)=>{
       console.log(error.message);
     });
-    //promise.catch(e=>alert(e.message));
-    //alert("SignUp successfully");
 })
