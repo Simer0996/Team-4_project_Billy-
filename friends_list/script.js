@@ -1,6 +1,17 @@
 $('.addBtn').on('click', () => {
-    // let inputValue = $('.searchFriendInput').val();
-    // $('.friendName1').text(inputValue());
-    window.location.href='../add_friend/index.html'
-})
+    location.href = '../add_friend/index.html'
+});
+
+let makeDivPutName = function () {
+    const loadFriendName = localStorage.getItem('friendName');
+    $('.addFriendNameList').append('<li class="liFriendName"></li>');
+    $('.liFriendName').text(loadFriendName);
+};
+
+
+document.addEventListener('DOMContentLoaded',  function () {
+    makeDivPutName();
+});
+
+
 

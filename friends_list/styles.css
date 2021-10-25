@@ -82,3 +82,13 @@ main section div {
   padding-top: 10px;
   margin: 10px 30px;
 }
+
+main .addFriendNameList li {
+  background-color: #b2b3b8;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin: 30px 30px;
+  list-style-type: none;
+  font-family: cursive;
+}

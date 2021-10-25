@@ -87,4 +87,17 @@ main {
         }
 
     }
+
+    .addFriendNameList {
+        li {
+            background-color: $primaryColor;
+            text-align: left;
+            padding-left: 10px;
+            padding-top: 10px;
+            margin: 30px 30px;
+            list-style-type: none;
+            font-family: cursive;
+        }
+    }
+
 }

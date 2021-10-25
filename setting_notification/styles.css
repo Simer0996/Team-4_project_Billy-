@@ -4,6 +4,7 @@
   outline: none;
   text-align: center;
   font-weight: bold;
+  font-family: Helvetica;
 }
 
 .contentsWrap {
@@ -89,6 +90,12 @@ footer {
   margin-top: 20px;
 }
 
+#reminderSet {
+  width: 20%;
+  padding: 5px;
+  border-radius: 10px;
+}
+
 input[type=checkbox] {
   height: 0;
   width: 0;
@@ -120,7 +127,7 @@ label:after {
 }
 
 input:checked + label {
-  background: #315fa3;
+  background: #36ad7b;
 }
 
 input:checked + label:after {

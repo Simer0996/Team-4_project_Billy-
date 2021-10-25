@@ -1,12 +1,13 @@
+// Slide bar toggle down
 $('.fromContacts').on('click', () => {
     $('.showContactList').slideToggle();
 });
 
 
-
+// pick name from contact list and show the result bottom
 $('.friend1').on('click', () => {
     let pickedFriendName = $('.friend1').text();
-    $('.pickedName').text(pickedFriendName);
+    $('.pickedName').html(pickedFriendName);
 });
 
 $('.friend2').on('click', () => {
@@ -24,8 +25,46 @@ $('.friend4').on('click', () => {
     $('.pickedName').text(pickedFriendName);
 });
 
+$('.friend5').on('click', () => {
+    let pickedFriendName = $('.friend5').text();
+    $('.pickedName').text(pickedFriendName);
+});
+
+$('.friend6').on('click', () => {
+    let pickedFriendName = $('.friend6').text();
+    $('.pickedName').text(pickedFriendName);
+});
+
+$('.friend7').on('click', () => {
+    let pickedFriendName = $('.friend7').text();
+    $('.pickedName').text(pickedFriendName);
+});
+
+$('.friend8').on('click', () => {
+    let pickedFriendName = $('.friend8').text();
+    $('.pickedName').text(pickedFriendName);
+});
+
+$('.friend9').on('click', () => {
+    let pickedFriendName = $('.friend9').text();
+    $('.pickedName').text(pickedFriendName);
+});
 
 
-$('.addFriendBtn').on('click', () => {
-    window.location.href='../friends_list/index.html'
-})
+// Add friend btn click move to friends list and value transfer
+const moveToFriendList = function () {
+    $('.addFriendBtn').on('click', () => {
+        let storedFriendName = $('.pickedName').text();
+        localStorage.setItem('friendName', storedFriendName);
+        location.href = '../friends_list/index.html';
+    })
+};
+
+document.addEventListener('DOMContentLoaded', function(){
+    moveToFriendList();
+});
+
+// $('.addFriendBtn').on('click', () => {
+//     moveToFriendList();
+// });
+
