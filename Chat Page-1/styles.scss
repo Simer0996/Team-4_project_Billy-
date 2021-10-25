@@ -10,12 +10,14 @@ $black: black;
     outline: none;
     text-align: center;
     font-weight: bold;
+    font-family: helvetica;
 }
 
 main {
     div {
         h3 {
             margin-top: 100px;
+            margin-bottom: 1.2em;
         }
     }
 }
@@ -41,7 +43,7 @@ select {
     }
 }
 
-.chatBtn {
+.startChatBtn {
     margin-top: 20vh;
     padding: 10px 40px;
     background-color: $secondaryColor;

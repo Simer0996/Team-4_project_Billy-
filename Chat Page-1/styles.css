@@ -4,10 +4,12 @@
   outline: none;
   text-align: center;
   font-weight: bold;
+  font-family: helvetica;
 }
 
 main div h3 {
   margin-top: 100px;
+  margin-bottom: 1.2em;
 }
 
 select {
@@ -24,7 +26,7 @@ select option {
   background-color: #b2b3b8;
 }
 
-.chatBtn {
+.startChatBtn {
   margin-top: 20vh;
   padding: 10px 40px;
   background-color: #646464;
