@@ -30,6 +30,10 @@ body header main {
           flex-direction: column;
 }
 
+.paymentLinkAll button {
+  padding: 20px;
+}
+
 .firstRow {
   display: -webkit-box;
   display: -ms-flexbox;

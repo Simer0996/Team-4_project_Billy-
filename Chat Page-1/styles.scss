@@ -1,6 +1,6 @@
-$primaryColor: rgb(178, 179, 184);
+$primaryColor: rgb(217, 218, 219);
 $secondaryColor: rgb(100, 100, 100);
-$btnColor: #095776;
+$btnColor: #66cc99;
 $white: white;
 $black: black;
 
@@ -38,14 +38,15 @@ select {
     height: 30px;
 
     option {
-        color: inherit;
+        color: $black;
         background-color: $primaryColor;
     }
 }
 
 .startChatBtn {
-    margin-top: 20vh;
+    margin-top: 20em;
     padding: 10px 40px;
-    background-color: $secondaryColor;
+    background-color: $btnColor;
     color: $white;
+    border-radius: 10px;
 }

@@ -22,13 +22,14 @@ select {
 }
 
 select option {
-  color: inherit;
-  background-color: #b2b3b8;
+  color: black;
+  background-color: #d9dadb;
 }
 
 .startChatBtn {
-  margin-top: 20vh;
+  margin-top: 20em;
   padding: 10px 40px;
-  background-color: #646464;
+  background-color: #66cc99;
   color: white;
+  border-radius: 10px;
 }
