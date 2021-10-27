@@ -1,0 +1,150 @@
+/*Bottom navigation bar*/
+* {
+    font-family: "Quicksand"sans-serif;
+    width: 450px;
+    justify-content: center;
+    margin: auto;
+    padding: .2rem;
+   
+}
+
+body {
+    height:800px;
+}
+
+.btn {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 5px;
+}
+
+.button>img {
+    width: 20px;
+    height: 20px;
+}
+
+.button>p {
+    width: 5%;
+    padding-right: 30%;
+}
+
+.button {
+    cursor: pointer;
+
+}
+
+.header {
+    text-align: center;
+}
+
+.parentdiv img {
+    width: 6%;
+    height: 8%;
+    padding-left: 30px;
+    padding-top: 45px;
+    cursor: pointer;
+}
+
+
+.firstdiv>img {
+    width: 5%;
+    height: 5%;
+
+}
+
+/* Add_Friend CSS START */
+.fromContacts {
+    background-color: #b2b3b8;
+    margin: 0 30px;
+    padding: 10px;
+}
+
+.fromContacts h3 {
+    text-align: center;
+    cursor: pointer;
+}
+
+.showContactList {
+    background-color: #e2ecf1;
+    margin: 0px 30px;
+    display: none;
+}
+
+.showContactList ul {
+    list-style-type: none;
+}
+
+.showContactList ul li {
+    padding: 10px;
+    border: solid 1px #b2b3b8;
+}
+
+.inviteFriend {
+    background-color: #b2b3b8;
+    margin: 30px 30px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.personalCode {
+    display: flex;
+    flex-direction: column;
+}
+
+.personalCode {
+    margin-top: 10px;
+}
+
+.personalCode h4 {
+    text-align: left;
+    padding-left: 30px;
+}
+
+.codeNumber {
+    background-color: #e2ecf1;
+    margin: 5px 30px;
+    padding: 20px;
+    text-align: left;
+    color: #b2b3b8;
+    position: relative;
+}
+
+.codeNumber .copyBtn {
+    padding: 10px;
+    position: absolute;
+    top: 19%;
+    left: 85%;
+}
+
+.addFriendBtn {
+    background-color: #b2b3b8;
+    color: white;
+    margin-top: 200px;
+    padding: 10px 150px;
+}
+
+/* Add_Friend CSS END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
