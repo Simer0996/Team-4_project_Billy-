@@ -12,8 +12,11 @@ async function includeHTML() {
     return gulp.src([
             '*.html',
             '*css',
+            '*js',
+            '*png',
             '!header.html', //ignore
             '!footer.html', //ignore
+            '!gulpfile.js',
         ])
         .pipe(fileinclude({
             prefix: '@@',
