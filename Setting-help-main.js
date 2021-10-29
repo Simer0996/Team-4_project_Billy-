@@ -1,25 +1,4 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration*/
-const firebaseConfig = {
-  
-  apiKey: "AIzaSyA588GyaRwUeolD6zmxbjvS8EU7Lq-EF_s",
-  authDomain: "billy-payment-app.firebaseapp.com",
-  projectId: "billy-payment-app",
-  storageBucket: "billy-payment-app.appspot.com",
-  messagingSenderId: "716948441529",
-  appId: "1:716948441529:web:d7d954ed60d569ddcf0e68"
-};
-
-// Initialize Firebase
-//const app = initializeApp(firebaseConfig);
-firebase.initializeApp(firebaseConfig);
-const auth=firebase.auth();
-
-var messageRef=firebase.database().ref('messages');
+/*let messageRef=firebase.database().ref('messages');
 
 document.getElementById('sett').addEventListener('click', submitform);
 
@@ -42,5 +21,35 @@ function saveMessage(subject, input){
         subject:subject,
         input:input
     });
+}*/
+
+//import emailjs from "emailjs-com";
+//import{ init } from 'emailjs-com';
+//init("user_TSV6FaAA5RP0AU1yPU4Au");
+/*export default function ContactUs(){
+
+function sendEmail(e) {
+    e.preventDefault();
+    emailjs.sendForm('gmail', 'template_vwwkuuj', e.target, 'user_TSV6FaAA5RP0AU1yPU4Au')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
 }
 
+sett.addEventListener('click', sendEmail);
+}*/
+
+sett.addEventListener('click', ()=>{
+    let templateParams = {
+        subject: subject.value,
+        message: input.value
+    };
+    emailjs.send('service_06wkfum', 'template_vwwkuuj', templateParams)
+        .then(function(response) {
+           console.log('SUCCESS!', response.status, response.text);
+        }, function(error) {
+           console.log('FAILED...', error);
+        });
+});
