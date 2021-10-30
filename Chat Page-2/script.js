@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     putSelectedFriendName();
 });
 
-// User Input Msg disply on Chat-box
+// User Input Msg display on Chat-box
 $(".chatMsgSendBtn").on('click', () => {
     let userMessage = $('.userWriteMsg').val();
     let addPInMeDiv = document.createElement("p");

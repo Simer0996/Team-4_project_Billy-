@@ -1,6 +1,6 @@
-$primaryColor: rgb(178, 179, 184);
-$secondaryColor: rgb(226, 236, 241);
-$btnColor: #095776;
+$primaryColor: rgb(216, 216, 218);
+$secondaryColor: #b0e4ca;
+$btnColor: #66cc99;
 $white: white;
 
 * {
@@ -14,28 +14,27 @@ $white: white;
 
 .fromContacts {
     background-color: $primaryColor;
-    margin: 0 30px;
-    padding: 10px;
+    margin: 1.5em 5em;
+    padding: 0.8em 1em;
 
-    h3 {
+    h4 {
         text-align: center;
     }
 }
 
 .showContactList {
     background-color: $secondaryColor;
-    margin: 0px 30px;
+    margin: 0.5em 5em;
 
     ul {
         list-style-type: none;
 
         li {
-            padding: 10px;
-            border: solid 1px $primaryColor;
+            padding: 0.7em;
+            border: solid 1px $white;
             cursor: pointer;
 
             div {
-
                 font-family: sans-serif;
                 font-size: 11pt;
             }
@@ -45,48 +44,12 @@ $white: white;
     display: none;
 }
 
-.inviteFriend {
-    background-color: $primaryColor;
-    margin: 30px 30px;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-.personalCode {
-    display: flex;
-    flex-direction: column;
-}
-
-.personalCode {
-    margin-top: 10px;
-
-    h4 {
-        text-align: left;
-        padding-left: 30px;
-    }
-}
-
-.codeNumber {
-    background-color: $secondaryColor;
-    margin: 5px 30px;
-    padding: 20px;
-    text-align: left;
-    color: $primaryColor;
-    position: relative;
-
-    .copyBtn {
-        padding: 10px;
-        position: absolute;
-        top: 19%;
-        left: 85%;
-    }
-}
 
 .addFriendBtn {
-    background-color: $primaryColor;
+    background-color: $btnColor;
     color: $white;
     margin-top: 15%;
-    padding: 10px 150px;
+    padding: 1em 9.5em;
 }
 
 .pickedName {

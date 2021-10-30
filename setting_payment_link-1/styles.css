@@ -1,9 +1,15 @@
 * {
   margin: 0px;
-  padding: 0px;
+  padding: 0px 0.7em;
   outline: none;
   text-align: center;
   font-weight: bold;
+}
+
+header {
+  color: #66cc99;
+  font-weight: bold;
+  margin-bottom: 1.5em;
 }
 
 body {
@@ -30,8 +36,8 @@ body header main {
           flex-direction: column;
 }
 
-.paymentLinkAll button {
-  padding: 20px;
+.paymentLinkAll {
+  cursor: pointer;
 }
 
 .firstRow {
@@ -43,6 +49,18 @@ body header main {
           justify-content: center;
 }
 
+.firstRow .addNew {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 30px;
+      flex-basis: 30px;
+  padding: 60px 20px;
+  margin: 10px;
+  background-color: #66cc99;
+  color: white;
+}
+
 .firstRow .bcHydro {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -50,19 +68,8 @@ body header main {
   -ms-flex-preferred-size: 30px;
       flex-basis: 30px;
   padding: 60px 20px;
-  border: black dotted;
   margin: 10px;
-}
-
-.firstRow .bcMsp {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-preferred-size: 30px;
-      flex-basis: 30px;
-  padding: 60px 20px;
-  border: black dotted;
-  margin: 10px;
+  background-color: #d1eeecdc;
 }
 
 .secondRow {
@@ -81,8 +88,8 @@ body header main {
   -ms-flex-preferred-size: 30px;
       flex-basis: 30px;
   padding: 60px 20px;
-  border: black dotted;
   margin: 10px;
+  background-color: #a7b3e6;
 }
 
 .secondRow .netflix {
@@ -92,8 +99,8 @@ body header main {
   -ms-flex-preferred-size: 30px;
       flex-basis: 30px;
   padding: 60px 20px;
-  border: black dotted;
   margin: 10px;
+  background-color: #a7b3e6;
 }
 
 .thirdRow {
@@ -112,8 +119,8 @@ body header main {
   -ms-flex-preferred-size: 30px;
       flex-basis: 30px;
   padding: 60px 20px;
-  border: black dotted;
   margin: 10px;
+  background-color: #d1eeecdc;
 }
 
 .fourthRow {
@@ -132,8 +139,8 @@ body header main {
   -ms-flex-preferred-size: 30px;
       flex-basis: 30px;
   padding: 60px 20px;
-  border: black dotted;
   margin: 10px;
+  background-color: #a7b3e6;
 }
 
 .fourthRow .cable {
@@ -143,8 +150,8 @@ body header main {
   -ms-flex-preferred-size: 30px;
       flex-basis: 30px;
   padding: 60px 20px;
-  border: black dotted;
   margin: 10px;
+  background-color: #a7b3e6;
 }
 
 footer {

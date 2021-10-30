@@ -13,16 +13,11 @@ $black: black;
     font-family: helvetica;
 }
 
-main {
-    div {
-        h3 {
-            margin-top: 100px;
-            margin-bottom: 1.2em;
-        }
-    }
-}
 
-select {
+.friendsDropDown {
+    margin-top: 4em;
+    margin-left: 1em;
+    font-size: 12pt;
     /* arrow */
     background-position:
         calc(100% - 20px) calc(1em + 2px),
@@ -32,7 +27,7 @@ select {
         5px 5px,
         5px 5px,
         2.5em 2.5em;
-  
+
     cursor: pointer;
     width: 400px;
     height: 30px;
@@ -45,7 +40,7 @@ select {
 
 .startChatBtn {
     margin-top: 20em;
-    padding: 10px 40px;
+    padding: 1em 3em;
     background-color: $btnColor;
     color: $white;
     border-radius: 10px;

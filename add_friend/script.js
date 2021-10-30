@@ -53,18 +53,17 @@ $('.friend9').on('click', () => {
 
 // Add friend btn click move to friends list and value transfer
 const moveToFriendList = function () {
-    $('.addFriendBtn').on('click', () => {
-        let storedFriendName = $('.pickedName').text();
-        localStorage.setItem('friendName', storedFriendName);
-        location.href = '../friends_list/index.html';
-    })
+    let storedFriendName = $('.pickedName').text();
+    localStorage.setItem('friendName', storedFriendName);
+    location.href = '../friends_list/index.html';
 };
 
-document.addEventListener('DOMContentLoaded', function(){
+
+$('.addFriendBtn').on('click', () => {
     moveToFriendList();
 });
 
-// $('.addFriendBtn').on('click', () => {
+
+// document.addEventListener('DOMContentLoaded', function(){
 //     moveToFriendList();
 // });
-

@@ -32,13 +32,16 @@ header h1 {
   color: #070606;
   text-align: left;
   font-weight: bold;
+  color: #66cc99;
+  font-size: 16pt;
+  padding-left: 0.3em;
 }
 
 .chatBoxForMsg {
   width: 95%;
   height: 80%;
   border-radius: 7px;
-  background-color: #b2b3b8;
+  background-color: #e0e0e2;
   padding: 5px;
   margin-bottom: 20px;
 }
@@ -59,7 +62,7 @@ header h1 {
 }
 
 .icon-back:hover {
-  background-color: #b2b3b8;
+  background-color: #e0e0e2;
 }
 
 .icon-back:active {
@@ -113,7 +116,7 @@ header h1 {
 }
 
 #msgCloudBox {
-  background-color: white;
+  background-color: #536FE0;
   width: 50%;
   max-height: 50%;
   margin: 0.5em;

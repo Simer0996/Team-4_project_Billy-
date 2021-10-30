@@ -8,18 +8,18 @@
 }
 
 .fromContacts {
-  background-color: #b2b3b8;
-  margin: 0 30px;
-  padding: 10px;
+  background-color: #d8d8da;
+  margin: 1.5em 5em;
+  padding: 0.8em 1em;
 }
 
-.fromContacts h3 {
+.fromContacts h4 {
   text-align: center;
 }
 
 .showContactList {
-  background-color: #e2ecf1;
-  margin: 0px 30px;
+  background-color: #b0e4ca;
+  margin: 0.5em 5em;
   display: none;
 }
 
@@ -28,8 +28,8 @@
 }
 
 .showContactList ul li {
-  padding: 10px;
-  border: solid 1px #b2b3b8;
+  padding: 0.7em;
+  border: solid 1px white;
   cursor: pointer;
 }
 
@@ -38,53 +38,11 @@
   font-size: 11pt;
 }
 
-.inviteFriend {
-  background-color: #b2b3b8;
-  margin: 30px 30px;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-.personalCode {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.personalCode {
-  margin-top: 10px;
-}
-
-.personalCode h4 {
-  text-align: left;
-  padding-left: 30px;
-}
-
-.codeNumber {
-  background-color: #e2ecf1;
-  margin: 5px 30px;
-  padding: 20px;
-  text-align: left;
-  color: #b2b3b8;
-  position: relative;
-}
-
-.codeNumber .copyBtn {
-  padding: 10px;
-  position: absolute;
-  top: 19%;
-  left: 85%;
-}
-
 .addFriendBtn {
-  background-color: #b2b3b8;
+  background-color: #66cc99;
   color: white;
   margin-top: 15%;
-  padding: 10px 150px;
+  padding: 1em 9.5em;
 }
 
 .pickedName {

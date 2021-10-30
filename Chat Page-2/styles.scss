@@ -1,8 +1,9 @@
-$primaryColor: rgb(178, 179, 184);
+$primaryColor: rgb(224, 224, 226);
 $secondaryColor: rgb(100, 100, 100);
 $btnColor: #66cc99;
 $black : rgb(7, 6, 6);
 $white : rgb(255, 255, 255);
+$chatCloud : #536FE0;
 
 * {
     margin: 0px;
@@ -42,6 +43,9 @@ header {
     color: $black;
     text-align: left;
     font-weight: bold;
+    color: $btnColor;
+    font-size: 16pt;
+    padding-left: 0.3em;
 }
 
 .chatBoxForMsg {
@@ -50,10 +54,10 @@ header {
     border-radius: 7px;
     background-color: $primaryColor;
     padding: 5px; 
-   
     margin-bottom: 20px;
 }
 
+//Back Icon Start
 .icon-back {
     width: 40px;
     height: 40px;
@@ -75,6 +79,7 @@ header {
 .icon-back:active {
     background-color: $secondaryColor;
 }
+//Back Icon End
 
 
 .chatMsgInput {
@@ -110,7 +115,7 @@ header {
 }
 
 #msgCloudBox {
-    background-color: $white;
+    background-color: $chatCloud;
     width: 50%;
     max-height: 50%;
     margin: 0.5em;

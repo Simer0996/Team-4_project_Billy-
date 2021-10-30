@@ -1,5 +1,5 @@
-$primaryColor: rgb(178, 179, 184);
-$btnColor: #095776;
+$primaryColor: rgb(224, 224, 224);
+$btnColor: #66cc99;
 $white: white;
 
 * {
@@ -11,24 +11,26 @@ $white: white;
 }
 
 main {
-    .searchBox {
-        background-color: $primaryColor;
-        margin: 10px 30px;
-        height: 30px;
-        text-align: left;
-
-        input {
-            background-color: $primaryColor;
-            margin: auto;
-            height: 25px;
-            width: 100%;
-            text-align: left;
-        }
-    }
+    // .searchBox {
+    //     background-color: $primaryColor;
+    //     margin: 10px 30px;
+    //     height: 30px;
+    //     text-align: left;
+        
+    //     .searchFriendInput {
+    //         background-color: $primaryColor;
+    //         margin: auto;
+    //         height: 25px;
+    //         width: 100%;
+    //         text-align: left;
+    //         padding-left: 1em;
+    //     }
+    // }
 
     h4 {
         text-align: left;
         margin: 10px 30px;
+        color: $btnColor;
     }
 
     .allFriends {
@@ -75,25 +77,14 @@ main {
         padding-left: 100px;
     }
 
-    section {
-        margin-top: 30px;
-
-        div {
-            background-color: $primaryColor;
-            text-align: left;
-            padding-left: 10px;
-            padding-top: 10px;
-            margin: 10px 30px;
-        }
-
-    }
-
+ 
     .addFriendNameList {
         li {
             background-color: $primaryColor;
             text-align: left;
-            padding-left: 10px;
-            padding-top: 10px;
+            padding-left: 1em;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
             margin: 30px 30px;
             list-style-type: none;
             font-family: cursive;

@@ -1,9 +1,23 @@
+$primaryColor: #66cc99;
+$secondaryColor: #a7b3e6;
+$tertiaryColor: #d1eeecdc;
+$white: white;
+$black: black;
+ 
+ 
+
 * {
     margin: 0px;
-    padding: 0px;
+    padding: 0px 0.7em;
     outline: none;
     text-align: center;
     font-weight: bold;
+}
+
+header {
+    color: $primaryColor;
+    font-weight: bold;
+    margin-bottom: 1.5em;
 }
 
 body {
@@ -19,9 +33,7 @@ body {
 }
 
 .paymentLinkAll {
-    button {
-        padding: 20px;
-    }
+    cursor: pointer;
     
 }
 
@@ -29,20 +41,21 @@ body {
     display: flex;
     justify-content: center;
 
+    .addNew {
+        flex-grow: 1;
+        flex-basis: 30px;
+        padding: 60px 20px;
+        margin: 10px;
+        background-color: $primaryColor;
+        color: $white;
+    }
+
     .bcHydro {
         flex-grow: 1;
         flex-basis: 30px;
         padding: 60px 20px;
-        border: black dotted;
         margin: 10px;
-    }
-
-    .bcMsp {
-        flex-grow: 1;
-        flex-basis: 30px;
-        padding: 60px 20px;
-        border: black dotted;
-        margin: 10px;
+        background-color: $tertiaryColor;
     }
 }
 
@@ -54,16 +67,16 @@ body {
         flex-grow: 1;
         flex-basis: 30px;
         padding: 60px 20px;
-        border: black dotted;
         margin: 10px;
+        background-color: $secondaryColor;
     }
 
     .netflix {
         flex-grow: 1;
         flex-basis: 30px;
         padding: 60px 20px;
-        border: black dotted;
         margin: 10px;
+        background-color: $secondaryColor;
     }
 }
 
@@ -75,8 +88,8 @@ body {
         flex-grow: 1;
         flex-basis: 30px;
         padding: 60px 20px;
-        border: black dotted;
         margin: 10px;
+        background-color: $tertiaryColor;
     }
 }
 
@@ -88,16 +101,16 @@ body {
         flex-grow: 1;
         flex-basis: 30px;
         padding: 60px 20px;
-        border: black dotted;
         margin: 10px;
+        background-color: $secondaryColor;
     }
 
     .cable {
         flex-grow: 1;
         flex-basis: 30px;
         padding: 60px 20px;
-        border: black dotted;
         margin: 10px;
+        background-color: $secondaryColor;
     }
 }
 
