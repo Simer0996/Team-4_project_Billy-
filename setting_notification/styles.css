@@ -29,7 +29,7 @@
   margin: 20px;
 }
 
-.newMessage {
+.newMessageDiv {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -41,7 +41,7 @@
   margin: 20px;
 }
 
-.paymentRequest {
+.paymentRequestDiv {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -53,7 +53,7 @@
   margin: 20px;
 }
 
-.paymentReceived {
+.paymentReceivedDiv {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -65,7 +65,7 @@
   margin: 20px;
 }
 
-.newFeatures {
+.newFeaturesDiv {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -75,19 +75,6 @@
   gap: 100px;
   padding: 20px;
   margin: 20px;
-}
-
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-top: 20px;
 }
 
 #reminderSet {
@@ -96,13 +83,13 @@ footer {
   border-radius: 10px;
 }
 
-input[type=checkbox] {
+.contentsWrap input[type=checkbox] {
   height: 0;
   width: 0;
   visibility: hidden;
 }
 
-label {
+.contentsWrap label {
   cursor: pointer;
   text-indent: -9999px;
   width: 50px;
@@ -113,7 +100,7 @@ label {
   position: relative;
 }
 
-label:after {
+.contentsWrap label:after {
   content: '';
   position: absolute;
   top: 4px;
@@ -126,11 +113,11 @@ label:after {
   transition: 0.3s;
 }
 
-input:checked + label {
+.contentsWrap input:checked + label {
   background: #36ad7b;
 }
 
-input:checked + label:after {
+.contentsWrap input:checked + label:after {
   left: calc(100% - 5px);
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
