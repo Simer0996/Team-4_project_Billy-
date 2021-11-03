@@ -1,39 +1,13 @@
 * {
   margin: 0px;
   padding: 0px 0.7em;
-  outline: none;
-  text-align: center;
-  font-weight: bold;
 }
 
 header {
   color: #66cc99;
   font-weight: bold;
   margin-bottom: 1.5em;
-}
-
-body {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-body header main {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  text-align: center;
 }
 
 .paymentLinkAll {
@@ -41,128 +15,94 @@ body header main {
 }
 
 .firstRow {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .firstRow .addNew {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-preferred-size: 30px;
-      flex-basis: 30px;
+  flex-grow: 1;
+  flex-basis: 30px;
   padding: 60px 20px;
   margin: 10px;
   background-color: #66cc99;
   color: white;
+  text-align: center;
+  font-weight: bold;
 }
 
 .firstRow .bcHydro {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-preferred-size: 30px;
-      flex-basis: 30px;
+  flex-grow: 1;
+  flex-basis: 30px;
   padding: 60px 20px;
   margin: 10px;
   background-color: #d1eeecdc;
+  text-align: center;
+  font-weight: bold;
 }
 
 .secondRow {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .secondRow .mobile {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-preferred-size: 30px;
-      flex-basis: 30px;
+  flex-grow: 1;
+  flex-basis: 30px;
   padding: 60px 20px;
   margin: 10px;
   background-color: #a7b3e6;
+  text-align: center;
+  font-weight: bold;
 }
 
 .secondRow .netflix {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-preferred-size: 30px;
-      flex-basis: 30px;
+  flex-grow: 1;
+  flex-basis: 30px;
   padding: 60px 20px;
   margin: 10px;
   background-color: #a7b3e6;
+  text-align: center;
+  font-weight: bold;
 }
 
 .thirdRow {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .thirdRow .creditCard {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-preferred-size: 30px;
-      flex-basis: 30px;
+  flex-grow: 1;
+  flex-basis: 30px;
   padding: 60px 20px;
   margin: 10px;
   background-color: #d1eeecdc;
+  text-align: center;
+  font-weight: bold;
 }
 
 .fourthRow {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .fourthRow .internet {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-preferred-size: 30px;
-      flex-basis: 30px;
+  flex-grow: 1;
+  flex-basis: 30px;
   padding: 60px 20px;
   margin: 10px;
   background-color: #a7b3e6;
+  text-align: center;
+  font-weight: bold;
 }
 
 .fourthRow .cable {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-preferred-size: 30px;
-      flex-basis: 30px;
+  flex-grow: 1;
+  flex-basis: 30px;
   padding: 60px 20px;
   margin: 10px;
   background-color: #a7b3e6;
+  text-align: center;
+  font-weight: bold;
+  opacity: 0;
 }
 
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-top: 20px;
-}

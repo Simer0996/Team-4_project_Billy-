@@ -64,6 +64,3 @@ $('.addFriendBtn').on('click', () => {
 });
 
 
-// document.addEventListener('DOMContentLoaded', function(){
-//     moveToFriendList();
-// });
