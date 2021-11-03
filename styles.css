@@ -530,3 +530,123 @@
     font-size: 14pt;
 }
 /* Setting_payment_link_2 CSS END */
+
+
+/* Setting_notification CSS START */
+.contentsWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  .reminder {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 100px;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .newMessageDiv {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 100px;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .paymentRequestDiv {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 100px;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .paymentReceivedDiv {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 100px;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .newFeaturesDiv {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 100px;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  #reminderSet {
+    width: 20%;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  
+  .contentsWrap input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  
+  .contentsWrap  label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 50px;
+    height: 25px;
+    background: #837f7f;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+  }
+  
+  .contentsWrap label:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    width: 20px;
+    height: 18px;
+    background: white;
+    border-radius: 50px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .contentsWrap input:checked + label {
+    background: #36ad7b;
+  }
+  
+  .contentsWrap input:checked + label:after {
+    left: calc(100% - 5px);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+
+/* Setting_notification CSS End */
