@@ -13,6 +13,7 @@ async function includeHTML() {
             '*.html',
             '*css',
             '*js',
+            '!gulpfile.js',
             '!header.html', //ignore
             '!footer.html', //ignore
         ])
@@ -24,4 +25,3 @@ async function includeHTML() {
 }
 
 exports.default = includeHTML;
-
