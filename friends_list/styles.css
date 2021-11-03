@@ -1,0 +1,69 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+main h4 {
+  text-align: left;
+  margin: 10px 30px;
+  color: #66cc99;
+}
+
+main .allFriends {
+  margin-top: 30px;
+}
+
+main .addBtn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: white;
+  cursor: pointer;
+  border: 2px solid #66cc99;
+  margin-left: 35px;
+  border-radius: 50%;
+}
+
+main .addBtn:after {
+  content: '';
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 4px;
+  width: 50%;
+  background: #66cc99;
+  top: 50%;
+  left: 50%;
+}
+
+main .addBtn:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #66cc99;
+  height: 50%;
+  width: 4px;
+}
+
+main .addFriendText {
+  padding-top: 20px;
+  text-align: left;
+  padding-left: 100px;
+}
+
+main .addFriendNameList li {
+  background-color: #e0e0e0;
+  text-align: left;
+  padding-left: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin: 30px 30px;
+  list-style-type: none;
+  font-family: cursive;
+}

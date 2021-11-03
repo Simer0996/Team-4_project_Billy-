@@ -1,0 +1,126 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  text-align: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: helvetica;
+}
+
+header h1 {
+  text-align: center;
+}
+
+.mobileFirst {
+  border-radius: 10px;
+  width: 275px;
+  height: 500px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 16px 5px;
+}
+
+.friendNameBox {
+  padding: 0.8em 1em;
+}
+
+.chatFriendName {
+  color: #070606;
+  text-align: left;
+  font-weight: bold;
+  color: #66cc99;
+  font-size: 16pt;
+  padding-left: 0.3em;
+}
+
+.chatBoxForMsg {
+  width: 95%;
+  height: 80%;
+  border-radius: 7px;
+  background-color: #e0e0e2;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.icon-back {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #66cc99;
+  padding: 7px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+  float: left;
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.icon-back:hover {
+  background-color: #e0e0e2;
+}
+
+.icon-back:active {
+  background-color: #646464;
+}
+
+.chatMsgInput {
+  border-radius: 50px;
+  -webkit-box-shadow: 0 1px 11px #646464;
+          box-shadow: 0 1px 11px #646464;
+  padding: 10px;
+  width: calc(100% + -72px);
+  margin: 5px 0 0 8px;
+  float: left;
+}
+
+.chatMsgInput * {
+  font-family: helvetica;
+  outline: none;
+  border: none;
+  caret-color: #00966c;
+}
+
+.chatMsgInput *::-webkit-input-placeholder {
+  color: #929292;
+}
+
+.chatMsgInput *:-ms-input-placeholder {
+  color: #929292;
+}
+
+.chatMsgInput *::-ms-input-placeholder {
+  color: #929292;
+}
+
+.chatMsgInput *::placeholder {
+  color: #929292;
+}
+
+.chatMsgSendBtn {
+  width: 40px;
+  height: 40px;
+  background-color: #66cc99;
+  border-radius: 50%;
+  float: right;
+  margin: 3px 11px 0 0;
+  padding: 8px;
+  -webkit-transition: background-color 150ms ease-in-out;
+  transition: background-color 150ms ease-in-out;
+  cursor: pointer;
+}
+
+#msgCloudBox {
+  background-color: #536FE0;
+  width: 50%;
+  max-height: 50%;
+  margin: 0.5em;
+  margin-left: 7em;
+  padding: 0.5em;
+  border-radius: 0.5em;
+}

@@ -1,0 +1,108 @@
+* {
+  margin: 0px;
+  padding: 0px 0.7em;
+}
+
+header {
+  color: #66cc99;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+.paymentLinkAll {
+  cursor: pointer;
+}
+
+.firstRow {
+  display: flex;
+  justify-content: center;
+}
+
+.firstRow .addNew {
+  flex-grow: 1;
+  flex-basis: 30px;
+  padding: 60px 20px;
+  margin: 10px;
+  background-color: #66cc99;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.firstRow .bcHydro {
+  flex-grow: 1;
+  flex-basis: 30px;
+  padding: 60px 20px;
+  margin: 10px;
+  background-color: #d1eeecdc;
+  text-align: center;
+  font-weight: bold;
+}
+
+.secondRow {
+  display: flex;
+  justify-content: center;
+}
+
+.secondRow .mobile {
+  flex-grow: 1;
+  flex-basis: 30px;
+  padding: 60px 20px;
+  margin: 10px;
+  background-color: #a7b3e6;
+  text-align: center;
+  font-weight: bold;
+}
+
+.secondRow .netflix {
+  flex-grow: 1;
+  flex-basis: 30px;
+  padding: 60px 20px;
+  margin: 10px;
+  background-color: #a7b3e6;
+  text-align: center;
+  font-weight: bold;
+}
+
+.thirdRow {
+  display: flex;
+  justify-content: center;
+}
+
+.thirdRow .creditCard {
+  flex-grow: 1;
+  flex-basis: 30px;
+  padding: 60px 20px;
+  margin: 10px;
+  background-color: #d1eeecdc;
+  text-align: center;
+  font-weight: bold;
+}
+
+.fourthRow {
+  display: flex;
+  justify-content: center;
+}
+
+.fourthRow .internet {
+  flex-grow: 1;
+  flex-basis: 30px;
+  padding: 60px 20px;
+  margin: 10px;
+  background-color: #a7b3e6;
+  text-align: center;
+  font-weight: bold;
+}
+
+.fourthRow .cable {
+  flex-grow: 1;
+  flex-basis: 30px;
+  padding: 60px 20px;
+  margin: 10px;
+  background-color: #a7b3e6;
+  text-align: center;
+  font-weight: bold;
+  opacity: 0;
+}
+

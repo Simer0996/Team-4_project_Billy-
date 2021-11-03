@@ -1,0 +1,68 @@
+header {
+    color: #66cc99;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.icon-back {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #66cc99;
+    padding: 7px;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: background-color 200ms ease-in-out;
+    transition: background-color 200ms ease-in-out;
+    float: left;
+    margin-right: 7px;
+    cursor: pointer;
+    margin: 1px 30px;
+    padding: 1px;
+    outline: none;
+    
+}
+
+.icon-back:hover {
+    background-color: #e0e0e2;
+}
+
+.icon-back:active {
+    background-color: #646464;
+}
+
+.cableBox {
+    width: 100px;
+    height: 100px;
+    margin: 4rem auto;
+    background-color: #a7b3e6;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cableBox h4 {
+    padding-top: 2.5rem;
+}
+
+.cableURLDiv {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+    font-weight: 700;
+}
+
+.cableURL {
+    margin: .5rem 0;
+    padding: .5rem;
+}
+
+.pmtLinkSaveBtn {
+    margin: 12rem 7.5rem;
+    padding: 1rem 6rem;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, .4);
+    background-color: #66cc99;
+    border-radius: 10px;
+    color: white;
+    font-size: 14pt;
+}

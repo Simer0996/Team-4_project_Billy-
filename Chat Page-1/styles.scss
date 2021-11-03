@@ -1,0 +1,47 @@
+$primaryColor: rgb(217, 218, 219);
+$secondaryColor: rgb(100, 100, 100);
+$btnColor: #66cc99;
+$white: white;
+$black: black;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    text-align: center;
+    font-weight: bold;
+    font-family: helvetica;
+}
+
+
+.friendsDropDown {
+    margin-top: 4em;
+    margin-left: 1em;
+    font-size: 12pt;
+    /* arrow */
+    background-position:
+        calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px),
+        100% 0;
+    background-size:
+        5px 5px,
+        5px 5px,
+        2.5em 2.5em;
+
+    cursor: pointer;
+    width: 400px;
+    height: 30px;
+
+    option {
+        color: $black;
+        background-color: $primaryColor;
+    }
+}
+
+.startChatBtn {
+    margin-top: 20em;
+    padding: 1em 3em;
+    background-color: $btnColor;
+    color: $white;
+    border-radius: 10px;
+}
