@@ -16,7 +16,7 @@ cell04.innerHTML = "Status"
 
 for(let i of bill_array)
 {
-   let row1 = table.inserRow(1)
+   let row1 = table.insertRow(1)
    let cell11 = row1.insertCell(0);
    let cell12 = row1.insertCell(1);
    let cell13 = row1.insertCell(2);
