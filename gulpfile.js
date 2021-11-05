@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const fileinclude = require('gulp-file-include');
 
+
 const paths = {
     script: {
         src: './',

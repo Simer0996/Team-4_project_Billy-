@@ -18,9 +18,7 @@ function getClass(list, cls) {
 (async () => {
    if (getClass(mainClass, 'new-bill')) {
       console.log('this is New Bill page');
-      const {
-         default: AddBill
-      } = await import('./js_modules/Add_bill.js');
+      const {default: AddBill} = await import('./js_modules/Add_bill.js');
       btn2.addEventListener('click', (e) => {
          e.preventDefault()
          let bill_object = new AddBill(bills.value, amount.value, date.value, area.value)
@@ -44,9 +42,7 @@ console.log(newArray);
 (async () => {
 if (getClass(mainClass, 'history')) {
    console.log('this is History page');
-   const {
-      default: createTable
-   } = await import('./js_modules/History.js');
+   const {default: createTable} = await import('./js_modules/History.js');
    createTable;
 }
 })();
@@ -55,10 +51,18 @@ if (getClass(mainClass, 'history')) {
 (async () => {
 if (getClass(mainClass, 'homePage')) {
    console.log('this is Home page');
-   const {
-      default: arrayHome
-   } = await import('./js_modules/Home.js');
+   const {default: arrayHome} = await import('./js_modules/Home.js');
    arrayHome;
 }
 })();
+
+//Add Friends//
+(async () => {
+   if (getClass(mainClass, 'add-Friend')) {
+      console.log('this is Add Friend page');
+      const {default: historyContent} = await import('./js_modules/Add_friend_script.js');
+historyContent();
+   }
+   })();
+
 
