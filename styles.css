@@ -1,11 +1,11 @@
 /*Bottom navigation bar*/
-* {
+/* * {
     font-family: "Quicksand"sans-serif;
     width: 450px;
     justify-content: center;
     margin: auto;
     padding: .2rem;
-}
+} */
 
 .btn {
     overflow: hidden;
@@ -129,4 +129,120 @@
 }
 
 /* Add_Friend CSS END */
+
+/* SignUp Page*/
+*{
+    margin:0;
+    padding:0;
+    font-family: "Quicksand"sans-serif;
+}
+
+.desktoptitle{
+    display:none;
+}
+
+.signupdesktop{
+    display: none;
+}
+
+.signupwrapper .signuptitle{
+    font-size: 40px;
+    margin-left: 80px;
+    margin-top: 50px;
+    color: skyblue;
+}
+
+.signupwrapper{
+    margin-left: 50px;
+    margin-top: 70px;
+}
+
+.inputfield label{
+    font-size: 15px;
+    color: gray;
+}
+
+.inputfield .input{
+    width:400px;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    margin: 5px 0 0px;
+}
+
+.btn1{
+    width: 180px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border-radius: 5px ;
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+    text-align: center;
+    margin-left: 120px;
+    margin-top: 50px;
+    color: white;
+    background-color: skyblue;
+}
+
+.inputfield:last-child{
+    margin-bottom: 10px;
+}
+
+.inputfield p{
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.inputfield a{
+    text-decoration: none;
+    color: skyblue;
+}
+
+@media (min-width:550px){
+    .signupdesktop{
+        display:block;
+        width:50%;
+    }
+
+    .signupmain{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       width:100%;
+       margin:30px;
+       height:100%;
+    }
+
+    .inputfield .input{
+        width:570px;
+    }
+    .signuptitle{
+        display:none;
+    }
+
+    .desktoptitle{
+        display:block;
+        font-size: 40px;
+        margin-top: 10px; 
+        text-align:center;
+        color: skyblue;
+    }
+
+    p{
+        display:none;
+    }
+
+    .btn1{
+        margin-left: 200px;
+    }
+
+    img{
+        width:650px;
+        height:100%;
+    }
+}
+
+
+
+
 
