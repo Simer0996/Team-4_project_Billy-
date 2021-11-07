@@ -202,20 +202,21 @@
 @media (min-width:550px){
     .signupdesktop{
         display:block;
-        width:50%;
+        height: 113%;
+        border: 30px solid skyblue;
     }
 
     .signupmain{
        display: grid;
        grid-template-columns: repeat(2, 1fr);
        width:100%;
-       margin:30px;
        height:100%;
     }
 
     .inputfield .input{
         width:570px;
     }
+
     .signuptitle{
         display:none;
     }
@@ -237,10 +238,187 @@
     }
 
     img{
-        width:650px;
+        width:400px;
+        height:200px;
+        margin-left:100px;
+        margin-top: 200px;
+    }
+}                                                                                                             
+
+/*Login Page*/
+.loginmain .header img{
+    height: 200px;
+    width: 250px;
+    padding: 30px;
+}
+
+.container{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.loginform .inputfield label{
+    font-size: 15px;
+    color: gray;
+}
+
+.loginform .inputfield .input{
+    width:400px;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    margin: 5px 0 0px;
+}
+
+.btn2{
+    width: 180px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border-radius: 5px ;
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+    text-align: center;
+    margin-left: 120px;
+    margin-top: 50px;
+    color: white;
+    background-color: skyblue;
+}
+
+.loginform .inputfield p{
+    margin-left: 110px;
+}
+
+.loginform .forgot a{
+    text-decoration: none;
+    color: gray;
+    margin-top: 100px;
+    margin-left: 300px;
+}
+
+.logintitle, .desktoplogin{
+    display:none;
+}
+
+
+@media (min-width:550px){
+    .logincontainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width:100%;
         height:100%;
     }
+
+    .loginmain .header{
+        display:none;
+    }
+
+    .logintitle, .desktoplogin{
+        display:block;
+    }
+
+    .desktoplogin{
+        height:128%;
+        border: 30px solid skyblue;
+    }
+
+    .logintitle{
+        text-align:center;
+        color:skyblue;
+        font-size: 40px;
+        margin-top: 120px;
+    }
+
+    .loginform .inputfield .input{
+        width:570px;
+    }
+
+    .btn2{
+        margin-left: 200px;
+        margin-top:100px;
+    }
+
+    .loginform .forgot{
+        margin-left:180px;
+    }
 }
+
+/*Forgot Password*/
+.forgotmain .header img{
+    height: 200px;
+    width: 250px;
+    padding: 30px;
+}
+
+.btn3{
+    width: 180px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border-radius: 5px ;
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+    text-align: center;
+    margin-left: 120px;
+    margin-top: 50px;
+    color: white;
+    background-color: skyblue;
+}
+
+.forgotloginlink a{
+    text-decoration: none;
+    color:black;
+    border:3px skyblue solid;
+    margin-left: 180px;
+}
+
+.forgotloginlink{
+    margin-top: 70px;
+}
+
+.forgottitle, .desktopforgot{
+    display:none;
+}
+
+@media (min-width:550px){
+    .forgotcontainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width:100%;
+        height:100%;
+    }
+
+    .forgotmain .header, .forgotloginlink{
+        display:none;
+    }
+
+    .desktopforgot, .forgottitle{
+        display:block;
+    }
+
+    .desktopforgot{
+        height:127%;
+        border: 30px solid skyblue;
+    }
+
+    .forgottitle{
+        text-align:center;
+        color:skyblue;
+        font-size: 40px;
+        margin-top: 120px;
+    }
+
+    .forgot .inputfield .input{
+        width:570px;
+    }
+
+    .btn3{
+        margin-left: 200px;
+        margin-top:100px;
+    }
+
+}    
+
 
 
 
