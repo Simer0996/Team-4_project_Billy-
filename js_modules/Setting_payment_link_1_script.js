@@ -3,7 +3,7 @@ $('.addNew').on('click', ()=>{
     location.href='../setting_payment_link-2/index.html';
 })
 
-let addNewPmtLink = function () {
+export let addNewPmtLink = function () {
     const getNewPmtLink = localStorage.getItem('linkURL');
     $('#newLink').attr('href', getNewPmtLink);
     $('.cable').css('opacity', '1');

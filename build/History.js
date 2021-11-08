@@ -1,4 +1,7 @@
-
+let recoveredString = localStorage.getItem('bill_array');
+console.log(recoveredString);
+let newArray = JSON.parse(recoveredString);
+console.log(newArray);
 
 export default function createTable() {
    let table = document.getElementById('tableOutput');

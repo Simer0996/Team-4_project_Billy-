@@ -1,5 +1,5 @@
 
-const startChatting = function () {
+export const startChatting = function () {
     $('.startChatBtn').on('click', () => {
         let selectedFriend = $('.friendsDropDown :selected').text();
         localStorage.setItem('friendName', selectedFriend);

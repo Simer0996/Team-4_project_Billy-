@@ -12,8 +12,9 @@ const paths = {
 async function includeHTML() {
     return gulp.src([
             '*.html',
-            '*css',
-            '*js',
+            '*.css',
+            'js_modules/*.js',
+            '*.js',
             '!gulpfile.js',
             '!header.html', //ignore
             '!footer.html', //ignore

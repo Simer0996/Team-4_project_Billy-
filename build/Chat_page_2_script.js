@@ -1,6 +1,6 @@
 // Load selected friend name on top of chat-box
 
-let putSelectedFriendName = function () {
+export let putSelectedFriendName = function () {
     const getFriendName = localStorage.getItem('friendName');
     $('.chatFriendName').text(getFriendName);
 };
