@@ -234,3 +234,57 @@ document.addEventListener('DOMContentLoaded',  function () {
         })
     }
 })();
+
+//Forgot Password
+(async () => {
+    if (getClass(mainClass, 'forgotmain')) {
+        console.log('this is Forgot password page');
+       const auth = firebase.auth();
+
+ const newpassFunction = () => {
+
+    let useremail = document.getElementById('email').value;
+    console.log('user email', useremail);
+    auth.sendPasswordResetEmail(useremail)
+        .then(() => {
+            console.log("Password reset email sent");
+        })
+        .catch(error => {
+            console.error(error);
+        })
+}
+
+newpass.addEventListener('click', newpassFunction);
+}
+})();
+
+//Login Page
+(async () => {
+    if (getClass(mainClass, 'loginmain')) {
+        console.log('this is Login page');
+        let loginid = document.getElementById('login');
+        loginid.addEventListener('click', ()=>{
+            let useremail=document.getElementById('email').value;
+            let userpassword=document.getElementById('password').value;
+          
+            firebase.auth().signInWithEmailAndPassword(useremail, userpassword)
+            .then(function(userCredential){
+              console.log('User login successfully', userCredential.user);
+              setTimeout(function(){
+                window.location.href="./Home.html";
+              }, 3000)
+            })
+            .catch(function(error){
+            // let errorCode=error.code;
+            let errorMessage=error.message;
+            window.alert("Error:" + errorMessage);
+          })
+          });
+          //================================
+          //How to know what is the status of user, is login or not login
+          //If(user in login)
+            //  go to the home page
+          //else
+           //   load login page   
+}
+})();
