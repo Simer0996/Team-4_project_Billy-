@@ -20,14 +20,16 @@
 
 <body>
 
-<main>
-    <h1 class="header">Login_page</h1>
-    <i class="fas fa-angle-left"></i>
+<div class="logincontainer">
+<div class="desktoplogin">   
+    <img src="../images/logo_original1.png">
+</div>     
+<main class="loginmain">
+    <h1 class="header"><img src="../images/logo_original1.png"></h1>
+    <p class="logintitle">Login</p>
 <div class="container">
-    <div class="subcontainer">
 <div class="loginform">
-     
-    <div class="inputfield">
+     <div class="inputfield">
         <label>Email</label>
         <input type="text" class="input" placeholder="example@hotmail.com" id="email">
     </div> 
@@ -36,12 +38,12 @@
         <input type="password" class="input" placeholder="********" id="password">
     </div>   
     <div class="forgot">
-        <a href="">Forgot Password</a>
+        <a href="Forgot_password.html">Forgot Password</a>
     </div>   
     <div>
-        <input type="submit" value="LOGIN" class="btn" id="login">
+        <input type="button" value="LOGIN" class="btn2" id="login">
     </div>   
-    <div class="line"><hr> <p>or</p> <hr> </div>
+    <!-- <div class="line"><hr> <p>or</p> <hr> </div>
     <div class="google">
         <a href="">
             <ion-icon name="logo-google"></ion-icon>
@@ -56,23 +58,16 @@
         <a href="">
             <ion-icon name="logo-apple"></ion-icon>
         </a>
-    </div>     
+    </div>      -->
     <div class="inputfield">
-        <p>Don't have an account? <a href=""> Sign Up </a></p>
-    </div>       
+        <p>Don't have an account? <a href="Sign-up_Page.html"> Sign Up </a></p>
+    </div>      
+      
 </div>   
 </div>
-</div> 
+   
+<!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
 </main>
+</div>  
 
-
-<footer>
-    <div class="btn">
-     <button class="button button1"><img src="images/home.png" alt="Home"><p>Home</p></button>
-      <button class="button button2"><img src="images/history.png" alt="History"><p>History</p></button>
-      <button class="button button3"><img src="images/split.png" alt="Split"><p>Split</p></button>
-      <button class="button button4"><img src="images/settings.png" alt="Setting"><p>Setting</p></button>
-    </div>
-  </footer>
-</body>
-</html>

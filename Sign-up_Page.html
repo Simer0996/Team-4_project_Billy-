@@ -1,38 +1,40 @@
-@@include('header.html')
-
-<main>
-    <h1 class="header">Sign_up</h1>
-    <i class="fas fa-angle-left"></i>
-    <div class="wrapper">
-        <div class="form">
+    @@include('./header.html')
+    <div class="signupmain">
+    <div class="signupdesktop">
+        <img src="../images/logo_original1.png">
+    </div>    
+    <div class="signupwrapper">
+        <div class="signuptitle">
+            Register
+        </div>
+        <p class="desktoptitle">Be Part of Billy</p>
+        <!-- <div class="signupform"> -->
             <div class="inputfield">
-                <label>Full Name</label>
-                <input type="text" class="input" id="fullname">
+                <label>Full Name*</label>
+                <input type="text" class="input" id="fullname" placeholder="Jane Doe">
             </div>
             <div class="inputfield">
-                <label>Email</label>
-                <input type="text" class="input" id="email">
+                <label>Email*</label>
+                <input type="text" class="input" id="email" placeholder="example@hotmail.com">
             </div>  
             <div class="inputfield">
-                <label>Password</label>
-                <input type="password" class="input" id="password">
+                <label>Password*</label>
+                <input type="password" class="input" id="password" placeholder="********">
             </div>
             <div class="inputfield">
-                <label>Confirm Password</label>
-                <input type="password" class="input" id="confirmpassword">
+                <label>Confirm Password*</label>
+                <input type="password" class="input" id="confirmpassword" placeholder="********">
             </div>   
             <div class="inputfield">
-                <label>Mobile Number</label>
-                <input type="number" class="input" id="mobile">
+                <label>Mobile Number*</label>
+                <input type="number" class="input" id="mobile" placeholder="+1(236) 333-4444">
             </div>   
             <div class="inputfield">
-                <input type="submit" value="SIGN UP" class="btn" id="signup">
-            </div>   
+                <input type="button" value="SIGN UP" class="btn1" id="signup">
+            </div>  
             <div class="inputfield">
-                <p>Have an account? <a href=""> Log In </a></p>
+                <p>Have an account? <a href="Login_Page.html"> Log In </a></p>
             </div>    
-        </div>  
+        <!-- </div>   -->
     </div>
-</main>
-
-@@include('footer.html')
+    </div>

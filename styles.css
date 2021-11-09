@@ -1,3 +1,7 @@
+/*************************************************/
+/***************** Header & Footer ***************/
+/*************************************************/
+
 /*Bottom navigation bar START*/
 * {
     font-family: "Quicksand"sans-serif;
@@ -57,6 +61,10 @@ body {
 
 /*Bottom navigation bar START*/
 
+
+/*************************************************/
+/***************** Namhyung Kim ******************/
+/*************************************************/
 
 /* Add_Friend CSS START */
 .fromContacts {
@@ -654,3 +662,415 @@ body {
   }
 
 /* Setting_notification CSS End */
+
+
+/*************************************************/
+/***************** Harinder **********************/
+/*************************************************/
+
+/* SignUp Page*/
+*{
+    margin:0;
+    padding:0;
+    font-family: "Quicksand"sans-serif;
+}
+
+.desktoptitle{
+    display:none;
+}
+
+.signupdesktop{
+    display: none;
+}
+
+.signupwrapper .signuptitle{
+    font-size: 40px;
+    margin-left: 80px;
+    margin-top: 50px;
+    color: skyblue;
+}
+
+.signupwrapper{
+    margin-left: 50px;
+    margin-top: 70px;
+}
+
+.inputfield label{
+    font-size: 15px;
+    color: gray;
+}
+
+.inputfield .input{
+    width:400px;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    margin: 5px 0 0px;
+}
+
+.btn1{
+    width: 180px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border-radius: 5px ;
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+    text-align: center;
+    margin-left: 120px;
+    margin-top: 50px;
+    color: white;
+    background-color: skyblue;
+}
+
+.inputfield:last-child{
+    margin-bottom: 10px;
+}
+
+.inputfield p{
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.inputfield a{
+    text-decoration: none;
+    color: skyblue;
+}
+
+@media (min-width:550px){
+    .signupdesktop{
+        display:block;
+        height: 113%;
+        border: 30px solid skyblue;
+    }
+
+    .signupmain{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       width:100%;
+       height:100%;
+    }
+
+    .inputfield .input{
+        width:570px;
+    }
+
+    .signuptitle{
+        display:none;
+    }
+
+    .desktoptitle{
+        display:block;
+        font-size: 40px;
+        margin-top: 10px; 
+        text-align:center;
+        color: skyblue;
+    }
+
+    p{
+        display:none;
+    }
+
+    .btn1{
+        margin-left: 200px;
+    }
+
+    img{
+        width:400px;
+        height:200px;
+        margin-left:100px;
+        margin-top: 200px;
+    }
+}                                                                                                             
+
+/*Login Page*/
+.loginmain .header img{
+    height: 200px;
+    width: 250px;
+    padding: 30px;
+}
+
+.container{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.loginform .inputfield label{
+    font-size: 15px;
+    color: gray;
+}
+
+.loginform .inputfield .input{
+    width:400px;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    margin: 5px 0 0px;
+}
+
+.btn2{
+    width: 180px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border-radius: 5px ;
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+    text-align: center;
+    margin-left: 120px;
+    margin-top: 50px;
+    color: white;
+    background-color: skyblue;
+}
+
+.loginform .inputfield p{
+    margin-left: 110px;
+}
+
+.loginform .forgot a{
+    text-decoration: none;
+    color: gray;
+    margin-top: 100px;
+    margin-left: 300px;
+}
+
+.logintitle, .desktoplogin{
+    display:none;
+}
+
+
+@media (min-width:550px){
+    .logincontainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width:100%;
+        height:100%;
+    }
+
+    .loginmain .header{
+        display:none;
+    }
+
+    .logintitle, .desktoplogin{
+        display:block;
+    }
+
+    .desktoplogin{
+        height:128%;
+        border: 30px solid skyblue;
+    }
+
+    .logintitle{
+        text-align:center;
+        color:skyblue;
+        font-size: 40px;
+        margin-top: 120px;
+    }
+
+    .loginform .inputfield .input{
+        width:570px;
+    }
+
+    .btn2{
+        margin-left: 200px;
+        margin-top:100px;
+    }
+
+    .loginform .forgot{
+        margin-left:180px;
+    }
+}
+
+/*Forgot Password*/
+.forgotmain .header img{
+    height: 200px;
+    width: 250px;
+    padding: 30px;
+}
+
+.btn3{
+    width: 180px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border-radius: 5px ;
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+    text-align: center;
+    margin-left: 120px;
+    margin-top: 50px;
+    color: white;
+    background-color: skyblue;
+}
+
+.forgotloginlink a{
+    text-decoration: none;
+    color:black;
+    border:3px skyblue solid;
+    margin-left: 180px;
+}
+
+.forgotloginlink{
+    margin-top: 70px;
+}
+
+.forgottitle, .desktopforgot{
+    display:none;
+}
+
+@media (min-width:550px){
+    .forgotcontainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width:100%;
+        height:100%;
+    }
+
+    .forgotmain .header, .forgotloginlink{
+        display:none;
+    }
+
+    .desktopforgot, .forgottitle{
+        display:block;
+    }
+
+    .desktopforgot{
+        height:127%;
+        border: 30px solid skyblue;
+    }
+
+    .forgottitle{
+        text-align:center;
+        color:skyblue;
+        font-size: 40px;
+        margin-top: 120px;
+    }
+
+    .forgot .inputfield .input{
+        width:570px;
+    }
+
+    .btn3{
+        margin-left: 200px;
+        margin-top:100px;
+    }
+}    
+
+/*Settings Page*/
+.setimage .header{
+    color:skyblue;
+    text-align: center;
+    margin-top:30px;
+}
+
+.settingimg{
+    width:550px;
+    height:200px;
+}
+
+.fas{
+    color:skyblue;
+    margin-left:10px;
+}
+
+.setting{
+    background-color: skyblue;
+    height:250px;
+    margin-left: 60px;
+    margin-right: 60px;
+    border-radius: 10px;
+}
+
+.setting .inputfield a{
+    color:black;
+    text-align: center;
+}
+
+.setting .inputfield {
+    margin-left: 80px;
+    padding:20px;
+}
+
+/*Setting help*/
+.helpmain .header{
+    color:skyblue;
+    margin-top:30px;
+    position:relative;
+}
+
+.help{
+    height:200px;
+    margin-top:100px;
+    margin-left:30px;
+    margin-right:20px;
+}
+
+.help .inputfield label{
+    font-size: 15px;
+    color: gray;
+}
+
+.help .inputfield .input, textarea{
+    width:430px;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    margin: 5px 0 0px;
+}
+
+.send-btn{
+    width: 180px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border-radius: 5px ;
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+    text-align: center;
+    margin-left: 120px;
+    margin-top: 50px;
+    color: white;
+    background-color: skyblue;
+}
+
+.desktophelp, .helphead{
+    display: none;
+}
+
+@media (min-width:550px){
+    .desktophelp, .helphead{
+        display: block;
+    }
+    .helpmaincontainer{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        width:100%;
+        height:100%;
+    }
+
+    .helphead{
+        display:flex;
+        background-color: lightgrey;
+    }
+
+    .helphead a{
+        padding:20px;
+        margin-left:200px;
+        text-decoration: none;
+        color:skyblue;
+    }
+
+    .helphead img{
+        height:40px;
+        width:40px;
+        margin-top:5px;
+    }
+
+    .help .inputfield .input, textarea{
+        width:590px;
+    }   
+    
+    .send-btn{
+        margin-left: 220px;
+    }
+}

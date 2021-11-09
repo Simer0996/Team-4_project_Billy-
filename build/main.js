@@ -62,7 +62,7 @@ function getClass(list, cls) {
         console.log('this is Add Friend page');
         const {
             default: moveToFriendList
-        } = await import('./Add_friend_script.js');
+        } = await import('./Add_friend.js');
         $('.fromContacts').on('click', () => {
             $('.showContactList').slideToggle();
         });
@@ -124,7 +124,7 @@ function getClass(list, cls) {
         console.log('this is Chat 1 page');
         const {
             default: startChatting
-        } = await import('./Chat_page_1_script.js');
+        } = await import('./Chat_page_1.js');
         document.addEventListener('DOMContentLoaded', function(){
             startChatting;
         });
@@ -139,7 +139,7 @@ function getClass(list, cls) {
         console.log('this is Chat 2 page');
         const {
             default: putSelectedFriendName
-        } = await import('./Chat_page_2_script.js');
+        } = await import('./Chat_page_2.js');
         putSelectedFriendName
         
         document.addEventListener('DOMContentLoaded', function () {
@@ -179,7 +179,7 @@ $('.icon-back').on('click', () => {
         console.log('this is Friends List page');
         const {
             default: createTablePutName
-        } = await import('./Friends_list_script.js');
+        } = await import('./Friends_list.js');
         document.addEventListener('DOMContentLoaded', function(){
             
         });
@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded',  function () {
         console.log('this is Setting Payment1 page');
         const {
             default: addNewPmtLink
-        } = await import('./Setting_payment_link_1_script.js');
+        } = await import('./Setting_payment_link_1.js');
         
         $('.addNew').on('click', ()=>{
             console.log('hello');
@@ -222,7 +222,7 @@ document.addEventListener('DOMContentLoaded',  function () {
         console.log('this is Setting Payment page');
         // const {
         //     default: addNewPmtLink
-        // } = await import('./Setting_payment_link_2_script.js');
+        // } = await import('./Setting_payment_link_2.js');
         
         $('.pmtLinkSaveBtn').on('click', ()=> {
             const cableURL = $('.cableURL').val();
