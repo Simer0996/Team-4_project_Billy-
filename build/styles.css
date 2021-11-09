@@ -9,7 +9,7 @@
     justify-content: center;
     margin: auto;
     padding: .2rem;
-  
+   
 }
 body {
     height: 900px;
@@ -38,7 +38,7 @@ body {
 
 .button {
     cursor: pointer;
-
+    height: 50px;
 }
 
 .header {
@@ -669,11 +669,11 @@ body {
 /*************************************************/
 
 /* SignUp Page*/
-*{
+/* *{
     margin:0;
     padding:0;
     font-family: "Quicksand"sans-serif;
-}
+} */
 
 .desktoptitle{
     display:none;

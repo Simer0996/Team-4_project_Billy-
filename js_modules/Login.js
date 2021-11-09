@@ -10,13 +10,13 @@
     }, 3000)
   })
   .catch(function(error){
-  // let errorCode=error.code;
+  let errorCode=error.code;
   let errorMessage=error.message;
-  
+  console.log
 
   window.alert("Error:" + errorMessage);
-})
 });
+})
 //================================
 
 
