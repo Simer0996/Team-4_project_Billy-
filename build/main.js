@@ -234,3 +234,159 @@ document.addEventListener('DOMContentLoaded',  function () {
         })
     }
 })();
+
+//Forgot Password
+(async () => {
+    if (getClass(mainClass, 'forgotmain')) {
+        console.log('this is Forgot password page');
+       const auth = firebase.auth();
+
+ const newpassFunction = () => {
+
+    let useremail = document.getElementById('email').value;
+    console.log('user email', useremail);
+    auth.sendPasswordResetEmail(useremail)
+        .then(() => {
+            console.log("Password reset email sent");
+        })
+        .catch(error => {
+            console.error(error);
+        })
+}
+
+newpass.addEventListener('click', newpassFunction);
+}
+})();
+
+//Login Page
+(async () => {
+    if (getClass(mainClass, 'loginmain')) {
+        console.log('this is Login page');
+        let loginid = document.getElementById('login');
+        loginid.addEventListener('click', ()=>{
+            let useremail=document.getElementById('email').value;
+            let userpassword=document.getElementById('password').value;
+          
+            firebase.auth().signInWithEmailAndPassword(useremail, userpassword)
+            .then(function(userCredential){
+              console.log('User login successfully', userCredential.user);
+              setTimeout(function(){
+                window.location.href="./Home.html";
+              }, 3000)
+            })
+            .catch(function(error){
+            // let errorCode=error.code;
+            let errorMessage=error.message;
+            window.alert("Error:" + errorMessage);
+          })
+          });
+          //================================
+          //How to know what is the status of user, is login or not login
+          //If(user in login)
+            //  go to the home page
+          //else
+           //   load login page   
+}
+})();
+
+//Sign-up Page
+(async () => {
+    if (getClass(mainClass, 'sign-up')) {
+        console.log('this is Sign-up page');
+      
+console.log("Sign up loaded");
+signup.addEventListener('click', ()=>{
+    let uemail=document.getElementById("email");
+    let upassword=document.getElementById("password");
+    let ufullname=document.getElementById("fullname");
+    let uconfirmpassword=document.getElementById("confirmpassword");
+    let umobile=document.getElementById("mobile");
+
+    auth.createUserWithEmailAndPassword(uemail.value, upassword.value, ufullname, uconfirmpassword, umobile)
+    .then(()=>{
+      console.log('User has been created');
+      alert("Sign Up successfull");
+    })
+    .catch((error)=>{
+      console.log(error.message);
+    });
+}) 
+}
+})();
+
+(async () => {
+    if (getClass(mainClass, 'settingpage')) {
+        console.log('this is Setting page');
+        logg.addEventListener('click', (e)=>{
+            e.preventDefault();
+          auth.signOut().then(() => {
+            alert("User signed out");
+          })
+          })
+}
+})();
+
+//Setting_help//
+
+(async () => {
+    if (getClass(mainClass, 'helpmain')) {
+        console.log('this is Setting Help page');
+
+/*let messageRef=firebase.database().ref('messages');
+
+document.getElementById('sett').addEventListener('click', submitform);
+
+function submitform(e){
+    e.preventDefault();
+
+let subject=getInputVal('subject');
+let input=getInputVal('input');
+
+saveMessage(subject, input);
+}
+
+function getinput(id){
+    return document.getElementById(id).value;
+}
+
+function saveMessage(subject, input){
+    var newmessageref=messageRef.push();
+    newmessageref.set({
+        subject:subject,
+        input:input
+    });
+}*/
+
+//import emailjs from "emailjs-com";
+//import{ init } from 'emailjs-com';
+//init("user_TSV6FaAA5RP0AU1yPU4Au");
+/*export default function ContactUs(){
+
+function sendEmail(e) {
+    e.preventDefault();
+    emailjs.sendForm('gmail', 'template_vwwkuuj', e.target, 'user_TSV6FaAA5RP0AU1yPU4Au')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
+}
+
+sett.addEventListener('click', sendEmail);
+}*/
+
+sett.addEventListener('click', ()=>{
+    let templateParams = {
+        subject: subject.value,
+        message: input.value
+    };
+    emailjs.send('service_06wkfum', 'template_vwwkuuj', templateParams)
+        .then(function(response) {
+           console.log('SUCCESS!', response.status, response.text);
+        }, function(error) {
+           console.log('FAILED...', error);
+        });
+});
+
+}
+})();
