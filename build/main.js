@@ -113,6 +113,7 @@ function getClass(list, cls) {
             $('.pickedName').text(pickedFriendName);
         });
 
+        //This you need to figure it out
         $('.addFriendBtn').on('click', () => {
             let storedFriendName = $('.pickedName').text();
             localStorage.setItem('friendName', storedFriendName);

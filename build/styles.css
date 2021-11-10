@@ -708,7 +708,7 @@ body {
     margin: 5px 0 0px;
 }
 
-.btn1{
+.signbtn1{
     width: 180px;
     padding: 8px 10px;
     font-size: 15px;
@@ -740,8 +740,9 @@ body {
 @media (min-width:550px){
     .signupdesktop{
         display:block;
-        height: 113%;
+        height: 100%;
         border: 30px solid skyblue;
+        margin-left:0;
     }
 
     .signupmain{
@@ -767,21 +768,21 @@ body {
         color: skyblue;
     }
 
-    p{
+    .inputfield p{
         display:none;
     }
 
-    .btn1{
+    .signbtn1{
         margin-left: 200px;
     }
 
-    img{
+    .signupdesktop img{
         width:400px;
         height:200px;
         margin-left:100px;
         margin-top: 200px;
     }
-}                                                                                                             
+}                                                                                                                 
 
 /*Login Page*/
 .loginmain .header img{
@@ -808,7 +809,7 @@ body {
     margin: 5px 0 0px;
 }
 
-.btn2{
+.loginbtn2{
     width: 180px;
     padding: 8px 10px;
     font-size: 15px;
@@ -856,8 +857,14 @@ body {
     }
 
     .desktoplogin{
-        height:128%;
+        height:170%;
         border: 30px solid skyblue;
+        width:100%;
+    }
+
+    .container .loginform{
+        width:100%;
+        margin-left:550px;
     }
 
     .logintitle{
@@ -871,7 +878,7 @@ body {
         width:570px;
     }
 
-    .btn2{
+    .loginbtn2{
         margin-left: 200px;
         margin-top:100px;
     }
@@ -888,7 +895,7 @@ body {
     padding: 30px;
 }
 
-.btn3{
+.forgotbtn3{
     width: 180px;
     padding: 8px 10px;
     font-size: 15px;
@@ -935,8 +942,16 @@ body {
     }
 
     .desktopforgot{
-        height:127%;
+        height:170%;
         border: 30px solid skyblue;
+    }
+
+    .fimg{
+        margin-top:120px;
+    }
+
+    .forgotcontainer .container .forgot{
+        margin-left:530px;
     }
 
     .forgottitle{
@@ -950,7 +965,7 @@ body {
         width:570px;
     }
 
-    .btn3{
+    .forgotbtn3{
         margin-left: 200px;
         margin-top:100px;
     }
