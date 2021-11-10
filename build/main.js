@@ -62,6 +62,7 @@ function getClass(list, cls) {
         console.log('this is Add Friend page');
         const {
             default: moveToFriendList
+
         } = await import('./Add_friend.js');
         $('.fromContacts').on('click', () => {
             $('.showContactList').slideToggle();
@@ -113,7 +114,10 @@ function getClass(list, cls) {
         });
 
         $('.addFriendBtn').on('click', () => {
-            moveToFriendList;
+            let storedFriendName = $('.pickedName').text();
+            localStorage.setItem('friendName', storedFriendName);
+            location.href = './Friends_list.html';
+            console.log("Add_friend.js")
         });
     }
 })();
@@ -125,10 +129,10 @@ function getClass(list, cls) {
         const {
             default: startChatting
         } = await import('./Chat_page_1.js');
-        document.addEventListener('DOMContentLoaded', function(){
+        document.addEventListener('DOMContentLoaded', function () {
             startChatting;
         });
-        
+
 
     }
 })();
@@ -141,58 +145,55 @@ function getClass(list, cls) {
             default: putSelectedFriendName
         } = await import('./Chat_page_2.js');
         putSelectedFriendName
-        
+
         document.addEventListener('DOMContentLoaded', function () {
             putSelectedFriendName;
         });
 
         // User Input Msg display on Chat-box
-$(".chatMsgSendBtn").on('click', () => {
-    let userMessage = $('.userWriteMsg').val();
-    let addPInMeDiv = document.createElement("p");
-    let addDivInChatBox = document.createElement("div");
-    let addPInChatBox = document.createElement("p");
-    let addMe = "Me: "
-    $(".inner").append("<p>Test</p>");
+        $(".chatMsgSendBtn").on('click', () => {
+            let userMessage = $('.userWriteMsg').val();
+            let addPInMeDiv = document.createElement("p");
+            let addDivInChatBox = document.createElement("div");
+            let addPInChatBox = document.createElement("p");
+            let addMe = "Me: "
+            $(".inner").append("<p>Test</p>");
 
-    $('.chatBoxForMsg').append(addDivInChatBox);
-    addDivInChatBox.append(addPInChatBox);
-    addPInChatBox.append(addPInMeDiv);
-    addPInMeDiv.append(addMe);
-    addPInChatBox.append(userMessage);
-    addPInChatBox.setAttribute('id', 'msgCloudBox');
-});
+            $('.chatBoxForMsg').append(addDivInChatBox);
+            addDivInChatBox.append(addPInChatBox);
+            addPInChatBox.append(addPInMeDiv);
+            addPInMeDiv.append(addMe);
+            addPInChatBox.append(userMessage);
+            addPInChatBox.setAttribute('id', 'msgCloudBox');
+        });
 
-// Redirect to Chat Page-1
-$('.icon-back').on('click', () => {
-    location.href = './Chat_page_1.html'
-})
+        // Redirect to Chat Page-1
+        $('.icon-back').on('click', () => {
+            location.href = './Chat_page_1.html'
+        })
 
     }
 })();
 
 
-//Add Friend page
-// Chat page//
+// Friends List page//
 (async () => {
     if (getClass(mainClass, 'friendsList')) {
         console.log('this is Friends List page');
         const {
             default: createTablePutName
         } = await import('./Friends_list.js');
-        document.addEventListener('DOMContentLoaded', function(){
-            
+        document.addEventListener('DOMContentLoaded', function () {
+
         });
 
         $('.addBtn').on('click', () => {
-            location.href = '../add_friend/index.html'
+            location.href = './Add_friend.html'
         });
-        
-document.addEventListener('DOMContentLoaded',  function () {
-    createTablePutName;
-});
-        
 
+        document.addEventListener('DOMContentLoaded', function () {
+            createTablePutName;
+        });
     }
 })();
 
@@ -203,10 +204,10 @@ document.addEventListener('DOMContentLoaded',  function () {
         const {
             default: addNewPmtLink
         } = await import('./Setting_payment_link_1.js');
-        
-        $('.addNew').on('click', ()=>{
+
+        $('.addNew').on('click', () => {
             console.log('hello');
-            location.href='./Setting_payment_link_2.html';
+            location.href = './Setting_payment_link_2.html';
         })
         document.addEventListener('click', function () {
             addNewPmtLink;
@@ -223,14 +224,14 @@ document.addEventListener('DOMContentLoaded',  function () {
         // const {
         //     default: addNewPmtLink
         // } = await import('./Setting_payment_link_2.js');
-        
-        $('.pmtLinkSaveBtn').on('click', ()=> {
+
+        $('.pmtLinkSaveBtn').on('click', () => {
             const cableURL = $('.cableURL').val();
             localStorage.setItem('linkURL', cableURL);
         })
-        
-        $('.icon-back').on('click', ()=> {
-            location.href='../Setting_payment_link_1.html';
+
+        $('.icon-back').on('click', () => {
+            location.href = '../Setting_payment_link_1.html';
         })
     }
 })();
@@ -239,23 +240,23 @@ document.addEventListener('DOMContentLoaded',  function () {
 (async () => {
     if (getClass(mainClass, 'forgotmain')) {
         console.log('this is Forgot password page');
-       const auth = firebase.auth();
+        const auth = firebase.auth();
 
- const newpassFunction = () => {
+        const newpassFunction = () => {
 
-    let useremail = document.getElementById('email').value;
-    console.log('user email', useremail);
-    auth.sendPasswordResetEmail(useremail)
-        .then(() => {
-            console.log("Password reset email sent");
-        })
-        .catch(error => {
-            console.error(error);
-        })
-}
+            let useremail = document.getElementById('email').value;
+            console.log('user email', useremail);
+            auth.sendPasswordResetEmail(useremail)
+                .then(() => {
+                    console.log("Password reset email sent");
+                })
+                .catch(error => {
+                    console.error(error);
+                })
+        }
 
-newpass.addEventListener('click', newpassFunction);
-}
+        newpass.addEventListener('click', newpassFunction);
+    }
 })();
 
 //Login Page
@@ -263,67 +264,67 @@ newpass.addEventListener('click', newpassFunction);
     if (getClass(mainClass, 'loginmain')) {
         console.log('this is Login page');
         let loginid = document.getElementById('login');
-        loginid.addEventListener('click', ()=>{
-            let useremail=document.getElementById('email').value;
-            let userpassword=document.getElementById('password').value;
-          
+        loginid.addEventListener('click', () => {
+            let useremail = document.getElementById('email').value;
+            let userpassword = document.getElementById('password').value;
+
             firebase.auth().signInWithEmailAndPassword(useremail, userpassword)
-            .then(function(userCredential){
-              console.log('User login successfully', userCredential.user);
-              setTimeout(function(){
-                window.location.href="./Home.html";
-              }, 3000)
-            })
-            .catch(function(error){
-            // let errorCode=error.code;
-            let errorMessage=error.message;
-            window.alert("Error:" + errorMessage);
-          })
-          });
-          //================================
-          //How to know what is the status of user, is login or not login
-          //If(user in login)
-            //  go to the home page
-          //else
-           //   load login page   
-}
+                .then(function (userCredential) {
+                    console.log('User login successfully', userCredential.user);
+                    setTimeout(function () {
+                        window.location.href = "./Home.html";
+                    }, 3000)
+                })
+                .catch(function (error) {
+                    // let errorCode=error.code;
+                    let errorMessage = error.message;
+                    window.alert("Error:" + errorMessage);
+                })
+        });
+        //================================
+        //How to know what is the status of user, is login or not login
+        //If(user in login)
+        //  go to the home page
+        //else
+        //   load login page   
+    }
 })();
 
 //Sign-up Page
 (async () => {
     if (getClass(mainClass, 'sign-up')) {
         console.log('this is Sign-up page');
-      
-console.log("Sign up loaded");
-signup.addEventListener('click', ()=>{
-    let uemail=document.getElementById("email");
-    let upassword=document.getElementById("password");
-    let ufullname=document.getElementById("fullname");
-    let uconfirmpassword=document.getElementById("confirmpassword");
-    let umobile=document.getElementById("mobile");
 
-    auth.createUserWithEmailAndPassword(uemail.value, upassword.value, ufullname, uconfirmpassword, umobile)
-    .then(()=>{
-      console.log('User has been created');
-      alert("Sign Up successfull");
-    })
-    .catch((error)=>{
-      console.log(error.message);
-    });
-}) 
-}
+        console.log("Sign up loaded");
+        signup.addEventListener('click', () => {
+            let uemail = document.getElementById("email");
+            let upassword = document.getElementById("password");
+            let ufullname = document.getElementById("fullname");
+            let uconfirmpassword = document.getElementById("confirmpassword");
+            let umobile = document.getElementById("mobile");
+
+            auth.createUserWithEmailAndPassword(uemail.value, upassword.value, ufullname, uconfirmpassword, umobile)
+                .then(() => {
+                    console.log('User has been created');
+                    alert("Sign Up successfull");
+                })
+                .catch((error) => {
+                    console.log(error.message);
+                });
+        })
+    }
 })();
 
 (async () => {
     if (getClass(mainClass, 'settingpage')) {
         console.log('this is Setting page');
-        logg.addEventListener('click', (e)=>{
+        logg.addEventListener('click', (e) => {
             e.preventDefault();
-          auth.signOut().then(() => {
-            alert("User signed out");
-          })
-          })
-}
+            auth.signOut().then(() => {
+                alert("User signed out");
+            })
+        })
+    }
 })();
 
 //Setting_help//
@@ -332,61 +333,61 @@ signup.addEventListener('click', ()=>{
     if (getClass(mainClass, 'helpmain')) {
         console.log('this is Setting Help page');
 
-/*let messageRef=firebase.database().ref('messages');
+        /*let messageRef=firebase.database().ref('messages');
 
-document.getElementById('sett').addEventListener('click', submitform);
+        document.getElementById('sett').addEventListener('click', submitform);
 
-function submitform(e){
-    e.preventDefault();
+        function submitform(e){
+            e.preventDefault();
 
-let subject=getInputVal('subject');
-let input=getInputVal('input');
+        let subject=getInputVal('subject');
+        let input=getInputVal('input');
 
-saveMessage(subject, input);
-}
+        saveMessage(subject, input);
+        }
 
-function getinput(id){
-    return document.getElementById(id).value;
-}
+        function getinput(id){
+            return document.getElementById(id).value;
+        }
 
-function saveMessage(subject, input){
-    var newmessageref=messageRef.push();
-    newmessageref.set({
-        subject:subject,
-        input:input
-    });
-}*/
+        function saveMessage(subject, input){
+            var newmessageref=messageRef.push();
+            newmessageref.set({
+                subject:subject,
+                input:input
+            });
+        }*/
 
-//import emailjs from "emailjs-com";
-//import{ init } from 'emailjs-com';
-//init("user_TSV6FaAA5RP0AU1yPU4Au");
-/*export default function ContactUs(){
+        //import emailjs from "emailjs-com";
+        //import{ init } from 'emailjs-com';
+        //init("user_TSV6FaAA5RP0AU1yPU4Au");
+        /*export default function ContactUs(){
 
-function sendEmail(e) {
-    e.preventDefault();
-    emailjs.sendForm('gmail', 'template_vwwkuuj', e.target, 'user_TSV6FaAA5RP0AU1yPU4Au')
-    .then((result) => {
-        console.log(result.text);
-    }, (error) => {
-        console.log(error.text);
-    });
-}
+        function sendEmail(e) {
+            e.preventDefault();
+            emailjs.sendForm('gmail', 'template_vwwkuuj', e.target, 'user_TSV6FaAA5RP0AU1yPU4Au')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        }
 
-sett.addEventListener('click', sendEmail);
-}*/
+        sett.addEventListener('click', sendEmail);
+        }*/
 
-sett.addEventListener('click', ()=>{
-    let templateParams = {
-        subject: subject.value,
-        message: input.value
-    };
-    emailjs.send('service_06wkfum', 'template_vwwkuuj', templateParams)
-        .then(function(response) {
-           console.log('SUCCESS!', response.status, response.text);
-        }, function(error) {
-           console.log('FAILED...', error);
+        sett.addEventListener('click', () => {
+            let templateParams = {
+                subject: subject.value,
+                message: input.value
+            };
+            emailjs.send('service_06wkfum', 'template_vwwkuuj', templateParams)
+                .then(function (response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                }, function (error) {
+                    console.log('FAILED...', error);
+                });
         });
-});
 
-}
+    }
 })();

@@ -1,5 +1,5 @@
 $('.addBtn').on('click', () => {
-    location.href = '../add_friend/index.html'
+    location.href = './Add_friend.html'
 });
 
 export let createTablePutName = function () {
