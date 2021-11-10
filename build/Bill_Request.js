@@ -1,13 +1,19 @@
 console.log("Hello There");
-let btnAdd = document.getElementbyId('addButton');
-let btnSub = document.getElementbyId('subButton');
-let input = document.getElementbyId('noOFPeople');
+let addBtn = document.querySelector('#add');
+let subBtn = document.querySelector('#sub');
+let qty = document.querySelector('#qtyBox');
 
-btnAdd.addEventListener('click',() => {
-    input = parseInt(noOFPeople.value);
+addBtn.addEventListener('click',() => {
+    qty.value = parseInt(qty.value) + 1;
 });
 
-btnSub.addEventListener('click',() => {
-    input = parseInt(noOFPeople.value);    
+subBtn.addEventListener('click',() => {
+    
+    if (qty.value <= 0) {
+        qty.value = 0;
+    }  
+    else {
+        qty.value = parseInt(qty.value) - 1;
+    }
 });
 
