@@ -1,3 +1,11 @@
+const Webcam = require("./webcamjs");
+// import Webcam, { set } from "./webcamjs/webcam.min";
+// set({
+//     width: 320,
+//     height: 240,
+//     image_format: 'jpeg',
+//     jpeg_quality: 90
+// });
 console.log('Hello Capture');
 
 
@@ -32,3 +40,18 @@ snap.addEventListener('click', () => {
 });
 
 startWebCam();
+
+saveButton.addEventListener('click', () => {
+        console.log("savebutton function");
+        console.log(Webcam);
+    //     Webcam.snap( function(data_uri) {
+    //     console.log(data_uri);
+    //     } )
+    //     Webcam.snap( function(data_uri) {
+    //     document.getElementById('canvas').innerHTML = 
+    //        '<img id="imageprev" src="'+data_uri+'"/>';
+    // } )
+
+    // Webcam.reset();
+
+});
