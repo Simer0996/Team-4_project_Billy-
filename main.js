@@ -264,8 +264,8 @@ function getClass(list, cls) {
 (async () => {
     if (getClass(mainClass, 'loginmain')) {
         console.log('this is Login page');
-        let loginid = document.getElementById('login');
-        loginid.addEventListener('click', () => {
+        //let loginid = document.getElementById('login');
+        login.addEventListener('click', () => {
             let useremail = document.getElementById('email').value;
             let userpassword = document.getElementById('password').value;
 
