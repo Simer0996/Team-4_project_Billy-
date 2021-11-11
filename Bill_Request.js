@@ -71,7 +71,7 @@ send.addEventListener('click',() => {
     // console.log(JSON.stringify(ref));
     // saveData(ref);
     set(ref(db,'bills/'+ new Date().getTime()),{
-        'total_amount': theAmount.value,
+            'total_amount': theAmount.value,
             'no_of_people': qty.value,
             'amount_1': am1.value,
             'amount_2': am2.value,
@@ -93,3 +93,51 @@ send.addEventListener('click',() => {
     //     }
     // );
 });
+
+// for(let i=0; i<5; i++) {
+//         <div class="fourthdiv4">
+//         <img src="images/Vector_13.png" alt="">
+//         <p>Namhyung Kim</p>
+//         <input type="text" id="amount3" placeholder="$">
+        
+//         </div>
+//         var content = "<div id='addiv_"+i+"'><img id='addimg_"+i+"' src='../images/Vector_13.png' alt=''><p id='addpar_"+i+"'>Namhyung Kim</p><input id='addtext_"+i+"' type='text' placeholder='$'></div>"
+
+//         document.getElementById('fourthdiv').innerHTML += content;
+        
+       
+//         var new_element = document.createElement('div');
+//         var sp = document.createElement('span');
+//         var br = document.createElement('br');
+//         var img = document.createElement('img');
+//         var text_field = document.createElement('text');
+//         img.setAttribute('src', 'images/Vector_13.png');
+        
+//         var span_text = document.createTextNode('hello');
+//         sp.appendChild(span_text);
+//         var my_container = document.getElementById("fourthdiv");
+//         my_container.appendChild(img);
+//         my_container.appendChild(sp);
+//         my_container.appendChild(text_field);
+//         my_container.appendChild(br);
+        
+        
+// }
+
+add_friend_btn.addEventListener('click', () => {
+    location.href='../build/bill_request_add_freinds.html';
+})
+
+const urlSearchParams = new URLSearchParams(window.location.search);
+const params = Object.fromEntries(urlSearchParams.entries());
+
+alert(params["selectedvalue"]);
+// if (params["selectedvalue"] != undefined) {
+    var i = 0;
+    var content = "<div id='addiv_"+i+"'><img id='addimg_"+i+"' src='../images/Vector_13.png' alt=''><p id='addpar_"+i+"'>"+params["selectedvalue"]+"</p><input id='addtext_"+i+"' type='text' placeholder='$'></div>"
+
+document.getElementById('fourthdiv').innerHTML += content;
+// }
+
+console.log(content);
+  

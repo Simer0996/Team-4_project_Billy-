@@ -1,0 +1,41 @@
+@@include('./header.html')
+
+<div id="grid"></div>
+
+<table>
+    <tr>
+      <th>From your Contacts</th>  
+    </tr>
+    <tr onclick="row_click('Paula Valero')">
+      <td>Paula Valero</td>  
+    </tr>
+    <tr onclick="row_click('SImer Singh')">
+      <td>Simer Singh</td>
+    </tr>
+    <tr onclick="row_click('Songhui Park')">
+        <td>Songhui Park</td>
+      </tr>
+      <tr onclick="row_click('Harsimran Singh')">
+        <td>Harsimran Singh</td>
+      </tr>
+      <tr onclick="row_click('Harinder Kaur')">
+        <td>Harinder Kaur</td>
+      </tr >
+      <tr onclick="row_click('Namhyung Kim')">
+        <td>Namhyung Kim</td>
+      </tr>
+      <tr onclick="row_click('Rod Ornellas')">
+        <td>Rod Ornellas</td>
+      </tr>
+      <tr onclick="row_click('Tomoko Okochi')">
+        <td>Tomoko Okochi</td>
+      </tr>
+      <tr onclick="row_click('Richard Wong')">
+        <td>Richard Wong</td>
+      </tr>
+  </table>
+  
+
+<style>#grid { display: grid; grid-template-columns: auto auto; }</style>
+
+@@include('./footer.html')
