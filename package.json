@@ -102,7 +102,7 @@
     "find-up": "^1.1.2",
     "findup-sync": "^3.0.0",
     "fined": "^1.2.0",
-    "firebase": "^9.3.0",
+    "firebase": "^9.4.0",
     "flagged-respawn": "^1.0.1",
     "flatnest": "^1.0.0",
     "flush-write-stream": "^1.1.1",

@@ -11,14 +11,52 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="styles.css">
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        // import { initializeApp } from 'firebase/app';
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js";
+        // import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-database.js";
+        // import { getDatabase, ref, set } from "firebase/database";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyDsaMWoCA2JwoL9MDH6e-2x51-u60X1xyg",
+          authDomain: "billy1--photocapture.firebaseapp.com",
+          databaseURL: "https://billy1--photocapture-default-rtdb.firebaseio.com",
+          projectId: "billy1--photocapture",
+          storageBucket: "billy1--photocapture.appspot.com",
+          messagingSenderId: "546893533377",
+          appId: "1:546893533377:web:8e42b4b40dbfe1b3960440",
+          measurementId: "G-G8GHK8SP2Z"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+
+        // import {getDatabase, ref, set, child, update, remove} from "https://www.gstatic.com/firebasejs/9.3.0/firebase-database.js";
+
+        // const db = getDatabase(app);
+        // const db = app.database();
+        // console.log(db);
+        // const ref = db.ref('data');
+      </script>
+
     <script type="module" src="script.js" defer></script>
-    <script src="Bill_Request.js" defer></script>
-    <script src="bill_photo_capture_page.js" defer></script>
-    <script type="text/javascript" src="webcamjs/webcam.min.js"></script>
+    <script src="Bill_Request.js" type="module" defer></script>
+    <!-- <script src="bill_photo_capture_page.js" defer></script> -->
+    <!-- <script type="text/javascript" src="webcamjs/webcam.min.js"></script> -->
+
+    
     
 </head>
 <body>
-    
+
 
 <main>
     <h1 class="header">Chat</h1>
