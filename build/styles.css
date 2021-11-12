@@ -3,14 +3,14 @@
 /*************************************************/
 
 /*Bottom navigation bar START*/
-* {
+/* * {
     font-family: "Quicksand"sans-serif;
     width: 450px;
     justify-content: center;
     margin: auto;
     padding: .2rem;
    
-}
+} */
 body {
     height: 900px;
 }
@@ -669,11 +669,11 @@ body {
 /*************************************************/
 
 /* SignUp Page*/
-/* *{
+.sign-up{
     margin:0;
     padding:0;
     font-family: "Quicksand"sans-serif;
-} */
+}
 
 .desktoptitle{
     display:none;
@@ -785,6 +785,12 @@ body {
 }                                                                                                                 
 
 /*Login Page*/
+.loginmain{
+    margin:0;
+    padding:0;
+    font-family: "Quicksand"sans-serif;
+}
+
 .loginmain .header img{
     height: 200px;
     width: 250px;
@@ -857,15 +863,22 @@ body {
     }
 
     .desktoplogin{
-        height:170%;
+        height:110%;
         border: 30px solid skyblue;
-        width:100%;
+        /* width:100%; */
     }
 
-    .container .loginform{
-        width:100%;
-        margin-left:550px;
+    .desktoplogin img{
+        width:400px;
+        height:200px;
+        margin-left:100px;
+        margin-top: 200px;
     }
+
+    /* .container .loginform{
+        width:100%;  
+         margin-left:550px; 
+    }  */
 
     .logintitle{
         text-align:center;
@@ -942,16 +955,19 @@ body {
     }
 
     .desktopforgot{
-        height:170%;
+        height:125%;
         border: 30px solid skyblue;
     }
 
-    .fimg{
-        margin-top:120px;
+    .desktopforgot img{
+        width:400px;
+        height:200px;
+        margin-left:100px;
+        margin-top: 200px;
     }
 
     .forgotcontainer .container .forgot{
-        margin-left:530px;
+        margin-left:50px;
     }
 
     .forgottitle{
@@ -986,6 +1002,7 @@ body {
 .fas{
     color:skyblue;
     margin-left:10px;
+    margin-top:30px;
 }
 
 .setting{
@@ -1004,6 +1021,16 @@ body {
 .setting .inputfield {
     margin-left: 80px;
     padding:20px;
+}
+
+@media (min-width:550px){
+    .settingimg, .setting{
+        margin-left:400px;
+    }
+
+    .setting{
+        width:500px;
+    }
 }
 
 /*Setting help*/
@@ -1065,20 +1092,27 @@ body {
 
     .helphead{
         display:flex;
-        background-color: lightgrey;
     }
 
     .helphead a{
         padding:20px;
         margin-left:200px;
         text-decoration: none;
-        color:skyblue;
+        color:darkcyan;
     }
 
     .helphead img{
         height:40px;
         width:40px;
         margin-top:5px;
+        margin-left:10px;
+    }
+
+    .desktophelp img{
+        width:300px;
+        height:400px;
+        margin-left:100px;
+        margin-top:50px;
     }
 
     .help .inputfield .input, textarea{
