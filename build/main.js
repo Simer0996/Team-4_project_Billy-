@@ -310,17 +310,21 @@ function getClass(list, cls) {
     }
 })();
 
-// (async () => {
-//     if (getClass(mainClass, 'settingpage')) {
-//         console.log('this is Setting page');
-//         logg.addEventListener('click', (e) => {
-//             e.preventDefault();
-//             auth.signOut().then(() => {
-//                 alert("User signed out");
-//             })
-//         })
-//     }
-// })();
+(async () => {
+    if (getClass(mainClass, 'settingpage')) {
+        console.log('this is Setting page');
+        logg.addEventListener('click', (e) => {
+            e.preventDefault();
+            auth.signOut().then(() => {
+                window.location.href = "./Login_Page.html";
+            })
+            .catch((error) => {
+                console.log('error signput', error);
+            })
+        })
+    }
+})();
+
 
 //Setting_help//
 

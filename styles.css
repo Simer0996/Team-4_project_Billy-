@@ -11,6 +11,7 @@
     padding: .2rem;
    
 } */
+
 body {
     height: 900px;
 }
@@ -1023,6 +1024,10 @@ body {
     padding:20px;
 }
 
+.logout{
+    margin-left: 50px;
+}
+
 @media (min-width:550px){
     .settingimg, .setting{
         margin-left:400px;
@@ -1030,6 +1035,10 @@ body {
 
     .setting{
         width:500px;
+    }
+
+    .logout{
+        margin-left: 130px;
     }
 }
 
