@@ -1,14 +1,9 @@
-
 export const startChatting = function () {
     $('.startChatBtn').on('click', () => {
         let selectedFriend = $('.friendsDropDown :selected').text();
         localStorage.setItem('friendName', selectedFriend);
-        location.href='../Chat Page-2/index.html';
+        location.href = './23_Chat_page_2.html';
     })
 };
 
-
-document.addEventListener('DOMContentLoaded', function(){
-    startChatting();
-});
-
+startChatting();

@@ -53,6 +53,29 @@
 /***************** Namhyung Kim ******************/
 /*************************************************/
 
+/* Splash_Page */
+.splashContainer {
+    width: auto;
+    height: 900px;
+    background-image: linear-gradient(to left top, #6b9cd1, #54a4d2, #3fabcf, #33b2c7, #39b7bc, #41b9b4, #4dbbac, #59bca3, #5ebc9e, #63bc99, #68bb94, #6ebb8f);
+
+}
+
+.splashContainer p {
+    color: white;
+    font-size: 24pt;
+    text-align: center;
+}
+
+.splashLogoImg {
+    max-width: 90%;
+    max-height: 100%;
+    padding-top: 60%;
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: pointer;
+}
+
 /* Add_Friend CSS START */
 .fromContacts {
     background-color: #b2b3b8;
@@ -124,10 +147,8 @@
     padding: 10px 150px;
 }
 
-/* Add_Friend CSS END */
 
-
-/* Friends_list CSS START */
+/* Friends_list CSS */
 .friendsListTitle {
     text-align: center;
 }
@@ -194,11 +215,13 @@
     font-family: cursive;
 }
 
-/* Friends_list CSS END */
 
-
-/* Chat_page_1 CSS START */
+/* Chat_page_1 CSS */
 .chatPage1Title {
+    text-align: center;
+}
+
+.dropDownWrap {
     text-align: center;
 }
 
@@ -218,7 +241,11 @@
 
 .friendsDropDown option {
     color: black;
-    background-color: #d9dadb;
+    background-color: white;
+}
+
+.chatBtnWrap {
+    text-align: center;
 }
 
 .startChatBtn {
@@ -227,13 +254,11 @@
     background-color: #66cc99;
     color: white;
     border-radius: 10px;
+    text-align: center;
 }
 
-/* Chat_page_1 CSS END */
 
-
-/* Chat_page_2 CSS START */
-
+/* Chat_page_2 CSS  */
 .chatPage2Title {
     text-align: center;
 }
@@ -353,10 +378,8 @@
     border-radius: 0.5em;
 }
 
-/* Chat_page_2 CSS END */
 
-
-/* Setting_payment_link_1 CSS START */
+/* Setting_payment_link_1  */
 .paymentLinkAll h1 {
     color: #66cc99;
     font-weight: bold;
@@ -460,10 +483,8 @@
     opacity: 0;
 }
 
-/* Setting_payment_link_1 CSS END */
 
-
-/* Setting_payment_link_2 CSS START */
+/* Setting_payment_link_2 */
 .settingPmtLink2 {
     color: #66cc99;
     font-weight: bold;
@@ -530,10 +551,8 @@
     font-size: 14pt;
 }
 
-/* Setting_payment_link_2 CSS END */
 
-
-/* Setting_notification CSS START */
+/* Setting_notification CSS */
 .contentsWrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -650,7 +669,6 @@
     transform: translateX(-100%);
 }
 
-/* Setting_notification CSS End */
 
 
 /*************************************************/
@@ -1133,3 +1151,29 @@ textarea {
         margin-left: 220px;
     }
 }
+
+
+/*************************************************/
+/***************** Harsimran Singh ******************/
+/*************************************************/
+
+/* 15_Bill_Splitter_menu */
+.splitterOptions {
+    text-align: center;
+}
+
+.optionsLink {
+    margin: 4em 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.optionsLink a{
+    font-size: 20px;
+    margin: 20px -40px;
+    text-decoration: none;
+    color: black;
+}
+
+
