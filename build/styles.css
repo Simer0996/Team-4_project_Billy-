@@ -3,47 +3,33 @@
 /*************************************************/
 
 /*Bottom navigation bar START*/
-/* * {
-    font-family: "Quicksand"sans-serif;
-    width: 450px;
-    justify-content: center;
-    margin: auto;
-    padding: .2rem;
-   
-} */
-
-body {
-    height: 900px;
-}
-
-.btn {
-    overflow: hidden;
+.footerBtns {
     position: fixed;
     bottom: 0;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding: 5px;
-}
-
-.button>img {
-    width: 20px;
-    height: 20px;
-}
-
-.button>p {
-    width: 5%;
-    padding-right: 30%;
-}
-
-.button {
-    cursor: pointer;
-    height: 50px;
-}
-
-.header {
+    left: 0;
+    right: 0;
+    z-index: 1000;
     text-align: center;
+}
+
+.footerButton {
+    cursor: pointer;
+    height: 70px;
+    width: 100px;
+    padding: 5px;
+    font-family: "Quicksand"sans-serif;
+    padding-bottom: 20px;
+}
+
+.footerButton>img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.footerButton>p {
+    margin-top: .1rem;
+    font-size: 16pt;
+
 }
 
 .parentdiv img {
@@ -473,6 +459,7 @@ body {
     font-weight: bold;
     opacity: 0;
 }
+
 /* Setting_payment_link_1 CSS END */
 
 
@@ -500,7 +487,7 @@ body {
     margin: 1px 30px;
     padding: 1px;
     outline: none;
-    
+
 }
 
 .settingPmtLink2 .icon-back:hover {
@@ -542,6 +529,7 @@ body {
     color: white;
     font-size: 14pt;
 }
+
 /* Setting_payment_link_2 CSS END */
 
 
@@ -552,83 +540,83 @@ body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  
-  .reminder {
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.reminder {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     gap: 100px;
     padding: 20px;
     margin: 20px;
-  }
-  
-  .newMessageDiv {
+}
+
+.newMessageDiv {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     gap: 100px;
     padding: 20px;
     margin: 20px;
-  }
-  
-  .paymentRequestDiv {
+}
+
+.paymentRequestDiv {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     gap: 100px;
     padding: 20px;
     margin: 20px;
-  }
-  
-  .paymentReceivedDiv {
+}
+
+.paymentReceivedDiv {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     gap: 100px;
     padding: 20px;
     margin: 20px;
-  }
-  
-  .newFeaturesDiv {
+}
+
+.newFeaturesDiv {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     gap: 100px;
     padding: 20px;
     margin: 20px;
-  }
-  
-  #reminderSet {
+}
+
+#reminderSet {
     width: 20%;
     padding: 5px;
     border-radius: 10px;
-  }
-  
-  .contentsWrap input[type=checkbox] {
+}
+
+.contentsWrap input[type=checkbox] {
     height: 0;
     width: 0;
     visibility: hidden;
-  }
-  
-  .contentsWrap  label {
+}
+
+.contentsWrap label {
     cursor: pointer;
     text-indent: -9999px;
     width: 50px;
@@ -637,9 +625,9 @@ body {
     display: block;
     border-radius: 100px;
     position: relative;
-  }
-  
-  .contentsWrap label:after {
+}
+
+.contentsWrap label:after {
     content: '';
     position: absolute;
     top: 4px;
@@ -650,17 +638,17 @@ body {
     border-radius: 50px;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-  }
-  
-  .contentsWrap input:checked + label {
+}
+
+.contentsWrap input:checked+label {
     background: #36ad7b;
-  }
-  
-  .contentsWrap input:checked + label:after {
+}
+
+.contentsWrap input:checked+label:after {
     left: calc(100% - 5px);
     -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
+    transform: translateX(-100%);
+}
 
 /* Setting_notification CSS End */
 
@@ -670,50 +658,50 @@ body {
 /*************************************************/
 
 /* SignUp Page*/
-.sign-up{
-    margin:0;
-    padding:0;
+.sign-up {
+    margin: 0;
+    padding: 0;
     font-family: "Quicksand"sans-serif;
 }
 
-.desktoptitle{
-    display:none;
-}
-
-.signupdesktop{
+.desktoptitle {
     display: none;
 }
 
-.signupwrapper .signuptitle{
+.signupdesktop {
+    display: none;
+}
+
+.signupwrapper .signuptitle {
     font-size: 40px;
     margin-left: 80px;
     margin-top: 50px;
     color: skyblue;
 }
 
-.signupwrapper{
+.signupwrapper {
     margin-left: 50px;
     margin-top: 70px;
 }
 
-.inputfield label{
+.inputfield label {
     font-size: 15px;
     color: gray;
 }
 
-.inputfield .input{
-    width:400px;
+.inputfield .input {
+    width: 400px;
     font-size: 15px;
     padding: 8px 10px;
     border-radius: 3px;
     margin: 5px 0 0px;
 }
 
-.signbtn1{
+.signbtn1 {
     width: 180px;
     padding: 8px 10px;
     font-size: 15px;
-    border-radius: 5px ;
+    border-radius: 5px;
     cursor: pointer;
     border-radius: 3px;
     position: relative;
@@ -724,103 +712,103 @@ body {
     background-color: skyblue;
 }
 
-.inputfield:last-child{
+.inputfield:last-child {
     margin-bottom: 10px;
 }
 
-.inputfield p{
+.inputfield p {
     margin-left: 120px;
     margin-top: 20px;
 }
 
-.inputfield a{
+.inputfield a {
     text-decoration: none;
     color: skyblue;
 }
 
-@media (min-width:550px){
-    .signupdesktop{
-        display:block;
+@media (min-width:550px) {
+    .signupdesktop {
+        display: block;
         height: 100%;
         border: 30px solid skyblue;
-        margin-left:0;
+        margin-left: 0;
     }
 
-    .signupmain{
-       display: grid;
-       grid-template-columns: repeat(2, 1fr);
-       width:100%;
-       height:100%;
+    .signupmain {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        height: 100%;
     }
 
-    .inputfield .input{
-        width:570px;
+    .inputfield .input {
+        width: 570px;
     }
 
-    .signuptitle{
-        display:none;
+    .signuptitle {
+        display: none;
     }
 
-    .desktoptitle{
-        display:block;
+    .desktoptitle {
+        display: block;
         font-size: 40px;
-        margin-top: 10px; 
-        text-align:center;
+        margin-top: 10px;
+        text-align: center;
         color: skyblue;
     }
 
-    .inputfield p{
-        display:none;
+    .inputfield p {
+        display: none;
     }
 
-    .signbtn1{
+    .signbtn1 {
         margin-left: 200px;
     }
 
-    .signupdesktop img{
-        width:400px;
-        height:200px;
-        margin-left:100px;
+    .signupdesktop img {
+        width: 400px;
+        height: 200px;
+        margin-left: 100px;
         margin-top: 200px;
     }
-}                                                                                                                 
+}
 
 /*Login Page*/
-.loginmain{
-    margin:0;
-    padding:0;
+.loginmain {
+    margin: 0;
+    padding: 0;
     font-family: "Quicksand"sans-serif;
 }
 
-.loginmain .header img{
+.loginmain .header img {
     height: 200px;
     width: 250px;
     padding: 30px;
 }
 
-.container{
+.container {
     margin-left: 50px;
     margin-top: 20px;
 }
 
-.loginform .inputfield label{
+.loginform .inputfield label {
     font-size: 15px;
     color: gray;
 }
 
-.loginform .inputfield .input{
-    width:400px;
+.loginform .inputfield .input {
+    width: 400px;
     font-size: 15px;
     padding: 8px 10px;
     border-radius: 3px;
     margin: 5px 0 0px;
 }
 
-.loginbtn2{
+.loginbtn2 {
     width: 180px;
     padding: 8px 10px;
     font-size: 15px;
-    border-radius: 5px ;
+    border-radius: 5px;
     cursor: pointer;
     border-radius: 3px;
     position: relative;
@@ -831,48 +819,50 @@ body {
     background-color: skyblue;
 }
 
-.loginform .inputfield p{
+.loginform .inputfield p {
     margin-left: 110px;
 }
 
-.loginform .forgot a{
+.loginform .forgot a {
     text-decoration: none;
     color: gray;
     margin-top: 100px;
     margin-left: 300px;
 }
 
-.logintitle, .desktoplogin{
-    display:none;
+.logintitle,
+.desktoplogin {
+    display: none;
 }
 
 
-@media (min-width:550px){
-    .logincontainer{
+@media (min-width:550px) {
+    .logincontainer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        width:100%;
-        height:100%;
+        width: 100%;
+        height: 100%;
     }
 
-    .loginmain .header{
-        display:none;
+    .loginmain .header {
+        display: none;
     }
 
-    .logintitle, .desktoplogin{
-        display:block;
+    .logintitle,
+    .desktoplogin {
+        display: block;
     }
 
-    .desktoplogin{
-        height:110%;
+    .desktoplogin {
+        height: 110%;
         border: 30px solid skyblue;
         /* width:100%; */
     }
 
-    .desktoplogin img{
-        width:400px;
-        height:200px;
-        margin-left:100px;
+    .desktoplogin img {
+        width: 400px;
+        height: 200px;
+        margin-left: 100px;
         margin-top: 200px;
     }
 
@@ -881,39 +871,39 @@ body {
          margin-left:550px; 
     }  */
 
-    .logintitle{
-        text-align:center;
-        color:skyblue;
+    .logintitle {
+        text-align: center;
+        color: skyblue;
         font-size: 40px;
         margin-top: 120px;
     }
 
-    .loginform .inputfield .input{
-        width:570px;
+    .loginform .inputfield .input {
+        width: 570px;
     }
 
-    .loginbtn2{
+    .loginbtn2 {
         margin-left: 200px;
-        margin-top:100px;
+        margin-top: 100px;
     }
 
-    .loginform .forgot{
-        margin-left:180px;
+    .loginform .forgot {
+        margin-left: 180px;
     }
 }
 
 /*Forgot Password*/
-.forgotmain .header img{
+.forgotmain .header img {
     height: 200px;
     width: 250px;
     padding: 30px;
 }
 
-.forgotbtn3{
+.forgotbtn3 {
     width: 180px;
     padding: 8px 10px;
     font-size: 15px;
-    border-radius: 5px ;
+    border-radius: 5px;
     cursor: pointer;
     border-radius: 3px;
     position: relative;
@@ -924,156 +914,162 @@ body {
     background-color: skyblue;
 }
 
-.forgotloginlink a{
+.forgotloginlink a {
     text-decoration: none;
-    color:black;
-    border:3px skyblue solid;
+    color: black;
+    border: 3px skyblue solid;
     margin-left: 180px;
 }
 
-.forgotloginlink{
+.forgotloginlink {
     margin-top: 70px;
 }
 
-.forgottitle, .desktopforgot{
-    display:none;
+.forgottitle,
+.desktopforgot {
+    display: none;
 }
 
-@media (min-width:550px){
-    .forgotcontainer{
+@media (min-width:550px) {
+    .forgotcontainer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        width:100%;
-        height:100%;
+        width: 100%;
+        height: 100%;
     }
 
-    .forgotmain .header, .forgotloginlink{
-        display:none;
+    .forgotmain .header,
+    .forgotloginlink {
+        display: none;
     }
 
-    .desktopforgot, .forgottitle{
-        display:block;
+    .desktopforgot,
+    .forgottitle {
+        display: block;
     }
 
-    .desktopforgot{
-        height:125%;
+    .desktopforgot {
+        height: 125%;
         border: 30px solid skyblue;
     }
 
-    .desktopforgot img{
-        width:400px;
-        height:200px;
-        margin-left:100px;
+    .desktopforgot img {
+        width: 400px;
+        height: 200px;
+        margin-left: 100px;
         margin-top: 200px;
     }
 
-    .forgotcontainer .container .forgot{
-        margin-left:50px;
+    .forgotcontainer .container .forgot {
+        margin-left: 50px;
     }
 
-    .forgottitle{
-        text-align:center;
-        color:skyblue;
+    .forgottitle {
+        text-align: center;
+        color: skyblue;
         font-size: 40px;
         margin-top: 120px;
     }
 
-    .forgot .inputfield .input{
-        width:570px;
+    .forgot .inputfield .input {
+        width: 570px;
     }
 
-    .forgotbtn3{
+    .forgotbtn3 {
         margin-left: 200px;
-        margin-top:100px;
+        margin-top: 100px;
     }
-}    
+}
 
 /*Settings Page*/
-.setimage .header{
-    color:skyblue;
+.setimage .header {
+    color: skyblue;
     text-align: center;
-    margin-top:30px;
+    margin-top: 30px;
 }
 
-.settingimg{
-    width:550px;
-    height:200px;
+.settingimg {
+    width: 550px;
+    height: 200px;
 }
 
-.fas{
-    color:skyblue;
-    margin-left:10px;
-    margin-top:30px;
+.fas {
+    color: skyblue;
+    margin-left: 10px;
+    margin-top: 30px;
 }
 
-.setting{
+.setting {
     background-color: skyblue;
-    height:250px;
+    height: 250px;
     margin-left: 60px;
     margin-right: 60px;
     border-radius: 10px;
 }
 
-.setting .inputfield a{
-    color:black;
+.setting .inputfield a {
+    color: black;
     text-align: center;
 }
 
 .setting .inputfield {
     margin-left: 80px;
-    padding:20px;
+    padding: 20px;
 }
 
-.logout{
+.logout {
     margin-left: 50px;
 }
 
-@media (min-width:550px){
-    .settingimg, .setting{
-        margin-left:400px;
+@media (min-width:550px) {
+
+    .settingimg,
+    .setting {
+        margin-left: 400px;
     }
 
-    .setting{
-        width:500px;
+    .setting {
+        width: 500px;
     }
 
-    .logout{
+    .logout {
         margin-left: 130px;
     }
 }
 
 /*Setting help*/
-.helpmain .header{
-    color:skyblue;
-    margin-top:30px;
-    position:relative;
+.helpmain .header {
+    color: skyblue;
+    margin-top: 30px;
+    position: relative;
 }
 
-.help{
-    height:200px;
-    margin-top:100px;
-    margin-left:30px;
-    margin-right:20px;
+.help {
+    height: 200px;
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-right: 20px;
 }
 
-.help .inputfield label{
+.help .inputfield label {
     font-size: 15px;
     color: gray;
 }
 
-.help .inputfield .input, textarea{
-    width:430px;
+.help .inputfield .input,
+textarea {
+    width: 430px;
     font-size: 15px;
     padding: 8px 10px;
     border-radius: 3px;
     margin: 5px 0 0px;
 }
 
-.send-btn{
+.send-btn {
     width: 180px;
     padding: 8px 10px;
     font-size: 15px;
-    border-radius: 5px ;
+    border-radius: 5px;
     cursor: pointer;
     border-radius: 3px;
     position: relative;
@@ -1084,51 +1080,56 @@ body {
     background-color: skyblue;
 }
 
-.desktophelp, .helphead{
+.desktophelp,
+.helphead {
     display: none;
 }
 
-@media (min-width:550px){
-    .desktophelp, .helphead{
+@media (min-width:550px) {
+
+    .desktophelp,
+    .helphead {
         display: block;
     }
-    .helpmaincontainer{
-        display:grid;
+
+    .helpmaincontainer {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        width:100%;
-        height:100%;
+        width: 100%;
+        height: 100%;
     }
 
-    .helphead{
-        display:flex;
+    .helphead {
+        display: flex;
     }
 
-    .helphead a{
-        padding:20px;
-        margin-left:200px;
+    .helphead a {
+        padding: 20px;
+        margin-left: 200px;
         text-decoration: none;
-        color:darkcyan;
+        color: darkcyan;
     }
 
-    .helphead img{
-        height:40px;
-        width:40px;
-        margin-top:5px;
-        margin-left:10px;
+    .helphead img {
+        height: 40px;
+        width: 40px;
+        margin-top: 5px;
+        margin-left: 10px;
     }
 
-    .desktophelp img{
-        width:300px;
-        height:400px;
-        margin-left:100px;
-        margin-top:50px;
+    .desktophelp img {
+        width: 300px;
+        height: 400px;
+        margin-left: 100px;
+        margin-top: 50px;
     }
 
-    .help .inputfield .input, textarea{
-        width:590px;
-    }   
-    
-    .send-btn{
+    .help .inputfield .input,
+    textarea {
+        width: 590px;
+    }
+
+    .send-btn {
         margin-left: 220px;
     }
 }
