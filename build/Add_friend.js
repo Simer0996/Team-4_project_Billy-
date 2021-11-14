@@ -3,7 +3,7 @@
 export const moveToFriendList = function () {
     let storedFriendName = $('.pickedName').text();
     localStorage.setItem('friendName', storedFriendName);
-    location.href = './Friends_list.html';
+    location.href = './20_Friends_list.html';
     console.log("Add_friend.js")
 };
 

@@ -9,7 +9,7 @@
     margin-left: 0.5em;
     margin-top: -0.1em;
     cursor: pointer;
-    color: #00966c;
+    color: #66cc99;
 }
 
 /*Bottom navigation bar START*/
@@ -91,7 +91,7 @@
 }
 
 .addFriendsTitle h1 {
-    color: #00966c;
+    color: #66cc99;
 }
 
 .fromContacts {
@@ -99,18 +99,23 @@
     margin: 0 30px;
     padding: 10px;
     text-align: center;
-
+    display: inline;
 }
 
 .fromContacts h3 {
     text-align: center;
-    transition: ;
     cursor: pointer;
+    position: relative;
+}
+
+.fromContacts .far {
+    position: absolute;
+    top: 5.6em;
+    left: 6em;
 }
 
 .showContactList {
-    background-color: #e2ecf1;
-    margin: 0px 30px;
+    margin-right: 2.5em;
     display: none;
 }
 
@@ -123,54 +128,37 @@
     border: solid 1px #b2b3b8;
 }
 
-.inviteFriend {
-    background-color: #b2b3b8;
-    margin: 30px 30px;
-    padding: 10px;
-    margin-bottom: 10px;
+.showContactList ul li div {
+    text-align: center;
+    cursor: pointer;
 }
 
-.personalCode {
-    display: flex;
-    flex-direction: column;
-}
-
-.personalCode {
-    margin-top: 10px;
-}
-
-.personalCode h4 {
-    text-align: left;
-    padding-left: 30px;
-}
-
-.codeNumber {
-    background-color: #e2ecf1;
-    margin: 5px 30px;
-    padding: 20px;
-    text-align: left;
-    color: #b2b3b8;
-    position: relative;
-}
-
-.codeNumber .copyBtn {
-    padding: 10px;
-    position: absolute;
-    top: 19%;
-    left: 85%;
+.addBtnContainer {
+    text-align: center;
 }
 
 .addFriendBtn {
-    background-color: #b2b3b8;
+    background-color: #66cc99;
     color: white;
-    margin-top: 200px;
+    margin-top: 120px;
     padding: 10px 150px;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(209, 209, 209, 0.945);
+
 }
+
+.pickedName {
+    text-align: center;
+    font-size: 20pt;
+    margin-top: 3em;
+}
+
 
 
 /* Friends_list CSS */
 .friendsListTitle {
     text-align: center;
+    color: #66cc99;
 }
 
 .allFriends h4 {
@@ -239,6 +227,7 @@
 /* Chat_page_1 CSS */
 .chatPage1Title {
     text-align: center;
+    color: #66cc99;
 }
 
 .dropDownWrap {
@@ -281,6 +270,7 @@
 /* Chat_page_2 CSS  */
 .chatPage2Title {
     text-align: center;
+    color: #66cc99;
 }
 
 .mobileFirst {
@@ -309,37 +299,13 @@
 }
 
 .chatBoxForMsg {
-    width: 95%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     border-radius: 7px;
-    background-color: #e0e0e2;
+    background-color: #eeeeeefa;
+    opacity: .5;
     padding: 5px;
     margin-bottom: 20px;
-}
-
-.icon-back {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #66cc99;
-    padding: 7px;
-    position: relative;
-    overflow: hidden;
-    -webkit-transition: background-color 200ms ease-in-out;
-    transition: background-color 200ms ease-in-out;
-    float: left;
-    margin-right: 7px;
-    cursor: pointer;
-}
-
-.icon-back:hover {
-    background-color: #e0e0e2;
-}
-
-.icon-back:active {
-    background-color: #646464;
 }
 
 .chatMsgInput {
@@ -375,16 +341,10 @@
     color: #929292;
 }
 
-.chatMsgSendBtn {
-    width: 40px;
-    height: 40px;
-    background-color: #66cc99;
-    border-radius: 50%;
-    float: right;
-    margin: 3px 11px 0 0;
-    padding: 8px;
-    -webkit-transition: background-color 150ms ease-in-out;
-    transition: background-color 150ms ease-in-out;
+
+.fa-paper-plane {
+    margin-left: 10px;
+    margin-top: 5px;
     cursor: pointer;
 }
 
@@ -394,8 +354,10 @@
     max-height: 50%;
     margin: 0.5em;
     margin-left: 7em;
-    padding: 0.5em;
+    padding-left: 0.5em;
+    padding-bottom: 0.5em;
     border-radius: 0.5em;
+    color: white;
 }
 
 
