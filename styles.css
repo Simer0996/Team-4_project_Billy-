@@ -798,9 +798,13 @@
     font-family: "Quicksand"sans-serif;
 }
 
+.logoImgContainer {
+    text-align: center;
+}
+
 .loginmain .header img {
-    height: 200px;
-    width: 250px;
+    max-width: 70%;
+    max-height: 70%;
     padding: 30px;
 }
 
@@ -828,19 +832,20 @@
     font-size: 15px;
     border-radius: 5px;
     cursor: pointer;
-    border-radius: 3px;
+    border-radius: 10px;
     position: relative;
     text-align: center;
     margin-left: 120px;
     margin-top: 50px;
     color: white;
-    background-color: skyblue;
+    background-color: #66cc99;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .loginform .inputfield p {
     margin-left: 110px;
 }
-
+ 
 .loginform .forgot a {
     text-decoration: none;
     color: gray;
@@ -873,7 +878,7 @@
 
     .desktoplogin {
         height: 110%;
-        border: 30px solid skyblue;
+        border: 30px solid #66cc99;;
         /* width:100%; */
     }
 
