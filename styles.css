@@ -1060,7 +1060,7 @@
     color: skyblue;
     margin-top: 7px;
     /* position: relative; */
-    text-align:center;
+    text-align: center;
 }
 
 .help {
@@ -1155,7 +1155,152 @@ textarea {
 
 
 /*************************************************/
-/***************** Harsimran Singh ******************/
+/******************* Simer Singh *****************/
+/*************************************************/
+
+/***** 4_Home Page *****/
+.homeLogo {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.homeLogo img {
+    max-width: 30%;
+    max-height: 30%;
+}
+
+/* calendar */
+.homeCalendar {
+    text-align: center;
+}
+
+.calendar {
+    display: inline-grid;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+   
+}
+
+.month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.year {
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.calendarNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    transition-duration: .2s;
+    position: relative;
+}
+
+.fas {
+    color: #66cc99;
+}
+
+.days {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(7, 1fr);
+    color: #999;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.days span {
+    width: 50px;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+
+.dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.dates button {
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    background: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    justify-self: center;
+    align-self: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 2px;
+    transition-duration: .2s;
+}
+
+
+.dates button:first-child {
+    grid-column: 3;
+}
+
+.dates button:hover {
+    background: #eee;
+}
+
+.dates button:focus {
+    background: #66cc99;
+    color: #fff;
+    font-weight: 600;
+}
+/* Calendar End */
+
+.loadBillSection div {
+    margin: 2rem;
+}
+
+.utilityName {
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #536FE0;
+}
+
+.utilityCategory {
+    margin-top: -0.8rem;
+}
+
+.homeBillAddDiv {
+    text-align: right;
+    padding: 1rem 2rem;
+}
+
+.homeBillAddBtn {
+    text-align: center;
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    color: #59bca3;
+    background-color: white;
+}
+
+
+
+
+
+/*************************************************/
+/***************** Harsimran Singh ***************/
 /*************************************************/
 
 /* 15_Bill_Splitter_menu */
@@ -1170,11 +1315,9 @@ textarea {
     flex-direction: column;
 }
 
-.optionsLink a{
+.optionsLink a {
     font-size: 20px;
     margin: 20px -40px;
     text-decoration: none;
     color: black;
 }
-
-
