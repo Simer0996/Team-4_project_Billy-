@@ -9,6 +9,7 @@
     margin-left: 0.5em;
     margin-top: -0.1em;
     cursor: pointer;
+    color: #00966c;
 }
 
 /*Bottom navigation bar START*/
@@ -28,6 +29,7 @@
     padding: 5px;
     font-family: "Quicksand"sans-serif;
     padding-bottom: 20px;
+    background-color: white;
 }
 
 .footerButton>img {
@@ -54,8 +56,6 @@
     width: 5%;
     height: 5%;
 }
-
-/*Bottom navigation bar START*/
 
 
 /*************************************************/
@@ -85,15 +85,26 @@
     cursor: pointer;
 }
 
-/* Add_Friend CSS START */
+/*** Add_Friend ***/
+.addFriendsTitle {
+    text-align: center;
+}
+
+.addFriendsTitle h1 {
+    color: #00966c;
+}
+
 .fromContacts {
-    background-color: #b2b3b8;
+    background-color: white;
     margin: 0 30px;
     padding: 10px;
+    text-align: center;
+
 }
 
 .fromContacts h3 {
     text-align: center;
+    transition: ;
     cursor: pointer;
 }
 
@@ -854,7 +865,7 @@
 .loginform .inputfield p {
     margin-left: 110px;
 }
- 
+
 .loginform .forgot a {
     text-decoration: none;
     color: gray;
@@ -887,7 +898,8 @@
 
     .desktoplogin {
         height: 110%;
-        border: 30px solid #66cc99;;
+        border: 30px solid #66cc99;
+        ;
         /* width:100%; */
     }
 
@@ -1202,7 +1214,7 @@ textarea {
     justify-content: center;
     align-items: center;
     padding: 10px;
-   
+
 }
 
 .month {
@@ -1288,6 +1300,7 @@ textarea {
     color: #fff;
     font-weight: 600;
 }
+
 /* Calendar End */
 
 .loadBillSection div {
@@ -1318,8 +1331,8 @@ textarea {
     background-color: white;
 }
 
- 
- 
+
+
 /*************************************************/
 /***************** Harsimran Singh ***************/
 /*************************************************/
@@ -1327,10 +1340,11 @@ textarea {
 /* 15_Bill_Splitter_menu */
 .splitterOptions {
     text-align: center;
+    color: #66cc99;
 }
 
-.optionsLink { 
-    margin: 4em 50%;
+.optionsLink {
+    margin: 4em 40%;
     width: 100%;
     display: flex;
     flex-direction: column;
