@@ -916,9 +916,18 @@
 }
 
 /*Forgot Password*/
-.forgotmain .header img {
-    height: 200px;
-    width: 250px;
+
+. {
+    text-align: center;
+}
+
+.billyLogoDiv {
+    text-align: center;
+}
+
+.forgotmain .forgotHeader img {
+    max-width: 70%;
+    max-height: 70%;
     padding: 30px;
 }
 
@@ -961,7 +970,7 @@
         height: 100%;
     }
 
-    .forgotmain .header,
+    .forgotmain .forgotHeader,
     .forgotloginlink {
         display: none;
     }
