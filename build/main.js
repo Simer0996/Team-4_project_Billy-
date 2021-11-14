@@ -256,7 +256,7 @@ function getClass(list, cls) {
                 .then(function (userCredential) {
                     console.log('User login successfully', userCredential.user);
                     setTimeout(function () {
-                        window.location.href = "./Home.html";
+                        window.location.href = "./4_Home.html";
                     }, 3000)
                 })
                 .catch(function (error) {
@@ -293,13 +293,15 @@ function getClass(list, cls) {
     }
 })();
 
+//Setting Page//
+
 (async () => {
     if (getClass(mainClass, 'settingpage')) {
         console.log('this is Setting page');
         logg.addEventListener('click', (e) => {
             e.preventDefault();
             auth.signOut().then(() => {
-                window.location.href = "./Login_Page.html";
+                window.location.href = "./1_Login_Page.html";
             })
             .catch((error) => {
                 console.log('error signput', error);
