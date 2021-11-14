@@ -2,6 +2,15 @@
 /***************** Header & Footer ***************/
 /*************************************************/
 
+/* Header Back Btn */
+
+.billyBackBtn {
+    position: fixed;
+    margin-left: 0.5em;
+    margin-top: -0.1em;
+}
+
+
 /*Bottom navigation bar START*/
 .footerBtns {
     position: fixed;
@@ -1025,7 +1034,7 @@
     height: 150px;
 }
 
-.fas {
+.fasSettingPage {
     color: skyblue;
     margin-left: 10px;
     margin-top: 10px;
@@ -1309,10 +1318,8 @@ textarea {
     background-color: white;
 }
 
-
-
-
-
+ 
+ 
 /*************************************************/
 /***************** Harsimran Singh ***************/
 /*************************************************/
@@ -1322,7 +1329,7 @@ textarea {
     text-align: center;
 }
 
-.optionsLink {
+.optionsLink { 
     margin: 4em 50%;
     width: 100%;
     display: flex;
