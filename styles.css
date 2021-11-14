@@ -8,8 +8,8 @@
     position: fixed;
     margin-left: 0.5em;
     margin-top: -0.1em;
+    cursor: pointer;
 }
-
 
 /*Bottom navigation bar START*/
 .footerBtns {

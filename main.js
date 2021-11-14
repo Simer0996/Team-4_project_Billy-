@@ -189,7 +189,7 @@ for (let i of newArray) {
         });
 
         $('.addBtn').on('click', () => {
-            location.href = './Add_friend.html'
+            location.href = './21_Add_friend.html'
         });
 
         document.addEventListener('DOMContentLoaded', function () {
