@@ -694,7 +694,7 @@
     font-size: 40px;
     margin-left: 80px;
     margin-top: 50px;
-    color: skyblue;
+    color: #66cc99;
 }
 
 .signupwrapper {
@@ -727,8 +727,8 @@
     margin-left: 120px;
     margin-top: 50px;
     color: white;
-    background-color: skyblue;
-}
+    background-color: #66cc99;
+}    
 
 .inputfield:last-child {
     margin-bottom: 10px;
@@ -741,14 +741,14 @@
 
 .inputfield a {
     text-decoration: none;
-    color: skyblue;
+    color: #66cc99;
 }
 
 @media (min-width:550px) {
     .signupdesktop {
         display: block;
         height: 100%;
-        border: 30px solid skyblue;
+        border: 30px solid #66cc99;
         margin-left: 0;
     }
 
@@ -772,7 +772,7 @@
         font-size: 40px;
         margin-top: 10px;
         text-align: center;
-        color: skyblue;
+        color: #66cc99;
     }
 
     .inputfield p {
@@ -798,7 +798,11 @@
     font-family: "Quicksand"sans-serif;
 }
 
-.logoImgContainer {
+/* .logoImgContainer {
+    text-align: center;
+} */
+
+.logincontainer .header {
     text-align: center;
 }
 
@@ -878,7 +882,7 @@
 
     .desktoplogin {
         height: 110%;
-        border: 30px solid #66cc99;;
+        border: 30px solid #66cc99;
         /* width:100%; */
     }
 
@@ -896,7 +900,7 @@
 
     .logintitle {
         text-align: center;
-        color: skyblue;
+        color: #66cc99;
         font-size: 40px;
         margin-top: 120px;
     }
@@ -934,13 +938,13 @@
     margin-left: 120px;
     margin-top: 50px;
     color: white;
-    background-color: skyblue;
+    background-color: #66cc99;
 }
 
 .forgotloginlink a {
     text-decoration: none;
     color: black;
-    border: 3px skyblue solid;
+    border: 3px #66cc99 solid;
     margin-left: 180px;
 }
 
@@ -973,7 +977,7 @@
 
     .desktopforgot {
         height: 125%;
-        border: 30px solid skyblue;
+        border: 30px solid #66cc99;
     }
 
     .desktopforgot img {
@@ -989,7 +993,7 @@
 
     .forgottitle {
         text-align: center;
-        color: skyblue;
+        color: #66cc99;
         font-size: 40px;
         margin-top: 120px;
     }
@@ -1006,7 +1010,7 @@
 
 /*Settings Page*/
 .setimage .header {
-    color: skyblue;
+    color: #66cc99;
     text-align: center;
     margin-top: 8px;
 }
@@ -1017,13 +1021,13 @@
 }
 
 .fas {
-    color: skyblue;
+    color: #66cc99;
     margin-left: 10px;
     margin-top: 10px;
 }
 
 .setting {
-    background-color: skyblue;
+    background-color: #66cc99;
     height: 250px;
     margin-left: 60px;
     margin-right: 60px;
@@ -1062,7 +1066,7 @@
 
 /*Setting help*/
 .helpmain .header {
-    color: skyblue;
+    color: #66cc99;
     margin-top: 7px;
     /* position: relative; */
     text-align: center;
@@ -1101,7 +1105,7 @@ textarea {
     margin-left: 120px;
     margin-top: 30px;
     color: white;
-    background-color: skyblue;
+    background-color: #66cc99;
 }
 
 .desktophelp,
