@@ -921,9 +921,13 @@
 
 /*Forgot Password*/
 .forgotmain .header img {
-    height: 200px;
-    width: 250px;
+    height: 70%;
+    width: 70%;
     padding: 30px;
+}
+
+.forgotcontainer .header{
+    text-align: center;
 }
 
 .forgotbtn3 {
