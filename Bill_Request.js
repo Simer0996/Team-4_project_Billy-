@@ -15,6 +15,28 @@ let am1 = document.getElementById('amount1');
 let am2 = document.getElementById('amount2');
 let am3 = document.getElementById('amount3');
 let send = document.getElementById('send_btn');
+let name = document.getElementById('name');
+let chkSplit = document.getElementById('chkSplitEvenly');
+
+var usersCount = 0;
+
+chkSplit.addEventListener('change', e => {
+
+    if(e.target.checked){
+        console.log('checked')
+    }
+    else
+    {
+        console.log('un checked')
+    }
+
+    console.log(theAmount.value);
+    console.log(usersCount)
+
+    console.log(theAmount.value / usersCount);
+
+});
+
 
 addBtn.addEventListener('click',() => {
     console.log("added");
@@ -68,7 +90,29 @@ function insertData() {
 }
 
 send.addEventListener('click',() => {
-    // console.log(JSON.stringify(ref));
+
+    // Check browser support
+if (typeof(Storage) !== "undefined") {
+    // Store
+
+    localStorage.setItem("userCount", usersCount); 
+
+    for(let i=0; i<usersCount; i++) {
+
+        console.log("addpar_"+i)
+
+        console.log(document.getElementById("addpar_"+i))
+
+        console.log(document.getElementById("addpar_"+i).value)
+
+        localStorage.setItem(i, document.getElementById("addpar_"+i).value + "16/11"+ (theAmount.value / usersCount));
+    }
+  }
+
+
+    //window.location.href = 'request_sent.html';
+
+   /* // console.log(JSON.stringify(ref));
     // saveData(ref);
     set(ref(db,'bills/'+ new Date().getTime()),{
             'total_amount': theAmount.value,
@@ -91,7 +135,7 @@ send.addEventListener('click',() => {
     //         'amount_2': am2.value,
     //         'amount_3': am3.value
     //     }
-    // );
+    // );*/
 });
 
 // for(let i=0; i<5; i++) {
@@ -125,19 +169,20 @@ send.addEventListener('click',() => {
 // }
 
 add_friend_btn.addEventListener('click', () => {
-    location.href='../build/bill_request_add_freinds.html';
+    console.log(name.value);
+
+    var content = "";
+
+    document.getElementById('fourthdiv').innerHTML =  content;
+
+    for(let i=0; i<=usersCount; i++) {
+
+        var content = "<div id='addiv_"+i+"'><img width='10' height='30' id='addimg_"+i+"' src='../images/Vector_13.png' alt=''><p id='addpar_"+i+"'>"+name.value+"</p><input id='addtext_"+i+"' type='text' placeholder='$'></div>"
+        document.getElementById('fourthdiv').innerHTML += content;
+    }
+
+    usersCount++;
+     
 })
 
-const urlSearchParams = new URLSearchParams(window.location.search);
-const params = Object.fromEntries(urlSearchParams.entries());
-
-alert(params["selectedvalue"]);
-// if (params["selectedvalue"] != undefined) {
-    var i = 0;
-    var content = "<div id='addiv_"+i+"'><img id='addimg_"+i+"' src='../images/Vector_13.png' alt=''><p id='addpar_"+i+"'>"+params["selectedvalue"]+"</p><input id='addtext_"+i+"' type='text' placeholder='$'></div>"
-
-document.getElementById('fourthdiv').innerHTML += content;
-// }
-
-console.log(content);
   

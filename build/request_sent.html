@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        // import { initializeApp } from 'firebase/app';
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js";
+        // import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-database.js";
+        // import { getDatabase, ref, set } from "firebase/database";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyDsaMWoCA2JwoL9MDH6e-2x51-u60X1xyg",
+          authDomain: "billy1--photocapture.firebaseapp.com",
+          databaseURL: "https://billy1--photocapture-default-rtdb.firebaseio.com",
+          projectId: "billy1--photocapture",
+          storageBucket: "billy1--photocapture.appspot.com",
+          messagingSenderId: "546893533377",
+          appId: "1:546893533377:web:8e42b4b40dbfe1b3960440",
+          measurementId: "G-G8GHK8SP2Z"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+
+        // import {getDatabase, ref, set, child, update, remove} from "https://www.gstatic.com/firebasejs/9.3.0/firebase-database.js";
+
+        // const db = getDatabase(app);
+        // const db = app.database();
+        // console.log(db);
+        // const ref = db.ref('data');
+      </script>
+
+    <script type="module" src="script.js" defer></script>
+    <script src="Bill_Request.js" type="module" defer></script>
+    <script src="bill_request_add_freinds.js" type="module" defer></script>
+    <script src="bill_photo_capture_page.js" defer></script>
+    <script src="split_history.js" defer></script>
+    <script src="bill_photo_capture_page.js" defer></script>
+    <script src="request_sent.js" defer></script>
+
+    <!-- <script src="bill_photo_capture_page.js" defer></script> -->
+    <!-- <script type="text/javascript" src="webcamjs/webcam.min.js"></script> -->
+
+    
+    
+</head>
+<body>
+
+
+<main>
+    <h1 class="header">Bill Request</h1>
+    <i class="fas fa-angle-left"></i>
+    <div class="container">
+        <div class="phone">
+          <div class="content">
+              <div class="firstdiv">  
+                  <p>Bill Request</p>   
+              </div>
+                <div class="seconddiv">  
+                <p>Request Sent To</p>
+              </div>
+              <div class="data" id="data">  
+              
+              </div>
+          </div>
+         </div>
+      </div>
+</main>
+
+
+<footer>
+    <div class="btn">
+     <button class="button button1"><img src="images/home.png" alt="Home"><p>Home</p></button>
+      <button class="button button2"><img src="images/history.png" alt="History"><p>History</p></button>
+      <button class="button button3"><img src="images/split.png" alt="Split"><p>Split</p></button>
+      <button class="button button4"><img src="images/settings.png" alt="Setting"><p>Setting</p></button>
+    </div>
+</footer>
+</body>
+</html>
