@@ -3,30 +3,32 @@
 <main class="new-bill">
     <h1 class="header">New Bill</h1>
     <form>
-        <div>
-        <label for="bills">Catagories</label>
-        <select name="bills" id="bills" value="Type of Bill">
-           <option value="BC Hydro">BC Hydro</option>
-           <option value="BC MSP">BC MSP</option>
-           <option value="Mobile">Mobile</option>
-           <option value="Internet">Internet</option> 
-           <option value="TV/Cable">TV/Cable</option>
-           <option value="Netflix">Netflix</option>
-           <option value="Credit Card">Credit Card</option>
-           <option value="Add new">Add new</option>
-        </select>
-        </div>
-        <div>
-        <label for="amount">Amount</label>
-        <input type="text" id="amount" name="amount">
-        </div>
-        <div>
-        <label for="date">Date</label>
-        <input type="date" name="date" id="date">
-        </div>
-        <div>
-        <label for="area">Memo</label>
-        <textarea name="area" id="area" cols="30" rows="20"></textarea>
+        <div class="newBillContainer">
+            <label for="bills">Catagories</label>
+            <select name="bills" id="bills" value="Type of Bill">
+                <option value="BC Hydro">BC Hydro</option>
+                <option value="BC MSP">BC MSP</option>
+                <option value="Mobile">Mobile</option>
+                <option value="Internet">Internet</option>
+                <option value="TV/Cable">TV/Cable</option>
+                <option value="Netflix">Netflix</option>
+                <option value="Credit Card">Credit Card</option>
+                <option value="Add new">Add new</option>
+            </select>
+
+            <div>
+                <label for="amount">Amount</label>
+                <input type="text" id="amount" name="amount">
+            </div>
+            <div>
+                <label for="date">Date</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <div>
+                <label for="area">Memo</label>
+                <textarea name="area" id="area" cols="30" rows="20"></textarea>
+            </div>
+
         </div>
         <div class="buttons">
             <button id="btn1">CANCEL</button>

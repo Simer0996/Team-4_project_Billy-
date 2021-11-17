@@ -1300,6 +1300,10 @@ textarea {
 }
 
 /*New Bill*/
+.newBillContainer {
+    text-align: center;
+}
+
 .new-bill input, .new-bill select, .new-bill textarea {
     width: 400px;
 }

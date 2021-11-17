@@ -1300,12 +1300,12 @@ textarea {
 }
 
 /*New Bill*/
-.new-bill input, .new-bill select, .new-bill textarea {
-    width: 400px;
+.newBillContainer {
+    text-align: center;
 }
 
-.new-bill form {
-    margin: auto;
+.new-bill input, .new-bill select, .new-bill textarea {
+    width: 400px;
 }
 
 .new-bill .header {
