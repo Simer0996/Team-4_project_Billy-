@@ -1,9 +1,21 @@
 /*************************************************/
+/***************** Global Variable ***************/
+/*************************************************/
+
+* {
+    font-family: 'Lato';
+}
+
+/* font-weight 400 for Body Text and .addBtn**
+***font-weight 700 for Subheading for pages***
+***font-weight 900 for Heading for pages *****/
+
+
+/*************************************************/
 /***************** Header & Footer ***************/
 /*************************************************/
 
 /* Header Back Btn */
-
 .billyBackBtn {
     position: fixed;
     margin-left: 0.5em;
@@ -27,7 +39,6 @@
     height: 70px;
     width: 100px;
     padding: 5px;
-    font-family: "Quicksand"sans-serif;
     padding-bottom: 20px;
     background-color: white;
 }
@@ -467,38 +478,15 @@
 
 
 /* Setting_payment_link_2 */
-.settingPmtLink2 {
+.settingPayment2 h1 {
     color: #66cc99;
     font-weight: bold;
     margin-bottom: 1.5em;
     text-align: center;
 }
 
-.settingPmtLink2 .icon-back {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #66cc99;
-    padding: 7px;
-    position: relative;
-    overflow: hidden;
-    -webkit-transition: background-color 200ms ease-in-out;
-    transition: background-color 200ms ease-in-out;
-    float: left;
-    margin-right: 7px;
-    cursor: pointer;
-    margin: 1px 30px;
-    padding: 1px;
-    outline: none;
-
-}
-
-.settingPmtLink2 .icon-back:hover {
-    background-color: #e0e0e2;
-}
-
-.settingPmtLink2 .icon-back:active {
-    background-color: #646464;
+.cableBoxDiv {
+    display: flex;
 }
 
 .cableBox {
@@ -509,6 +497,10 @@
     background-color: #a7b3e6;
     text-align: center;
     font-weight: bold;
+}
+
+.cableBox h4 {
+    margin-top: 2.3em;
 }
 
 .cableURLDiv {
@@ -523,8 +515,12 @@
     padding: .5rem;
 }
 
+.SaveBtnContainer {
+    text-align: center;
+}
+
 .pmtLinkSaveBtn {
-    margin: 12rem;
+    margin-top: 12rem;
     padding: 1rem 6rem;
     box-shadow: 0 7px 20px rgba(0, 0, 0, .4);
     background-color: #66cc99;
@@ -1008,11 +1004,6 @@
     height: 150px;
 }
 
-.fasSettingPage {
-    color: skyblue;
-    margin-left: 10px;
-    margin-top: 10px;
-}
 
 .setting {
     background-color: skyblue;

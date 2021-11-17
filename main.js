@@ -51,20 +51,20 @@ function getClass(list, cls) {
         console.log('this is Home page');
 
         let recoveredString = localStorage.getItem('bill_array');
-console.log(recoveredString);
-let newArray = JSON.parse(recoveredString);
-console.log(newArray);
+        console.log(recoveredString);
+        let newArray = JSON.parse(recoveredString);
+        console.log(newArray);
 
- function arrayHome() {
-for (let i of newArray) {
-    let row1 = document.getElementById("myTable").insertRow(0)
-    let cell1 = row1.insertCell(0);
-    let cell2 = row1.insertCell(1);
-    cell1.innerHTML = `${i.Catagories}`
-    cell2.innerHTML = `${i.Amount}$`
-   
-}
-}
+        function arrayHome() {
+            for (let i of newArray) {
+                let row1 = document.getElementById("myTable").insertRow(0)
+                let cell1 = row1.insertCell(0);
+                let cell2 = row1.insertCell(1);
+                cell1.innerHTML = `${i.Catagories}`
+                cell2.innerHTML = `${i.Amount}$`
+
+            }
+        }
         // const {
         //     default: arrayHome
         // } = await import('./Home.js');
@@ -130,7 +130,6 @@ for (let i of newArray) {
             $('.pickedName').text(pickedFriendName);
         });
 
-        //This you need to figure it out
         $('.addFriendBtn').on('click', () => {
             let storedFriendName = $('.pickedName').text();
             localStorage.setItem('friendName', storedFriendName);
@@ -178,25 +177,39 @@ for (let i of newArray) {
 
 
 // Friends List page//
-(async () => {
-    if (getClass(mainClass, 'friendsList')) {
-        console.log('this is Friends List page');
-        const {
-            default: createTablePutName
-        } = await import('./Friends_list.js');
+
+// (async () => {
+//     if (getClass(mainClass, 'friendsList')) {
+//         console.log('this is Friends List page');
+//         const {
+//             default: createTablePutName
+//         } = await import('./Friends_list.js');
+
+//         document.addEventListener('DOMContentLoaded', function () {
+//             createTablePutName;
+//         });
+
+//         $('.addBtn').on('click', () => {
+//             location.href = './21_Add_friend.html'
+//         });
+
+//     }
+// })();
+
+        let createTablePutName = function () {
+            const loadFriendName = localStorage.getItem('friendName');
+            $('.addFriendNameList').append('<li class="liFriendName"></li>');
+            $('.liFriendName').text(loadFriendName);
+        };
+        
         document.addEventListener('DOMContentLoaded', function () {
-
+            createTablePutName();
         });
-
+        
         $('.addBtn').on('click', () => {
             location.href = './21_Add_friend.html'
         });
 
-        document.addEventListener('DOMContentLoaded', function () {
-            createTablePutName;
-        });
-    }
-})();
 
 //Setting payment
 (async () => {
@@ -208,7 +221,7 @@ for (let i of newArray) {
 
         $('.addNew').on('click', () => {
             console.log('hello');
-            location.href = './Setting_payment_link_2.html';
+            location.href = './11_Setting_payment_link_2.html';
         })
         document.addEventListener('click', function () {
             addNewPmtLink;
@@ -318,11 +331,11 @@ for (let i of newArray) {
         logg.addEventListener('click', (e) => {
             e.preventDefault();
             auth.signOut().then(() => {
-                window.location.href = "./1_Login_Page.html";
-            })
-            .catch((error) => {
-                console.log('error signput', error);
-            })
+                    window.location.href = "./1_Login_Page.html";
+                })
+                .catch((error) => {
+                    console.log('error signput', error);
+                })
         })
     }
 })();

@@ -1,6 +1,3 @@
-$('.addBtn').on('click', () => {
-    location.href = './Add_friend.html'
-});
 
 export let createTablePutName = function () {
     const loadFriendName = localStorage.getItem('friendName');
@@ -8,11 +5,12 @@ export let createTablePutName = function () {
     $('.liFriendName').text(loadFriendName);
 };
 
-
-
 document.addEventListener('DOMContentLoaded',  function () {
     createTablePutName();
 });
 
+$('.addBtn').on('click', () => {
+    location.href = './21_Add_friend.html'
+});
 
 
