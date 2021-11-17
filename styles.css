@@ -904,9 +904,7 @@ text-align: center; */
 
 /*Forgot Password*/
 
-. {
-    text-align: center;
-}
+
 
 .billyLogoDiv {
     text-align: center;
@@ -1300,6 +1298,69 @@ textarea {
     margin-bottom: 1.5em;
     text-align: center;
 }
+
+/*New Bill*/
+.new-bill input, .new-bill select, .new-bill textarea {
+    width: 100%;
+
+}
+
+.new-bill .header {
+    text-align:center;
+    color: #66CC99;
+}
+
+.new-bill {
+    height: 1000px;
+}
+
+.new-bill .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.new-bill .buttons #btn1{
+    width: 100px;
+    height: 50px;
+    border-radius: 75px;
+    background-color: #66CC99;
+    color:white;
+    margin-top: 30px;
+    margin-left: 30px;
+    cursor:pointer;
+}
+
+.new-bill .buttons #btn2{
+    width: 100px;
+    height: 50px;
+    border-radius: 75px;
+    background-color: #66CC99;
+    color:white;
+    margin-top: 30px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+/***************History*****************/
+.history #tableOutput  {
+    width: 100%;
+} 
+
+.history .header {
+    color: #66CC99;
+    text-align: center;
+}
+
+.history #tableOutput tr:first-child {
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+
+
+
+
 
 
 

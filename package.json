@@ -18,7 +18,8 @@
   "homepage": "https://github.com/Simer0996/Team-4_project_Billy-#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-file-include": "^2.3.0"
+    "gulp-file-include": "^2.3.0",
+    "gulp-install": "^1.1.0"
   },
   "dependencies": {
     "ansi-colors": "^1.1.0",
