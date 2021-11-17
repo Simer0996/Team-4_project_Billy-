@@ -916,9 +916,6 @@ text-align: center; */
 }
 
 /*Forgot Password*/
-
-
-
 .billyLogoDiv {
     text-align: center;
 }
@@ -933,26 +930,38 @@ text-align: center; */
     width: 180px;
     padding: 8px 10px;
     font-size: 15px;
-    border-radius: 5px;
     cursor: pointer;
     border-radius: 3px;
     position: relative;
     text-align: center;
-    margin-left: 120px;
     margin-top: 50px;
     color: white;
-    background-color: skyblue;
+    background-color: #66cc99;
+}
+
+.forgotbtn3Container {
+    text-align: center;
 }
 
 .forgotloginlink a {
     text-decoration: none;
     color: black;
-    border: 3px skyblue solid;
-    margin-left: 180px;
+    border: 3px #66cc99 solid;
+   
+    width: 100px;
+    height: 50px;
+    border-radius: 75px;
+    border: solid black 2px;
+    background-color: #66CC99;
+    color: white;
+    padding: 0.5em 1em;
+    cursor: pointer;
+
 }
 
 .forgotloginlink {
     margin-top: 70px;
+    text-align: center;
 }
 
 .forgottitle,
