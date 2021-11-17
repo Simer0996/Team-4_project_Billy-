@@ -794,7 +794,6 @@ text-align: center; */
 .loginmain {
     margin: 0;
     padding: 0;
-    font-family: "Quicksand"sans-serif;
 }
 
 .logoImgContainer {
@@ -1417,3 +1416,25 @@ textarea {
     text-decoration: none;
     color: black;
 }
+
+/* 16_Bill_Splitter_request */
+.splitHistory {
+    color: #66cc99;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+
+
+/* 18_Bill_Splitter_history */
+.billRequestTitle {
+    color: #66cc99;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+
+
+

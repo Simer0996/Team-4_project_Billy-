@@ -181,9 +181,7 @@ function getClass(list, cls) {
 // (async () => {
 //     if (getClass(mainClass, 'friendsList')) {
 //         console.log('this is Friends List page');
-//         const {
-//             default: createTablePutName
-//         } = await import('./Friends_list.js');
+       
 
 //         document.addEventListener('DOMContentLoaded', function () {
 //             createTablePutName;
