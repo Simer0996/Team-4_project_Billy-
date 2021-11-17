@@ -1301,8 +1301,7 @@ textarea {
 
 /*New Bill*/
 .new-bill input, .new-bill select, .new-bill textarea {
-    width: 100%;
-
+    width: 400px;
 }
 
 .new-bill .header {
@@ -1311,7 +1310,7 @@ textarea {
 }
 
 .new-bill {
-    height: 1000px;
+    margin: 2em;
 }
 
 .new-bill .buttons {
