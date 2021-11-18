@@ -1,0 +1,122 @@
+
+html, body {
+    height: 100%;
+}
+
+body {
+  background:linear-gradient(to right bottom, #66CC99, #6688CC);
+  overflow: hidden;
+}
+/* ******************************** logo *******************************/
+.logo {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    max-width: 250px;
+    height: auto;
+}
+
+/* ******************************** circle *****************************/
+
+.topcircle {
+    max-width: 20rem;
+    height: auto;
+    position: relative;
+    top: 0;
+    margin: -10% -5%;
+    opacity: 0.5;
+}
+
+.circle {
+    width: 3rem;
+    height: auto;
+    margin: 0 auto;
+    position: absolute;
+    top: 25%;
+    left: 18%;
+    opacity: 0.3;
+}
+
+.circle:nth-of-type(2) {
+    width: 5rem;
+    height: auto;
+    margin: 0 auto;
+    position: absolute;
+    top: 27%;
+    left: 20%;
+    opacity: 0.6;
+}
+
+/* ******************************** wave *******************************/
+
+.bottom { 
+  height: 5%;
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  background: #ffffff;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+}
+
+.wave {
+  background: url('../image/wave.svg') repeat-x; 
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier( 0.36, 0.63, 0.45, 0.53) infinite, ease;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.5;
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 0.3;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,-25px,0);
+  }
+  50% {
+    transform: translate3d(0,10px,0);
+  }
+}
+
+/* ******************************** hover ******************************/
+
+/* .overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .logo:hover .overlay {
+    opacity: 1;
+  } */
