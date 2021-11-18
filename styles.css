@@ -946,7 +946,7 @@ text-align: center; */
     text-decoration: none;
     color: black;
     border: 3px #66cc99 solid;
-   
+
     width: 100px;
     height: 50px;
     border-radius: 75px;
@@ -1287,24 +1287,34 @@ textarea {
     margin: 2rem;
 }
 
-.utilityName {
-    font-family: sans-serif;
-    font-weight: 600;
-    color: #536FE0;
+#myTable {
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.utilityCategory {
-    margin-top: -0.8rem;
+#myTable tr {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
+
+#myTable td {
+    color: #536FE0;
+    margin: 0 2.3em;
+    font-weight: 900;
+}
+
 
 .homeBillAddDiv {
     text-align: right;
-    padding: 1rem 2rem;
+    padding: 6rem 3rem;
 }
 
 .homeBillAddBtn {
     text-align: center;
-    border-radius: 50%;
+    cursor: pointer;
     width: 4em;
     height: 4em;
     color: #59bca3;
@@ -1381,16 +1391,12 @@ textarea {
 .history #tableOutput tr:first-child {
     font-weight: bold;
     font-size: 20px;
-
+    color: #536FE0;
 }
 
-
-
-
-
-
-
-
+#tableOutput tbody td {
+    text-align: center;
+}
 
 
 /*************************************************/
@@ -1434,7 +1440,3 @@ textarea {
     margin-bottom: 1.5em;
     text-align: center;
 }
-
-
-
-
