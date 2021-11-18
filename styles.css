@@ -1,0 +1,1585 @@
+/*************************************************/
+/***************** Global Variable ***************/
+/*************************************************/
+
+* {
+    font-family: 'Lato';
+}
+
+/* font-weight 400 for Body Text and .addBtn**
+***font-weight 700 for Subheading for pages***
+***font-weight 900 for Heading for pages *****/
+
+
+/* For H1 Title
+
+color: #66cc99;
+font-weight: bold;
+margin-bottom: 1.5em;
+text-align: center; */
+
+
+/*************************************************/
+/***************** Header & Footer ***************/
+/*************************************************/
+
+/* Header Back Btn */
+.billyBackBtn {
+    position: fixed;
+    margin-left: 0.5em;
+    margin-top: -0.1em;
+    cursor: pointer;
+    color: #66cc99;
+}
+
+/*Bottom navigation bar START*/
+.footerBtns {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footerButton {
+    cursor: pointer;
+    height: 70px;
+    width: 100px;
+    padding: 5px;
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+.divider {
+    border-right: 2px solid #66cc99;
+    height: 40px;
+    margin-top: 18px;
+}
+
+.footerBtns .button4 {
+    border-right: none;
+}
+
+.footerButton>img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.footerButton>p {
+    margin-top: .1rem;
+    font-size: 16pt;
+
+}
+
+.parentdiv img {
+    width: 6%;
+    height: 8%;
+    padding-left: 30px;
+    padding-top: 45px;
+    cursor: pointer;
+}
+
+
+.firstdiv>img {
+    width: 5%;
+    height: 5%;
+}
+
+/*************************************************/
+/***************** Songhui Park ******************/
+/*************************************************/
+
+.firstSplashPage  {
+    max-height: 100%;
+    max-width : 100%
+}
+
+.firstSplashPage {
+  background:linear-gradient(to right bottom, #66CC99, #6688CC);
+  overflow: hidden;
+}
+
+/* ******************************** logo *******************************/
+.splashLogo {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.splashLogo img{
+    max-width: 250px;
+    height: auto;
+}
+
+/* ******************************** circle *****************************/
+.topcircle {
+    max-width: 20rem;
+    height: auto;
+    position: relative;
+    top: 0;
+    margin: -10% -5%;
+    opacity: 0.5;
+}
+
+.circle {
+    width: 3rem;
+    height: auto;
+    margin: 0 auto;
+    position: absolute;
+    top: 25%;
+    left: 18%;
+    opacity: 0.3;
+}
+
+.circle:nth-of-type(2) {
+    width: 5rem;
+    height: auto;
+    margin: 0 auto;
+    position: absolute;
+    top: 27%;
+    left: 20%;
+    opacity: 0.6;
+}
+
+/* ******************************** wave *******************************/
+
+.splashBottom { 
+  height: 5%;
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  background: #ffffff;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+}
+
+.wave {
+  background: url('images/wave.svg') repeat-x; 
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier( 0.36, 0.63, 0.45, 0.53) infinite, ease;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.5;
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 0.3;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,-25px,0);
+  }
+  50% {
+    transform: translate3d(0,10px,0);
+  }
+}
+
+/* ******************************** hover ******************************/
+
+/* .overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .logo:hover .overlay {
+    opacity: 1;
+  } */
+
+
+
+
+/*************************************************/
+/***************** Namhyung Kim ******************/
+/*************************************************/
+
+/* Splash_Page */
+.splashContainer {
+    width: auto;
+    height: 900px;
+    background-image: linear-gradient(to left top, #6b9cd1, #54a4d2, #3fabcf, #33b2c7, #39b7bc, #41b9b4, #4dbbac, #59bca3, #5ebc9e, #63bc99, #68bb94, #6ebb8f);
+
+}
+
+.splashContainer p {
+    color: white;
+    font-size: 24pt;
+    text-align: center;
+}
+
+.splashLogoImg {
+    max-width: 90%;
+    max-height: 100%;
+    padding-top: 60%;
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: pointer;
+}
+
+/*** Add_Friend ***/
+.addFriendsTitle {
+    text-align: center;
+}
+
+.addFriendsTitle h1 {
+    color: #66cc99;
+}
+
+.fromContacts {
+    background-color: white;
+    margin: 0 30px;
+    padding: 10px;
+    text-align: center;
+    display: inline;
+}
+
+.fromContacts h3 {
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.fromContacts .far {
+    position: absolute;
+    top: 5.6em;
+    left: 6em;
+}
+
+.showContactList {
+    margin-right: 2.5em;
+    display: none;
+}
+
+.showContactList ul {
+    list-style-type: none;
+}
+
+.showContactList ul li {
+    padding: 10px;
+    border: solid 1px #b2b3b8;
+}
+
+.showContactList ul li div {
+    text-align: center;
+    cursor: pointer;
+}
+
+.addBtnContainer {
+    text-align: center;
+}
+
+.addFriendBtn {
+    background-color: #66cc99;
+    color: white;
+    margin-top: 120px;
+    padding: 10px 150px;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(209, 209, 209, 0.945);
+
+}
+
+.pickedName {
+    text-align: center;
+    font-size: 20pt;
+    margin-top: 3em;
+}
+
+
+
+/* Friends_list CSS */
+.friendsListTitle {
+    text-align: center;
+    color: #66cc99;
+}
+
+.allFriends h4 {
+    text-align: left;
+    margin: 10px 30px;
+    color: #66cc99;
+}
+
+.allFriends {
+    margin-top: 30px;
+}
+
+.addBtn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: white;
+    cursor: pointer;
+    border: 2px solid #66cc99;
+    margin-left: 35px;
+    border-radius: 50%;
+}
+
+.addBtn:after {
+    content: '';
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 4px;
+    width: 50%;
+    background: #66cc99;
+    top: 50%;
+    left: 50%;
+}
+
+.addBtn:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: #66cc99;
+    height: 50%;
+    width: 4px;
+}
+
+.addFriendText {
+    padding-top: 20px;
+    text-align: left;
+    padding-left: 100px;
+}
+
+.addFriendNameList li {
+    background-color: #e0e0e0;
+    text-align: left;
+    padding-left: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin: 30px 30px;
+    list-style-type: none;
+    font-family: cursive;
+}
+
+
+/* Chat_page_1 CSS */
+.chatPage1Title {
+    text-align: center;
+    color: #66cc99;
+}
+
+.dropDownWrap {
+    text-align: center;
+}
+
+.friendsDropDown {
+    margin-top: 4em;
+    margin-left: 1em;
+    font-size: 12pt;
+    /* arrow */
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), 100% 0;
+    background-size: 5px 5px,
+        5px 5px,
+        2.5em 2.5em;
+    cursor: pointer;
+    width: 400px;
+    height: 30px;
+}
+
+.friendsDropDown option {
+    color: black;
+    background-color: white;
+}
+
+.chatBtnWrap {
+    text-align: center;
+}
+
+.startChatBtn {
+    margin-top: 20em;
+    padding: 1em 3em;
+    background-color: #66cc99;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+/* Chat_page_2 CSS  */
+.chatPage2Title {
+    text-align: center;
+    color: #66cc99;
+}
+
+.mobileFirst {
+    border-radius: 10px;
+    width: 275px;
+    height: 500px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 16px 5px;
+}
+
+.friendNameBox {
+    padding: 0.8em 1em;
+}
+
+.chatFriendName {
+    color: #070606;
+    text-align: left;
+    font-weight: bold;
+    color: #66cc99;
+    font-size: 16pt;
+    padding-left: 0.3em;
+}
+
+.chatBoxForMsg {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    background-color: #eeeeeefa;
+    opacity: .5;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.chatMsgInput {
+    border-radius: 50px;
+    -webkit-box-shadow: 0 1px 11px #646464;
+    box-shadow: 0 1px 11px #646464;
+    padding: 10px;
+    width: calc(100% + -72px);
+    margin: 5px 0 0 8px;
+    float: left;
+}
+
+.chatMsgInput * {
+    font-family: helvetica;
+    outline: none;
+    border: none;
+    caret-color: #00966c;
+}
+
+.chatMsgInput *::-webkit-input-placeholder {
+    color: #929292;
+}
+
+.chatMsgInput *:-ms-input-placeholder {
+    color: #929292;
+}
+
+.chatMsgInput *::-ms-input-placeholder {
+    color: #929292;
+}
+
+.chatMsgInput *::placeholder {
+    color: #929292;
+}
+
+
+.fa-paper-plane {
+    margin-left: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#msgCloudBox {
+    background-color: #536FE0;
+    width: 50%;
+    max-height: 50%;
+    margin: 0.5em;
+    margin-left: 7em;
+    padding-left: 0.5em;
+    padding-bottom: 0.5em;
+    border-radius: 0.5em;
+    color: white;
+}
+
+
+/* Setting_payment_link_1  */
+.paymentLinkAll h1 {
+    color: #66cc99;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.paymentLinkAll {
+    cursor: pointer;
+}
+
+.firstRow {
+    display: flex;
+    justify-content: center;
+}
+
+.firstRow .addNew {
+    flex-grow: 1;
+    flex-basis: 30px;
+    padding: 60px 20px;
+    margin: 10px;
+    background-color: #66cc99;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.firstRow .bcHydro {
+    flex-grow: 1;
+    flex-basis: 30px;
+    padding: 60px 20px;
+    margin: 10px;
+    background-color: #d1eeecdc;
+    text-align: center;
+    font-weight: bold;
+}
+
+.secondRow {
+    display: flex;
+    justify-content: center;
+}
+
+.secondRow .mobile {
+    flex-grow: 1;
+    flex-basis: 30px;
+    padding: 60px 20px;
+    margin: 10px;
+    background-color: #a7b3e6;
+    text-align: center;
+    font-weight: bold;
+}
+
+.secondRow .netflix {
+    flex-grow: 1;
+    flex-basis: 30px;
+    padding: 60px 20px;
+    margin: 10px;
+    background-color: #a7b3e6;
+    text-align: center;
+    font-weight: bold;
+}
+
+.thirdRow {
+    display: flex;
+    justify-content: center;
+}
+
+.thirdRow .creditCard {
+    flex-grow: 1;
+    flex-basis: 30px;
+    padding: 60px 20px;
+    margin: 10px;
+    background-color: #d1eeecdc;
+    text-align: center;
+    font-weight: bold;
+}
+
+.fourthRow {
+    display: flex;
+    justify-content: center;
+}
+
+.fourthRow .internet {
+    flex-grow: 1;
+    flex-basis: 30px;
+    padding: 60px 20px;
+    margin: 10px;
+    background-color: #a7b3e6;
+    text-align: center;
+    font-weight: bold;
+}
+
+.fourthRow .cable {
+    flex-grow: 1;
+    flex-basis: 30px;
+    padding: 60px 20px;
+    margin: 10px;
+    background-color: #a7b3e6;
+    text-align: center;
+    font-weight: bold;
+    opacity: 0;
+}
+
+
+/* Setting_payment_link_2 */
+.settingPayment2 h1 {
+    color: #66cc99;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.cableBoxDiv {
+    display: flex;
+}
+
+.cableBox {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 50px auto;
+    background-color: #a7b3e6;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cableBox h4 {
+    margin-top: 2.3em;
+}
+
+.cableURLDiv {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+    font-weight: 700;
+}
+
+.cableURL {
+    margin: .5rem 0;
+    padding: .5rem;
+}
+
+.SaveBtnContainer {
+    text-align: center;
+}
+
+.pmtLinkSaveBtn {
+    margin-top: 12rem;
+    padding: 1rem 6rem;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, .4);
+    background-color: #66cc99;
+    border-radius: 10px;
+    color: white;
+    font-size: 14pt;
+}
+
+
+/* Setting_notification CSS */
+.notificationTitle {
+    color: #66cc99;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.contentsWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.reminder {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.newMessageDiv {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.paymentRequestDiv {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.paymentReceivedDiv {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.newFeaturesDiv {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 20px;
+    margin: 20px;
+}
+
+#reminderSet {
+    width: 20%;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.contentsWrap input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.contentsWrap label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 50px;
+    height: 25px;
+    background: #837f7f;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+.contentsWrap label:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    width: 20px;
+    height: 18px;
+    background: white;
+    border-radius: 50px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.contentsWrap input:checked+label {
+    background: #36ad7b;
+}
+
+.contentsWrap input:checked+label:after {
+    left: calc(100% - 5px);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+
+
+/*************************************************/
+/***************** Harinder **********************/
+/*************************************************/
+
+/* SignUp Page*/
+.sign-up {
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand"sans-serif;
+}
+
+.desktoptitle {
+    display: none;
+}
+
+.signupdesktop {
+    display: none;
+}
+
+.signupwrapper .signuptitle {
+    font-size: 40px;
+    margin-left: 80px;
+    margin-top: 50px;
+    color: skyblue;
+}
+
+.signupwrapper {
+    margin-left: 50px;
+    margin-top: 70px;
+}
+
+.inputfield label {
+    font-size: 15px;
+    color: gray;
+}
+
+.inputfield .input {
+    width: 400px;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    margin: 5px 0 0px;
+}
+
+.signbtn1 {
+    width: 180px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+    text-align: center;
+    margin-left: 120px;
+    margin-top: 50px;
+    color: white;
+    background-color: skyblue;
+}
+
+.inputfield:last-child {
+    margin-bottom: 10px;
+}
+
+.inputfield p {
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.inputfield a {
+    text-decoration: none;
+    color: skyblue;
+}
+
+@media (min-width:550px) {
+    .signupdesktop {
+        display: block;
+        height: 100%;
+        border: 30px solid skyblue;
+        margin-left: 0;
+    }
+
+    .signupmain {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        height: 100%;
+    }
+
+    .inputfield .input {
+        width: 570px;
+    }
+
+    .signuptitle {
+        display: none;
+    }
+
+    .desktoptitle {
+        display: block;
+        font-size: 40px;
+        margin-top: 10px;
+        text-align: center;
+        color: skyblue;
+    }
+
+    .inputfield p {
+        display: none;
+    }
+
+    .signbtn1 {
+        margin-left: 200px;
+    }
+
+    .signupdesktop img {
+        width: 400px;
+        height: 200px;
+        margin-left: 100px;
+        margin-top: 200px;
+    }
+}
+
+/*Login Page*/
+.loginmain {
+    margin: 0;
+    padding: 0;
+}
+
+.logoImgContainer {
+    text-align: center;
+}
+
+.loginmain .header img {
+    max-width: 70%;
+    max-height: 70%;
+    padding: 30px;
+}
+
+.container {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.loginform .inputfield label {
+    font-size: 15px;
+    color: gray;
+}
+
+.loginform .inputfield .input {
+    width: 400px;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    margin: 5px 0 0px;
+}
+
+.loginbtn2 {
+    width: 180px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    margin-left: 120px;
+    margin-top: 50px;
+    color: white;
+    background-color: #66cc99;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.loginform .inputfield p {
+    margin-left: 110px;
+}
+
+.loginform .forgot a {
+    text-decoration: none;
+    color: gray;
+    margin-top: 100px;
+    margin-left: 300px;
+}
+
+.logintitle,
+.desktoplogin {
+    display: none;
+}
+
+
+@media (min-width:550px) {
+    .logincontainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        height: 100%;
+    }
+
+    .loginmain .header {
+        display: none;
+    }
+
+    .logintitle,
+    .desktoplogin {
+        display: block;
+    }
+
+    .desktoplogin {
+        height: 110%;
+        border: 30px solid #66cc99;
+        ;
+        /* width:100%; */
+    }
+
+    .desktoplogin img {
+        width: 400px;
+        height: 200px;
+        margin-left: 100px;
+        margin-top: 200px;
+    }
+
+    /* .container .loginform{
+        width:100%;  
+         margin-left:550px; 
+    }  */
+
+    .logintitle {
+        text-align: center;
+        color: skyblue;
+        font-size: 40px;
+        margin-top: 120px;
+    }
+
+    .loginform .inputfield .input {
+        width: 570px;
+    }
+
+    .loginbtn2 {
+        margin-left: 200px;
+        margin-top: 100px;
+    }
+
+    .loginform .forgot {
+        margin-left: 180px;
+    }
+}
+
+/*Forgot Password*/
+.billyLogoDiv {
+    text-align: center;
+}
+
+.forgotmain .forgotHeader img {
+    max-width: 70%;
+    max-height: 70%;
+    padding: 30px;
+}
+
+.forgotbtn3 {
+    width: 180px;
+    padding: 8px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    background-color: #66cc99;
+}
+
+.forgotbtn3Container {
+    text-align: center;
+}
+
+.forgotloginlink a {
+    text-decoration: none;
+    color: black;
+    border: 3px #66cc99 solid;
+
+    width: 100px;
+    height: 50px;
+    border-radius: 75px;
+    border: solid black 2px;
+    background-color: #66CC99;
+    color: white;
+    padding: 0.5em 1em;
+    cursor: pointer;
+
+}
+
+.forgotloginlink {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.forgottitle,
+.desktopforgot {
+    display: none;
+}
+
+@media (min-width:550px) {
+    .forgotcontainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        height: 100%;
+    }
+
+    .forgotmain .forgotHeader,
+    .forgotloginlink {
+        display: none;
+    }
+
+    .desktopforgot,
+    .forgottitle {
+        display: block;
+    }
+
+    .desktopforgot {
+        height: 125%;
+        border: 30px solid skyblue;
+    }
+
+    .desktopforgot img {
+        width: 400px;
+        height: 200px;
+        margin-left: 100px;
+        margin-top: 200px;
+    }
+
+    .forgotcontainer .container .forgot {
+        margin-left: 50px;
+    }
+
+    .forgottitle {
+        text-align: center;
+        color: skyblue;
+        font-size: 40px;
+        margin-top: 120px;
+    }
+
+    .forgot .inputfield .input {
+        width: 570px;
+    }
+
+    .forgotbtn3 {
+        margin-left: 200px;
+        margin-top: 100px;
+    }
+}
+
+/*Settings Page*/
+.setimage .header {
+        color: #66cc99;
+        font-weight: bold;
+        margin-bottom: 1.5em;
+        text-align: center;
+}
+
+.settingimg {
+    width: 480px;
+    height: 150px;
+}
+
+
+.setting {
+    background-color: skyblue;
+    height: 250px;
+    margin-left: 60px;
+    margin-right: 60px;
+    border-radius: 10px;
+}
+
+.setting .inputfield a {
+    color: black;
+    text-align: center;
+}
+
+.setting .inputfield {
+    margin-left: 80px;
+    padding: 20px;
+}
+
+.logout {
+    margin-left: 50px;
+}
+
+@media (min-width:550px) {
+
+    .settingimg,
+    .setting {
+        margin-left: 400px;
+    }
+
+    .setting {
+        width: 500px;
+    }
+
+    .logout {
+        margin-left: 130px;
+    }
+}
+
+/*Setting help*/
+.helpmain .header {
+    color: skyblue;
+    margin-top: 7px;
+    /* position: relative; */
+    text-align: center;
+}
+
+.help {
+    height: 200px;
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.help .inputfield label {
+    font-size: 15px;
+    color: gray;
+}
+
+.help .inputfield .input,
+textarea {
+    width: 430px;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    margin: 5px 0 0px;
+}
+
+.send-btn {
+    width: 180px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+    text-align: center;
+    margin-left: 120px;
+    margin-top: 30px;
+    color: white;
+    background-color: skyblue;
+}
+
+.desktophelp,
+.helphead {
+    display: none;
+}
+
+@media (min-width:550px) {
+
+    .desktophelp,
+    .helphead {
+        display: block;
+    }
+
+    .helpmaincontainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        height: 100%;
+    }
+
+    .helphead {
+        display: flex;
+    }
+
+    .helphead a {
+        padding: 20px;
+        margin-left: 200px;
+        text-decoration: none;
+        color: darkcyan;
+    }
+
+    .helphead img {
+        height: 40px;
+        width: 40px;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+
+    .desktophelp img {
+        width: 300px;
+        height: 400px;
+        margin-left: 100px;
+        margin-top: 50px;
+    }
+
+    .help .inputfield .input,
+    textarea {
+        width: 590px;
+    }
+
+    .send-btn {
+        margin-left: 220px;
+    }
+}
+
+
+/*************************************************/
+/******************* Simer Singh *****************/
+/*************************************************/
+
+/***** 4_Home Page *****/
+.homeLogo {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.homeLogo img {
+    max-width: 30%;
+    max-height: 30%;
+}
+
+/* calendar */
+.homeCalendar {
+    text-align: center;
+}
+
+.calendar {
+    display: inline-grid;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.year {
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.calendarNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    transition-duration: .2s;
+    position: relative;
+}
+
+.fas {
+    color: #66cc99;
+}
+
+.days {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(7, 1fr);
+    color: #999;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.days span {
+    width: 50px;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+
+.dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.dates button {
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    background: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    justify-self: center;
+    align-self: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 2px;
+    transition-duration: .2s;
+}
+
+
+.dates button:first-child {
+    grid-column: 3;
+}
+
+.dates button:hover {
+    background: #eee;
+}
+
+.dates button:focus {
+    background: #66cc99;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Calendar End */
+
+.loadBillSection div {
+    margin: 2rem;
+}
+
+#myTable {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#myTable tr {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#myTable td {
+    color: #536FE0;
+    margin: 0 2.3em;
+    font-weight: 900;
+}
+
+
+.homeBillAddDiv {
+    text-align: right;
+    padding: 6rem 3rem;
+}
+
+.homeBillAddBtn {
+    text-align: center;
+    cursor: pointer;
+    width: 4em;
+    height: 4em;
+    color: #59bca3;
+    background-color: white;
+}
+
+/* Setting - User */
+
+.settingUserPage h1 {
+    color: #66cc99;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+/*New Bill*/
+.newBillContainer {
+    text-align: center;
+}
+
+.new-bill input,
+.new-bill select,
+.new-bill textarea {
+    width: 400px;
+}
+
+.new-bill .header {
+    text-align: center;
+    color: #66CC99;
+}
+
+.new-bill {
+    margin: 2em;
+}
+
+.new-bill .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.new-bill .buttons #btn1 {
+    width: 100px;
+    height: 50px;
+    border-radius: 75px;
+    background-color: #66CC99;
+    color: white;
+    margin-top: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.new-bill .buttons #btn2 {
+    width: 100px;
+    height: 50px;
+    border-radius: 75px;
+    background-color: #66CC99;
+    color: white;
+    margin-top: 30px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+/***************History*****************/
+.history #tableOutput {
+    width: 100%;
+    padding: 1em;
+}
+
+.history .header {
+    color: #66CC99;
+    text-align: center;
+}
+
+.history #tableOutput tr:first-child {
+    font-weight: bold;
+    font-size: 20px;
+    color: #536FE0;
+}
+
+#tableOutput tbody td {
+    text-align: center;
+}
+
+
+/*************************************************/
+/***************** Harsimran Singh ***************/
+/*************************************************/
+
+/* 15_Bill_Splitter_menu */
+.splitterOptions {
+    text-align: center;
+    color: #66cc99;
+}
+
+.optionsLink {
+    margin: 4em 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.optionsLink a {
+    font-size: 20px;
+    margin: 20px -40px;
+    text-decoration: none;
+    color: black;
+}
+
+/* 16_Bill_Splitter_request */
+.splitHistory {
+    color: #66cc99;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+
+/* 18_Bill_Splitter_history */
+.billRequestTitle {
+    color: #66cc99;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+/* 19_Bill_Splitter_payment */
+.billPaymentTitle {
+    color: #66cc99;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+    text-align: center;
+}

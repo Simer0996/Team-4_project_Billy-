@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css ">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-auth-compat.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+  <!-- <script src="/_/firebase/init.js"></script> -->
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script>
+    // Import the functions you need from the SDKs you need
+    //import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseApp = firebase.initializeApp({
+      apiKey: "AIzaSyA588GyaRwUeolD6zmxbjvS8EU7Lq-EF_s",
+      authDomain: "billy-payment-app.firebaseapp.com",
+      databaseURL: "https://billy-payment-app-default-rtdb.firebaseio.com",
+      projectId: "billy-payment-app",
+      storageBucket: "billy-payment-app.appspot.com",
+      messagingSenderId: "716948441529",
+      appId: "1:716948441529:web:d7d954ed60d569ddcf0e68"
+    });
+
+    // Initialize Firebase
+    //const db = firebaseApp.filestore();
+    const auth = firebaseApp.auth();
+  </script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_TSV6FaAA5RP0AU1yPU4Au");
+    })();
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous" defer></script>
+
+  <script src="./main.js" type="module" defer></script>
+
+
+
+</head>
+
+<body>
+
+<main class="homePage">
+
+  <section class="homeTitle">
+
+    <div class="homeLogo">
+      <img src="./images/logo_original.png" alt="Logo">
+    </div>
+
+  </section>
+
+  <section class="homeCalendar">
+
+    <div class="calendar">
+      <div class="month">
+        <a href="#" class="calendarNav"><i class="fas fa-angle-left"></i></a>
+        <div class="year">November 2021 </div>
+        <a href="#" class="nav"><i class="fas fa-angle-right"></i></a>
+      </div>
+
+      <div class="days">
+        <span>Mon</span>
+        <span>Tue</span>
+        <span>Wed</span>
+        <span>Thu</span>
+        <span>Fri</span>
+        <span>Sat</span>
+        <span>Sun</span>
+      </div>
+      <div class="dates">
+        <button>
+          <time>1</time>
+        </button>
+        <button>
+          <time>2</time>
+        </button>
+        <button>
+          <time>3</time>
+        </button>
+        <button>
+          <time>4</time>
+        </button>
+        <button>
+          <time>5</time>
+        </button>
+        <button>
+          <time>6</time>
+        </button>
+        <button>
+          <time>7</time>
+        </button>
+        <button>
+          <time>8</time>
+        </button>
+        <button>
+          <time>9</time>
+        </button>
+        <button>
+          <time>10</time>
+        </button>
+        <button>
+          <time>11</time>
+        </button>
+        <button>
+          <time>12</time>
+        </button>
+        <button>
+          <time>13</time>
+        </button>
+        <button>
+          <time>14</time>
+        </button>
+        <button>
+          <time>15</time>
+        </button>
+        <button>
+          <time>16</time>
+        </button>
+        <button>
+          <time>17</time>
+        </button>
+        <button>
+          <time>18</time>
+        </button>
+        <button>
+          <time>19</time>
+        </button>
+        <button>
+          <time>20</time>
+        </button>
+        <button>
+          <time>21</time>
+        </button>
+        <button>
+          <time>22</time>
+        </button>
+        <button>
+          <time>23</time>
+        </button>
+        <button>
+          <time>24</time>
+        </button>
+        <button>
+          <time>25</time>
+        </button>
+        <button>
+          <time>26</time>
+        </button>
+        <button>
+          <time>27</time>
+        </button>
+        <button>
+          <time>28</time>
+        </button>
+        <button>
+          <time>29</time>
+        </button>
+        <button>
+          <time>30</time>
+        </button>
+        <button>
+          <time>31</time>
+        </button>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="loadBillSection">
+
+    <div class="myTableWrap">
+      <table id="myTable"></table>
+    </div>
+
+    <div class="homeBillAddDiv">
+      <a class="homeBillAddBtn" onclick="location.href='5_Add_bill.html';"><i class="fas fa-plus-circle fa-4x"></i></a>
+    </div>
+
+  </section>
+
+
+
+
+
+
+</main>
+
+
+<footer>
+    <div class="footerBtns">
+      <a class="footerButton button1" onclick="location.href='4_Home.html';"><img src="images/newHome.png" alt="Home"><p>Home</p></a>
+      <span class="divider"></span>
+      <a class="footerButton button2" onclick="location.href='6_History.html';"><img src="images/newHistory.png" alt="History"><p>History</p></a>
+      <span class="divider"></span>
+      <a class="footerButton button3" onclick="location.href='14_Bill_Splitter.html';"><img src="images/newSplit.png" alt="Split"><p>Split</p></a>
+      <span class="divider"></span>
+      <a class="footerButton button4" onclick="location.href='8_Setting.html';"><img src="images/newSettings.png" alt="Setting"><p>Setting</p></a>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+
