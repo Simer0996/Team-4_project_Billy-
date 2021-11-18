@@ -13,10 +13,10 @@ export default function createTable() {
    let cell04 = row0.insertCell(3);
    
    cell01.innerHTML = "Due Date"
-   cell02.innerHTML = "Catagory"
+   cell02.innerHTML = "Category"
    cell03.innerHTML = "Amount"
    cell04.innerHTML = "Status"
-   
+   console.log(newArray);
    for(let i of newArray) 
    {
       let row1 = table.insertRow(1)
