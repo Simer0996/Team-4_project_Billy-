@@ -1,4 +1,4 @@
-const Webcam = require("./webcamjs");
+// const Webcam = require("./webcamjs");
 // import Webcam, { set } from "./webcamjs/webcam.min";
 // set({
 //     width: 320,
