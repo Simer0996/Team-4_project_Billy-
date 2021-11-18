@@ -92,7 +92,7 @@ text-align: center; */
 /***************** Songhui Park ******************/
 /*************************************************/
 
-.firstSplashPage {
+.firstSplashPage  {
     max-height: 100%;
     max-width : 100%
 }
@@ -117,7 +117,6 @@ text-align: center; */
 }
 
 /* ******************************** circle *****************************/
-
 .topcircle {
     max-width: 20rem;
     height: auto;
@@ -161,7 +160,7 @@ text-align: center; */
 }
 
 .wave {
-  background: url('../image/wave.svg') repeat-x; 
+  background: url('images/wave.svg') repeat-x; 
   position: absolute;
   top: -198px;
   width: 6400px;
