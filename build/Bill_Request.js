@@ -1,6 +1,6 @@
 import {getDatabase, ref, set, child, update, remove} from "https://www.gstatic.com/firebasejs/9.3.0/firebase-database.js";
 const db = getDatabase();
-console.log(db);
+console.log(db);    
 // const set = require("set-value");
 
 
@@ -167,17 +167,19 @@ if (typeof(Storage) !== "undefined") {
         
         
 // }
+let friendsArr = [];
 
 add_friend_btn.addEventListener('click', () => {
-    console.log(name.value);
-
+    
+    friendsArr.push(name.value);
+    console.log(friendsArr);
     var content = "";
 
     document.getElementById('fourthdiv').innerHTML =  content;
 
-    for(let i=0; i<=usersCount; i++) {
+    for(let i=0; i<friendsArr.length; i++) {
 
-        var content = "<div id='addiv_"+i+"'><img width='10' height='30' id='addimg_"+i+"' src='../images/Vector_13.png' alt=''><p id='addpar_"+i+"'>"+name.value+"</p><input id='addtext_"+i+"' type='text' placeholder='$'></div>"
+        content = "<div id='addiv_"+i+"'><img width='10' height='30' id='addimg_"+i+"' src='../images/Vector_13.png' alt=''><p id='addpar_"+i+"'>"+friendsArr[i]+"</p><input id='addtext_"+i+"' type='text' placeholder='$'></div>"
         document.getElementById('fourthdiv').innerHTML += content;
     }
 

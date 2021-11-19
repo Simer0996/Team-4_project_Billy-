@@ -41,13 +41,9 @@ snap.addEventListener('click', () => {
 
 startWebCam();
 
-saveButton.addEventListener('click', (e) => {
+saveButton.addEventListener('click', () => {
         console.log("savebutton function");
-        const link = document.createElement('a');
-        link.download = 'download.png';
-        link.href = canvas.toDataURL();
-        link.click();
-        link.delete;
+        console.log(Webcam);
     //     Webcam.snap( function(data_uri) {
     //     console.log(data_uri);
     //     } )
