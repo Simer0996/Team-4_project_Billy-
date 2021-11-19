@@ -693,7 +693,7 @@
 .signupwrapper .signuptitle {
     font-size: 40px;
     margin-left: 80px;
-    margin-top: 50px;
+    margin-bottom:40px;
     color: #66cc99;
 }
 
@@ -947,8 +947,9 @@
 
 .forgotloginlink a {
     text-decoration: none;
-    color: black;
-    border: 3px #66cc99 solid;
+    color: white;
+    border: 1px black solid;
+    background-color: #66cc99;
     margin-left: 180px;
 }
 
@@ -1078,7 +1079,7 @@
 
 .help {
     height: 200px;
-    margin-top: 100px;
+    margin-top: 20px;
     margin-left: 30px;
     margin-right: 20px;
 }
