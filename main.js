@@ -67,7 +67,7 @@ function getClass(list, cls) {
                 cell1.innerHTML = `${i.Date}`
                 cell2.innerHTML = `${i.Catagories}`
                 cell3.innerHTML = `$${i.Amount}`
-                 
+
 
             }
         }
@@ -187,7 +187,7 @@ function getClass(list, cls) {
 // (async () => {
 //     if (getClass(mainClass, 'friendsList')) {
 //         console.log('this is Friends List page');
-       
+
 
 //         document.addEventListener('DOMContentLoaded', function () {
 //             createTablePutName;
@@ -200,19 +200,19 @@ function getClass(list, cls) {
 //     }
 // })();
 
-        let createTablePutName = function () {
-            const loadFriendName = localStorage.getItem('friendName');
-            $('.addFriendNameList').append('<li class="liFriendName"></li>');
-            $('.liFriendName').text(loadFriendName);
-        };
-        
-        document.addEventListener('DOMContentLoaded', function () {
-            createTablePutName();
-        });
-        
-        $('.addBtn').on('click', () => {
-            location.href = './21_Add_friend.html'
-        });
+let createTablePutName = function () {
+    const loadFriendName = localStorage.getItem('friendName');
+    $('.addFriendNameList').append('<li class="liFriendName"></li>');
+    $('.liFriendName').text(loadFriendName);
+};
+
+document.addEventListener('DOMContentLoaded', function () {
+    createTablePutName();
+});
+
+$('.addBtn').on('click', () => {
+    location.href = './21_Add_friend.html'
+});
 
 
 //Setting payment
@@ -366,3 +366,283 @@ function getClass(list, cls) {
 
     }
 })();
+
+//Bill Request
+//
+(async () => {
+    if (getClass(mainClass, 'billRequest')) {
+        console.log('this is Bill Request page');
+        console.log("Hello There");
+        let addBtn = document.querySelector('#add');
+        let subBtn = document.querySelector('#sub');
+        let qty = document.querySelector('#qtyBox');
+
+        let theAmount = document.getElementById('totalAmount');
+        let am1 = document.getElementById('amount1');
+        let am2 = document.getElementById('amount2');
+        let am3 = document.getElementById('amount3');
+        let send = document.getElementById('send_btn');
+        let name = document.getElementById('name');
+        let chkSplit = document.getElementById('chkSplitEvenly');
+
+        var usersCount = 0;
+
+        chkSplit.addEventListener('change', e => {
+
+            if (e.target.checked) {
+                console.log('checked')
+            } else {
+                console.log('un checked')
+            }
+
+            console.log(theAmount.value);
+            console.log(usersCount)
+
+            console.log(theAmount.value / usersCount);
+
+        });
+
+
+        addBtn.addEventListener('click', () => {
+            console.log("added");
+            qty.value = parseInt(qty.value) + 1;
+        });
+
+        subBtn.addEventListener('click', () => {
+
+            if (qty.value <= 0) {
+                qty.value = 0;
+            } else {
+                qty.value = parseInt(qty.value) - 1;
+            }
+        });
+
+        function saveData(ref) {
+            // const billRef = ref.child('bill');
+            ref.set({
+                    'total_amount': theAmount.value,
+                    'no_of_people': qty.value,
+                    'amount_1': am1.value,
+                    'amount_2': am2.value,
+                    'amount_3': am3.value
+                })
+                .then(() => {
+                    alert("data has been added successfully");
+                })
+                .catch((error) => {
+                    alert("unsuccessful, error");
+                });
+        }
+
+        function insertData() {
+            set(ref(db, "TheData/" + qty.value), {
+                    total_amount: theAmount.value,
+                    no_of_people: qty.value,
+                    amount_1: am1.value,
+                    amount_2: am2.value,
+                    amount_3: am3.value
+                })
+
+                .then(() => {
+                    alert("data has been added successfully");
+                })
+                .catch((error) => {
+                    alert("unsuccessful, error");
+                });
+        }
+
+        send.addEventListener('click', () => {
+
+            // Check browser support
+            if (typeof (Storage) !== "undefined") {
+                // Store
+
+                localStorage.setItem("userCount", usersCount);
+
+                for (let i = 0; i < usersCount; i++) {
+
+                    console.log("addpar_" + i)
+
+                    console.log(document.getElementById("addpar_" + i))
+
+                    console.log(document.getElementById("addpar_" + i).value)
+
+                    localStorage.setItem(i, document.getElementById("addpar_" + i).value + "16/11" + (theAmount.value / usersCount));
+                }
+            }
+
+
+            //window.location.href = 'request_sent.html';
+
+            /* // console.log(JSON.stringify(ref));
+             // saveData(ref);
+             set(ref(db,'bills/'+ new Date().getTime()),{
+                     'total_amount': theAmount.value,
+                     'no_of_people': qty.value,
+                     'amount_1': am1.value,
+                     'amount_2': am2.value,
+                     'amount_3': am3.value
+             })
+             .then(() => {
+                 alert("data has been added successfully");
+             })
+             .catch((error) => {
+                 alert("unsuccessful, error");
+             });
+             // ref.child('test').set(
+             //     {
+             //         'total_amount': theAmount.value,
+             //         'no_of_people': qty.value,
+             //         'amount_1': am1.value,
+             //         'amount_2': am2.value,
+             //         'amount_3': am3.value
+             //     }
+             // );*/
+        });
+
+        // for(let i=0; i<5; i++) {
+        //         <div class="fourthdiv4">
+        //         <img src="images/Vector_13.png" alt="">
+        //         <p>Namhyung Kim</p>
+        //         <input type="text" id="amount3" placeholder="$">
+
+        //         </div>
+        //         var content = "<div id='addiv_"+i+"'><img id='addimg_"+i+"' src='../images/Vector_13.png' alt=''><p id='addpar_"+i+"'>Namhyung Kim</p><input id='addtext_"+i+"' type='text' placeholder='$'></div>"
+
+        //         document.getElementById('fourthdiv').innerHTML += content;
+
+
+        //         var new_element = document.createElement('div');
+        //         var sp = document.createElement('span');
+        //         var br = document.createElement('br');
+        //         var img = document.createElement('img');
+        //         var text_field = document.createElement('text');
+        //         img.setAttribute('src', 'images/Vector_13.png');
+
+        //         var span_text = document.createTextNode('hello');
+        //         sp.appendChild(span_text);
+        //         var my_container = document.getElementById("fourthdiv");
+        //         my_container.appendChild(img);
+        //         my_container.appendChild(sp);
+        //         my_container.appendChild(text_field);
+        //         my_container.appendChild(br);
+
+
+        // }
+        let friendsArr = [];
+
+        add_friend_btn.addEventListener('click', () => {
+
+            friendsArr.push(name.value);
+            console.log(friendsArr);
+            var content = "";
+
+            document.getElementById('fourthdiv').innerHTML = content;
+
+            for (let i = 0; i < friendsArr.length; i++) {
+
+                content = "<div id='addiv_" + i + "'><img width='10' height='30' id='addimg_" + i + "' src='../images/Vector_13.png' alt=''><p id='addpar_" + i + "'>" + friendsArr[i] + "</p><input id='addtext_" + i + "' type='text' placeholder='$'></div>"
+                document.getElementById('fourthdiv').innerHTML += content;
+            }
+
+            usersCount++;
+        })
+    }
+})();
+
+
+(async () => {
+    if (getClass(mainClass, 'camera-capture')) {
+        console.log('This is Camera Capture page');
+
+        // const Webcam = require("./webcamjs");
+        // import Webcam, { set } from "./webcamjs/webcam.min";
+        // set({
+        //     width: 320,
+        //     height: 240,
+        //     image_format: 'jpeg',
+        //     jpeg_quality: 90
+        // });
+        console.log('Hello Capture');
+
+
+        const video = document.getElementById('video');
+        const canvas = document.getElementById('canvas');
+        const snap = document.getElementById('snap');
+
+        const constraints = {
+            // audio: true,
+            video: {
+                video: {
+                    facingMode: "user"
+                },
+                video: {
+                    facingMode: {
+                        exact: "environment"
+                    }
+                },
+                width: {
+                    min: 1024,
+                    ideal: 1280,
+                    max: 1920
+                },
+                height: {
+                    min: 576,
+                    ideal: 720,
+                    max: 1080
+                }
+            }
+        }
+
+        //Camera Capture
+        async function startWebCam() {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia(constraints);
+                video.srcObject = stream;
+                window.stream = stream;
+            } catch (error) {
+                console.log(error.toString());
+            }
+        }
+
+        var context = canvas.getContext('2d');
+
+        snap.addEventListener('click', () => {
+            context.drawImage(video, 0, 0, 640, 480);
+        });
+
+        startWebCam();
+
+        saveButton.addEventListener('click', (e) => {
+            console.log("savebutton function");
+            const link = document.createElement('a');
+            link.download = 'download.png';
+            link.href = canvas.toDataURL();
+            link.click();
+            link.delete;
+            //     Webcam.snap( function(data_uri) {
+            //     console.log(data_uri);
+            //     } )
+            //     Webcam.snap( function(data_uri) {
+            //     document.getElementById('canvas').innerHTML = 
+            //        '<img id="imageprev" src="'+data_uri+'"/>';
+            // } )
+
+            // Webcam.reset();
+
+        });
+
+
+    }
+})();
+
+//Split History//
+(async () => {
+    if (getClass(mainClass, 'split-history')) {
+        console.log('this is Split History page');
+
+
+    }
+})();
+
+//
