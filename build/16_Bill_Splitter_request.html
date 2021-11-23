@@ -61,42 +61,42 @@
 
 <body>
 <main class="billRequest">
-  
-  <i class="fas fa-arrow-circle-left fa-3x billyBackBtn" onclick= "location.href='15_Bill_Splitter_menu.html';"></i>
+
+  <i class="fas fa-arrow-circle-left fa-3x billyBackBtn" onclick="location.href='15_Bill_Splitter_menu.html';"></i>
   <h1 class="billRequestTitle">Bill Request</h1>
-  <div class="container">
-    <div class="content">
-            
-      <div class="firstdiv">  
-          <!-- <img src="images/scan-banner icon.png" alt="scan-banner-icon"> -->
-          <p>Scan your bills here</p>   
-      </div>
 
-      <div class="seconddiv">  
-        <p>Enter Amount</p>
-        <p><input type="text" id="totalAmount" placeholder="$"></p>   
-      </div>
+  <div class="billRequestContent">
 
-      <div class="thirddiv">  
-        <div class="thirddiv1">
-          <p>Number of people</p>
-          <input type="text" id="qtyBox" value="0">
-          <button type="button" id="sub">SUB</button>
-          <button type="button" id="add">ADD</button>   
-        </div>
-        <div class="thirddiv2">
-          <p>Add Friend</p>
-          <input type="text" id="name" placeholder="Enter Name">
-          <!-- <img src="images/Add.png" alt="Add">    -->
+    <div class="billRequestFirstDiv">
+      <!-- <img src="images/scan-banner icon.png" alt="scan-banner-icon"> -->
+      <p>Take a photo of your Bill</p>
+    </div>
+
+    <div class="billRequestSecondDiv">
+      <p>Total Amount</p>
+      <p><input type="text" id="totalAmount" placeholder="$"></p>
+    </div>
+
+    <div class="billRequestThirdDiv">
+      <div class="thirdDiv1">
+        <p>Number of people</p>
+        <input type="text" id="qtyBox" value="0">
+        <button type="button" id="sub">SUB</button>
+        <button type="button" id="add">ADD</button>
+      </div>
+      <div class="thirdDiv2">
+        <p>Add Friend</p>
+        <input type="text" id="name" placeholder="Enter Name">
+        <!-- <img src="images/Add.png" alt="Add">    -->
         <button type="button" id="add_friend_btn">Add friend</button>
-        </div>
       </div>
-      <div>
-        <input type="checkbox" id="chkSplitEvenly">  Split Evenly
-      </div>
-      <div class="fourthdiv" id="fourthdiv">
-     
-         <!--  <div class="fourthdiv2">
+    </div>
+    <div class="splitEvenlyBox">
+      <input type="checkbox" id="chkSplitEvenly"> Split Evenly
+    </div>
+    <div class="billRequestFourthDiv" id="fourthdiv">
+
+      <!--  <div class="fourthdiv2">
             
             <p>Harsimran Singh</p>
             <input type="text" id="amount1" value="$">
@@ -106,16 +106,20 @@
             <p>Simerjit Singh</p>
             <input type="text" id="amount2" placeholder="$">
           </div> -->
-          
-       
-      </div>
-      <p>Total Amount</p>
-      <p>$ 120.00</p>  
-      <button type="button" id="send_btn">SEND</button> 
 
+
+    </div>
+    <div class="totalAmountDiv">
+      <p>Total Amount</p>
+      <p>$ 120.00</p>
+    </div>
+    
+    <div class="billRequestBtnDiv">
+      <button class="billRequestSendBtn" type="button" id="send_btn">SEND</button>
   </div>
- </div>
-</div>
+  </div>
+  </div>
+
 </main>
 
 

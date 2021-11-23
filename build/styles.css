@@ -92,7 +92,7 @@ text-align: center; */
 /***************** Songhui Park ******************/
 /*************************************************/
 
-.firstSplashPage  {
+/* .firstSplashPage  {
     max-height: 100%;
     max-width : 100%
 }
@@ -100,10 +100,10 @@ text-align: center; */
 .firstSplashPage {
   background:linear-gradient(to right bottom, #66CC99, #6688CC);
   overflow: hidden;
-}
+} */
 
 /* ******************************** logo *******************************/
-.splashLogo {
+/* .splashLogo {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -114,10 +114,10 @@ text-align: center; */
 .splashLogo img{
     max-width: 250px;
     height: auto;
-}
+} */
 
 /* ******************************** circle *****************************/
-.topcircle {
+/* .topcircle {
     max-width: 20rem;
     height: auto;
     position: relative;
@@ -144,10 +144,10 @@ text-align: center; */
     top: 27%;
     left: 20%;
     opacity: 0.6;
-}
+} */
 
 /* ******************************** wave *******************************/
-
+/* 
 .splashBottom { 
   height: 5%;
   width:100%;
@@ -174,9 +174,9 @@ text-align: center; */
   top: -175px;
   animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
   opacity: 0.3;
-}
+} */
 
-@keyframes wave {
+/* @keyframes wave {
   0% {
     margin-left: 0;
   }
@@ -192,7 +192,7 @@ text-align: center; */
   50% {
     transform: translate3d(0,10px,0);
   }
-}
+} */
 
 /* ******************************** hover ******************************/
 
@@ -1567,6 +1567,54 @@ textarea {
     text-align: center;
 }
 
+.billRequestFirstDiv, .billRequestSecondDiv {
+    text-align: center;
+    margin: 2rem;
+}
+
+.billRequestSecondDiv p {
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.billRequestSecondDiv p input{
+    padding: 15px 10px;
+    margin-top: 0;
+}
+
+.billRequestThirdDiv {
+    margin-left: 40px;
+}
+
+.billRequestFourthDiv {
+    margin-left: 40px;
+}
+
+.splitEvenlyBox {
+    width: 400px;
+    height: 150px;
+    background-color: #5ebc9e;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.totalAmountDiv {
+    text-align: center;
+}
+
+.billRequestBtnDiv {
+    text-align: center;
+}
+
+.billRequestSendBtn {
+    width: 100px;
+    height: 50px;
+    border-radius: 75px;
+    background-color: #66CC99;
+    color: white;
+    margin-top: 30px;
+    cursor: pointer;
+}
 
 /* 18_Bill_Splitter_history */
 .billRequestTitle {
