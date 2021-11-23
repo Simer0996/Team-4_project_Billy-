@@ -827,8 +827,8 @@ text-align: center; */
 .signupwrapper .signuptitle {
     font-size: 40px;
     margin-left: 80px;
-    margin-top: 50px;
-    color: skyblue;
+    margin-bottom:40px;
+    color: #66cc99;
 }
 
 .signupwrapper {
@@ -861,8 +861,8 @@ text-align: center; */
     margin-left: 120px;
     margin-top: 50px;
     color: white;
-    background-color: skyblue;
-}
+    background-color: #66cc99;
+}    
 
 .inputfield:last-child {
     margin-bottom: 10px;
@@ -875,14 +875,14 @@ text-align: center; */
 
 .inputfield a {
     text-decoration: none;
-    color: skyblue;
+    color: #66cc99;
 }
 
 @media (min-width:550px) {
     .signupdesktop {
         display: block;
         height: 100%;
-        border: 30px solid skyblue;
+        border: 30px solid #66cc99;
         margin-left: 0;
     }
 
@@ -906,7 +906,7 @@ text-align: center; */
         font-size: 40px;
         margin-top: 10px;
         text-align: center;
-        color: skyblue;
+        color: #66cc99;
     }
 
     .inputfield p {
@@ -929,9 +929,14 @@ text-align: center; */
 .loginmain {
     margin: 0;
     padding: 0;
+    font-family: "Quicksand"sans-serif;
 }
 
-.logoImgContainer {
+/* .logoImgContainer {
+    text-align: center;
+} */
+
+.logincontainer .header {
     text-align: center;
 }
 
@@ -978,7 +983,7 @@ text-align: center; */
 .loginform .inputfield p {
     margin-left: 110px;
 }
-
+ 
 .loginform .forgot a {
     text-decoration: none;
     color: gray;
@@ -1012,7 +1017,6 @@ text-align: center; */
     .desktoplogin {
         height: 110%;
         border: 30px solid #66cc99;
-        ;
         /* width:100%; */
     }
 
@@ -1030,7 +1034,7 @@ text-align: center; */
 
     .logintitle {
         text-align: center;
-        color: skyblue;
+        color: #66cc99;
         font-size: 40px;
         margin-top: 120px;
     }
@@ -1050,52 +1054,41 @@ text-align: center; */
 }
 
 /*Forgot Password*/
-.billyLogoDiv {
-    text-align: center;
+.forgotmain .header img {
+    height: 70%;
+    width: 70%;
+    padding: 30px;
 }
 
-.forgotmain .forgotHeader img {
-    max-width: 70%;
-    max-height: 70%;
-    padding: 30px;
+.forgotcontainer .header{
+    text-align: center;
 }
 
 .forgotbtn3 {
     width: 180px;
     padding: 8px 10px;
     font-size: 15px;
+    border-radius: 5px;
     cursor: pointer;
     border-radius: 3px;
     position: relative;
     text-align: center;
+    margin-left: 120px;
     margin-top: 50px;
     color: white;
     background-color: #66cc99;
 }
 
-.forgotbtn3Container {
-    text-align: center;
-}
-
 .forgotloginlink a {
     text-decoration: none;
-    color: black;
-    border: 3px #66cc99 solid;
-
-    width: 100px;
-    height: 50px;
-    border-radius: 75px;
-    border: solid black 2px;
-    background-color: #66CC99;
     color: white;
-    padding: 0.5em 1em;
-    cursor: pointer;
-
+    border: 1px black solid;
+    background-color: #66cc99;
+    margin-left: 180px;
 }
 
 .forgotloginlink {
     margin-top: 70px;
-    text-align: center;
 }
 
 .forgottitle,
@@ -1111,7 +1104,7 @@ text-align: center; */
         height: 100%;
     }
 
-    .forgotmain .forgotHeader,
+    .forgotmain .header,
     .forgotloginlink {
         display: none;
     }
@@ -1123,7 +1116,7 @@ text-align: center; */
 
     .desktopforgot {
         height: 125%;
-        border: 30px solid skyblue;
+        border: 30px solid #66cc99;
     }
 
     .desktopforgot img {
@@ -1139,7 +1132,7 @@ text-align: center; */
 
     .forgottitle {
         text-align: center;
-        color: skyblue;
+        color: #66cc99;
         font-size: 40px;
         margin-top: 120px;
     }
@@ -1155,21 +1148,26 @@ text-align: center; */
 }
 
 /*Settings Page*/
+/*Settings Page*/
 .setimage .header {
-        color: #66cc99;
-        font-weight: bold;
-        margin-bottom: 1.5em;
-        text-align: center;
+    color: #66cc99;
+    text-align: center;
+    margin-top: 8px;
 }
 
 .settingimg {
     width: 480px;
-    height: 150px;
+    height: 140px;
 }
 
+.fas {
+    color: #66cc99;
+    margin-left: 10px;
+    margin-top: 10px;
+}
 
 .setting {
-    background-color: skyblue;
+    background-color: #66cc99;
     height: 250px;
     margin-left: 60px;
     margin-right: 60px;
@@ -1206,9 +1204,10 @@ text-align: center; */
     }
 }
 
+
 /*Setting help*/
 .helpmain .header {
-    color: skyblue;
+    color: #66cc99;
     margin-top: 7px;
     /* position: relative; */
     text-align: center;
@@ -1216,7 +1215,7 @@ text-align: center; */
 
 .help {
     height: 200px;
-    margin-top: 100px;
+    margin-top: 20px;
     margin-left: 30px;
     margin-right: 20px;
 }
@@ -1247,7 +1246,7 @@ textarea {
     margin-left: 120px;
     margin-top: 30px;
     color: white;
-    background-color: skyblue;
+    background-color: #66cc99;
 }
 
 .desktophelp,
@@ -1303,7 +1302,6 @@ textarea {
         margin-left: 220px;
     }
 }
-
 
 /*************************************************/
 /******************* Simer Singh *****************/
