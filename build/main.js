@@ -455,7 +455,7 @@ $('.addBtn').on('click', () => {
             //     }
             // }
 
-            alert("navigation");
+            // alert("navigation");
 
 
             window.location.href = '18_Bill_Splitter_history.html';
@@ -484,7 +484,7 @@ $('.addBtn').on('click', () => {
              //         'amount_3': am3.value
              //     }
              // );*/
-        });
+        // });
 
         // for(let i=0; i<5; i++) {
         //         <div class="fourthdiv4">
