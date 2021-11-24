@@ -1,5 +1,6 @@
 //Add Bill
 let bill_array = []; //Array storage
+let bill_splitter__history_array = []
 // let add = document.getElementById("btn2")//Add button function
 
 // import AddBill from "./js_modules/Add_bill.js"; //imported the class of dynamic object
@@ -454,25 +455,27 @@ $('.addBtn').on('click', () => {
         send.addEventListener('click', () => {
 
             // Check browser support
-            if (typeof (Storage) !== "undefined") {
-                // Store
+            // if (typeof (Storage) !== "undefined") {
+            //     // Store
 
-                localStorage.setItem("userCount", usersCount);
+            //     localStorage.setItem("userCount", usersCount);
 
-                for (let i = 0; i < usersCount; i++) {
+            //     for (let i = 0; i < usersCount; i++) {
 
-                    console.log("addpar_" + i)
+            //         console.log("addpar_" + i)
 
-                    console.log(document.getElementById("addpar_" + i))
+            //         console.log(document.getElementById("addpar_" + i))
 
-                    console.log(document.getElementById("addpar_" + i).value)
+            //         console.log(document.getElementById("addpar_" + i).value)
 
-                    localStorage.setItem(i, document.getElementById("addpar_" + i).value + "16/11" + (theAmount.value / usersCount));
-                }
-            }
+            //         localStorage.setItem(i, document.getElementById("addpar_" + i).value + "16/11" + (theAmount.value / usersCount));
+            //     }
+            // }
+
+            alert("navigation");
 
 
-            //window.location.href = 'request_sent.html';
+            window.location.href = '18_Bill_Splitter_history.html';
 
             /* // console.log(JSON.stringify(ref));
              // saveData(ref);
@@ -533,20 +536,28 @@ $('.addBtn').on('click', () => {
 
         add_friend_btn.addEventListener('click', () => {
 
-            friendsArr.push(name.value);
-            console.log(friendsArr);
+            friendsArr.push({"dueDate": '21/11/2021', "To": name.value, "Amount": '300'});
+           // console.log(friendsArr);
             var content = "";
 
             document.getElementById('fourthdiv').innerHTML = content;
 
             for (let i = 0; i < friendsArr.length; i++) {
 
-                content = "<div id='addiv_" + i + "'><img width='10' height='30' id='addimg_" + i + "' src='../images/Vector_13.png' alt=''><p id='addpar_" + i + "'>" + friendsArr[i] + "</p><input id='addtext_" + i + "' type='text' placeholder='$'></div>"
+                console.log(friendsArr[i]["To"]);
+
+                content = "<div id='addiv_" + i + "'><p id='addpar_" + i + "'>" + friendsArr[i]["To"] + "</p><input id='addtext_" + i + "' type='text' placeholder='$'></div>"
                 document.getElementById('fourthdiv').innerHTML += content;
             }
-
+           
             usersCount++;
+
+            localStorage.setItem("friendsArray",JSON.stringify(friendsArr));
+            
         })
+
+
+
     }
 })();
 
@@ -638,10 +649,32 @@ $('.addBtn').on('click', () => {
 
 //Split History//
 (async () => {
+    
     if (getClass(mainClass, 'split-history')) {
         console.log('this is Split History page');
 
+        function historyTable() {
+            bill_splitter__history_array = JSON.parse(localStorage.getItem("friendsArray"));
+            for (let i of bill_splitter__history_array) {
 
+console.log(i)
+
+                let row1 = document.getElementById("hisTable").insertRow(i+ 1)
+                let cell1 = row1.insertCell(0);
+                let cell2 = row1.insertCell(1);
+                let cell3 = row1.insertCell(2);
+
+                cell1.innerHTML = `${i.dueDate}`
+                cell2.innerHTML = `${i.To}`
+                cell3.innerHTML = `$${i.Amount}`
+
+
+            }
+
+            
+        }
+
+        historyTable();   
     }
 })();
 
