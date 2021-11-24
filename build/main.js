@@ -401,39 +401,39 @@ $('.addBtn').on('click', () => {
             }
         });
 
-        function saveData(ref) {
-            // const billRef = ref.child('bill');
-            ref.set({
-                    'total_amount': theAmount.value,
-                    'no_of_people': qty.value,
-                    'amount_1': am1.value,
-                    'amount_2': am2.value,
-                    'amount_3': am3.value
-                })
-                .then(() => {
-                    alert("data has been added successfully");
-                })
-                .catch((error) => {
-                    alert("unsuccessful, error");
-                });
-        }
+        // function saveData(ref) {
+        //     // const billRef = ref.child('bill');
+        //     ref.set({
+        //             'total_amount': theAmount.value,
+        //             'no_of_people': qty.value,
+        //             'amount_1': am1.value,
+        //             'amount_2': am2.value,
+        //             'amount_3': am3.value
+        //         })
+        //         .then(() => {
+        //             alert("data has been added successfully");
+        //         })
+        //         .catch((error) => {
+        //             alert("unsuccessful, error");
+        //         });
+        // }
 
-        function insertData() {
-            set(ref(db, "TheData/" + qty.value), {
-                    total_amount: theAmount.value,
-                    no_of_people: qty.value,
-                    amount_1: am1.value,
-                    amount_2: am2.value,
-                    amount_3: am3.value
-                })
+        // function insertData() {
+        //     set(ref(db, "TheData/" + qty.value), {
+        //             total_amount: theAmount.value,
+        //             no_of_people: qty.value,
+        //             amount_1: am1.value,
+        //             amount_2: am2.value,
+        //             amount_3: am3.value
+        //         })
 
-                .then(() => {
-                    alert("data has been added successfully");
-                })
-                .catch((error) => {
-                    alert("unsuccessful, error");
-                });
-        }
+        //         .then(() => {
+        //             alert("data has been added successfully");
+        //         })
+        //         .catch((error) => {
+        //             alert("unsuccessful, error");
+        //         });
+        // }
 
         send.addEventListener('click', () => {
 
@@ -542,6 +542,7 @@ $('.addBtn').on('click', () => {
 
 
     }
+    
 })();
 
 

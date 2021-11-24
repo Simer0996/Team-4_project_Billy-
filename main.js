@@ -484,7 +484,7 @@ $('.addBtn').on('click', () => {
              //         'amount_3': am3.value
              //     }
              // );*/
-        // });
+        });
 
         // for(let i=0; i<5; i++) {
         //         <div class="fourthdiv4">
