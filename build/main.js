@@ -25,13 +25,13 @@ function getClass(list, cls) {
         btn2.addEventListener('click', (e) => {
             e.preventDefault()
             let bill_object = new AddBill(bills.value, amount.value, date.value, area.value)
-            // let arr = JSON.parse(localStorage.getItem('bill_array'))
+            let arr = JSON.parse(localStorage.getItem('bill_array'))
 
-             bill_array.push(bill_object)
-            // console.log(arr)
+             arr.push(bill_object)
+            console.log(arr)
             outputArea.innerText = "Bill Added!"
 
-            localStorage.setItem('bill_array', JSON.stringify(bill_array));
+            localStorage.setItem('bill_array', JSON.stringify(arr));
 
         })
     }
