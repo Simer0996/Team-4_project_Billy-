@@ -1148,7 +1148,6 @@ text-align: center; */
 }
 
 /*Settings Page*/
-/*Settings Page*/
 .setimage .header {
     color: #66cc99;
     text-align: center;
@@ -1157,7 +1156,7 @@ text-align: center; */
 
 .settingimg {
     width: 480px;
-    height: 140px;
+    height: 150px;
 }
 
 .fas {
@@ -1203,7 +1202,6 @@ text-align: center; */
         margin-left: 130px;
     }
 }
-
 
 /*Setting help*/
 .helpmain .header {
