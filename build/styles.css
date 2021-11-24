@@ -1509,6 +1509,13 @@ textarea {
     cursor: pointer;
 }
 
+#outputArea {
+    text-align: center;
+    font-weight: 900;
+    margin-top: 50px;
+    font-size: 24pt;
+}
+
 /***************History*****************/
 .history #tableOutput {
     width: 100%;

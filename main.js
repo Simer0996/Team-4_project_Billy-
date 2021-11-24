@@ -183,23 +183,6 @@ function getClass(list, cls) {
 
 
 // Friends List page//
-
-// (async () => {
-//     if (getClass(mainClass, 'friendsList')) {
-//         console.log('this is Friends List page');
-
-
-//         document.addEventListener('DOMContentLoaded', function () {
-//             createTablePutName;
-//         });
-
-//         $('.addBtn').on('click', () => {
-//             location.href = './21_Add_friend.html'
-//         });
-
-//     }
-// })();
-
 let createTablePutName = function () {
     const loadFriendName = localStorage.getItem('friendName');
     $('.addFriendNameList').append('<li class="liFriendName"></li>');
