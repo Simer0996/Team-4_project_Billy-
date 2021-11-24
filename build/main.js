@@ -5,6 +5,7 @@ let bill_splitter__history_array = []
 
 // import AddBill from "./js_modules/Add_bill.js"; //imported the class of dynamic object
 //Object creation
+let arrayFriends = [];
 
 let mainClass = Array.from(document.querySelector('main').classList);
 console.log('main class', mainClass);
@@ -93,53 +94,86 @@ function getClass(list, cls) {
         });
         // pick name from contact list and show the result bottom
         $('.friend1').on('click', () => {
-            let pickedFriendName = $('.friend1').text();
-            $('.pickedName').html(pickedFriendName);
+            let pickedFriendName1 = $('.friend1').text();
+            $('.pickedName').html(pickedFriendName1);
+            arrayFriends.push(pickedFriendName1)
+            let arr1 = JSON.parse(localStorage.getItem('arrayFriends'))
+            localStorage.setItem('bill_array', JSON.stringify(arr1));
         });
 
         $('.friend2').on('click', () => {
-            let pickedFriendName = $('.friend2').text();
-            $('.pickedName').text(pickedFriendName);
+            let pickedFriendName2 = $('.friend2').text();
+            $('.pickedName').text(pickedFriendName2);
+            arrayFriends.push(pickedFriendName2)
+            let arr2 = JSON.parse(localStorage.getItem('arrayFriends'))
+            localStorage.setItem('bill_array', JSON.stringify(arr2));
         });
 
         $('.friend3').on('click', () => {
-            let pickedFriendName = $('.friend3').text();
-            $('.pickedName').text(pickedFriendName);
+            let pickedFriendName3 = $('.friend3').text();
+            $('.pickedName').text(pickedFriendName3);
+            arrayFriends.push(pickedFriendName3)
+            let arr3 = JSON.parse(localStorage.getItem('arrayFriends'))
+            localStorage.setItem('bill_array', JSON.stringify(arr3));
         });
 
         $('.friend4').on('click', () => {
-            let pickedFriendName = $('.friend4').text();
-            $('.pickedName').text(pickedFriendName);
+            let pickedFriendName4 = $('.friend4').text();
+            $('.pickedName').text(pickedFriendName4);
+            arrayFriends.push(pickedFriendName4)
+            let arr4 = JSON.parse(localStorage.getItem('arrayFriends'))
+            localStorage.setItem('bill_array', JSON.stringify(arr4));
         });
 
         $('.friend5').on('click', () => {
-            let pickedFriendName = $('.friend5').text();
-            $('.pickedName').text(pickedFriendName);
+            let pickedFriendName5 = $('.friend5').text();
+            $('.pickedName').text(pickedFriendName5);
+            arrayFriends.push(pickedFriendName5)
+            let arr5 = JSON.parse(localStorage.getItem('arrayFriends'))
+            localStorage.setItem('bill_array', JSON.stringify(arr5));
         });
 
         $('.friend6').on('click', () => {
-            let pickedFriendName = $('.friend6').text();
-            $('.pickedName').text(pickedFriendName);
+            let pickedFriendName6 = $('.friend6').text();
+            $('.pickedName').text(pickedFriendName6);
+            arrayFriends.push(pickedFriendName6)
+            let arr6 = JSON.parse(localStorage.getItem('arrayFriends'))
+            localStorage.setItem('bill_array', JSON.stringify(arr6));
         });
 
         $('.friend7').on('click', () => {
-            let pickedFriendName = $('.friend7').text();
-            $('.pickedName').text(pickedFriendName);
+            let pickedFriendName7 = $('.friend7').text();
+            $('.pickedName').text(pickedFriendName7);
+            arrayFriends.push(pickedFriendName7)
+            let arr7 = JSON.parse(localStorage.getItem('arrayFriends'))
+            localStorage.setItem('bill_array', JSON.stringify(arr7));
         });
 
         $('.friend8').on('click', () => {
-            let pickedFriendName = $('.friend8').text();
-            $('.pickedName').text(pickedFriendName);
+            let pickedFriendName8 = $('.friend8').text();
+            $('.pickedName').text(pickedFriendName8);
+            arrayFriends.push(pickedFriendName8)
+            let arr8 = JSON.parse(localStorage.getItem('arrayFriends'))
+            localStorage.setItem('bill_array', JSON.stringify(arr8));
         });
 
         $('.friend9').on('click', () => {
-            let pickedFriendName = $('.friend9').text();
-            $('.pickedName').text(pickedFriendName);
+            let pickedFriendName9 = $('.friend9').text();
+            $('.pickedName').text(pickedFriendName9);
+            arrayFriends.push(pickedFriendName9)
+            let arr9 = JSON.parse(localStorage.getItem('arrayFriends'))
+            localStorage.setItem('bill_array', JSON.stringify(arr9));
         });
 
         $('.addFriendBtn').on('click', () => {
-            let storedFriendName = $('.pickedName').text();
-            localStorage.setItem('friendName', storedFriendName);
+            // let arr1 = JSON.parse(localStorage.getItem('friendName'))
+
+            // arr1 = arr1 + storedFriendName;
+            // console.log(arr1)
+           
+           console.log(arrayFriends)
+            
+            localStorage.setItem('friendName', arrayFriends);
             location.href = './20_Friends_list.html';
             console.log("Add_friend.js")
         });
