@@ -1417,11 +1417,13 @@ textarea {
 
 .loadBillSection div {
     margin: 2rem;
+
 }
 
 #myTable {
     margin-left: auto;
     margin-right: auto;
+
 }
 
 #myTable tr {
@@ -1429,19 +1431,19 @@ textarea {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
+    
 }
 
 #myTable td {
     color: #536FE0;
-    margin: 0 2.3em;
+    margin: 0 2em;
     font-weight: 900;
 }
 
 
 .homeBillAddDiv {
     text-align: right;
-    padding: 6rem 3rem;
+    padding: 3rem;
 }
 
 .homeBillAddBtn {
