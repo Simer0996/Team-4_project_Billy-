@@ -26,9 +26,6 @@ function getClass(list, cls) {
             e.preventDefault()
             let bill_object = new AddBill(bills.value, amount.value, date.value, area.value)
             let arr = JSON.parse(localStorage.getItem('bill_array'))
-            if(arr == null) {
-                arr=[];
-            }
 
             arr.push(bill_object)
             console.log(arr)
