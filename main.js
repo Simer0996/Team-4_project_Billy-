@@ -26,7 +26,9 @@ function getClass(list, cls) {
             e.preventDefault()
             let bill_object = new AddBill(bills.value, amount.value, date.value, area.value)
             let arr = JSON.parse(localStorage.getItem('bill_array'))
-
+            if (arr == null) {
+                arr = [];
+            }
             arr.push(bill_object)
             console.log(arr)
             outputArea.innerText = "Bill Added!"
@@ -50,36 +52,36 @@ function getClass(list, cls) {
 
 // Home page
 (async () => {
-        if (getClass(mainClass, 'homePage')) {
-            console.log('this is Home page');
+    if (getClass(mainClass, 'homePage')) {
+        console.log('this is Home page');
 
-            function draw(data) {
-                var calendarEl = document.getElementById('calendar');
+        function draw(data) {
+            var calendarEl = document.getElementById('calendar');
 
-                var calendar = new FullCalendar.Calendar(calendarEl, {
-                    initialView: 'dayGridMonth',
-                    initialDate: '2021-11-07',
-                    headerToolbar: {
-                        left: 'prev,next today',
-                        center: 'title',
-                        right: 'dayGridMonth,timeGridWeek,timeGridDay'
-                    },
-                    events: data
-                });
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                initialDate: '2021-11-07',
+                headerToolbar: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek,timeGridDay'
+                },
+                events: data
+            });
+            calendar.render();
+            
+        }
 
-                calendar.render();
-            }
-
-
-            let recoveredString = localStorage.getItem('bill_array');
-            console.log(recoveredString);
-            let newArray = JSON.parse(recoveredString);
-            console.log(newArray);
-
-            if (newArray == null) {
-                newArray = []
-            }
         
+        let recoveredString = localStorage.getItem('bill_array');
+        console.log(recoveredString);
+        let newArray = JSON.parse(recoveredString);
+        console.log(newArray);
+
+        if (newArray == null) {
+            newArray = []
+        }
+
 
         function renderRows() {
             newArray.forEach(bill_object => {
@@ -92,8 +94,8 @@ function getClass(list, cls) {
                 }
             }));
         }
+        
         renderRows()
-
 
         function arrayHome() {
             for (let i of newArray) {
@@ -105,15 +107,8 @@ function getClass(list, cls) {
                 cell1.innerHTML = `${i.Date}`
                 cell2.innerHTML = `${i.Categories}`
                 cell3.innerHTML = `$${i.Amount}`
-
-
             }
         }
-        // const {
-        //     default: arrayHome
-        // } = await import('./Home.js');
-        // arrayHome;
-       
     }
 })();
 
