@@ -26,10 +26,8 @@ function getClass(list, cls) {
             e.preventDefault()
             let bill_object = new AddBill(bills.value, amount.value, date.value, area.value)
             let arr = JSON.parse(localStorage.getItem('bill_array'))
-            if (arr == null) {
-                arr = [];
-            }
-             arr.push(bill_object)
+
+            arr.push(bill_object)
             console.log(arr)
             outputArea.innerText = "Bill Added!"
 
@@ -52,13 +50,50 @@ function getClass(list, cls) {
 
 // Home page
 (async () => {
-    if (getClass(mainClass, 'homePage')) {
-        console.log('this is Home page');
+        if (getClass(mainClass, 'homePage')) {
+            console.log('this is Home page');
 
-        let recoveredString = localStorage.getItem('bill_array');
-        console.log(recoveredString);
-        let newArray = JSON.parse(recoveredString);
-        console.log(newArray);
+            function draw(data) {
+                var calendarEl = document.getElementById('calendar');
+
+                var calendar = new FullCalendar.Calendar(calendarEl, {
+                    initialView: 'dayGridMonth',
+                    initialDate: '2021-11-07',
+                    headerToolbar: {
+                        left: 'prev,next today',
+                        center: 'title',
+                        right: 'dayGridMonth,timeGridWeek,timeGridDay'
+                    },
+                    events: data
+                });
+
+                calendar.render();
+            }
+
+
+            let recoveredString = localStorage.getItem('bill_array');
+            console.log(recoveredString);
+            let newArray = JSON.parse(recoveredString);
+            console.log(newArray);
+
+            if (newArray == null) {
+                newArray = []
+            }
+        
+
+        function renderRows() {
+            newArray.forEach(bill_object => {
+                arrayHome(bill_object);
+            })
+            draw(newArray.map(obj => {
+                return {
+                    title: obj.Categories,
+                    start: obj.Date,
+                }
+            }));
+        }
+        renderRows()
+
 
         function arrayHome() {
             for (let i of newArray) {
@@ -68,7 +103,7 @@ function getClass(list, cls) {
                 let cell3 = row1.insertCell(2);
 
                 cell1.innerHTML = `${i.Date}`
-                cell2.innerHTML = `${i.Catagories}`
+                cell2.innerHTML = `${i.Categories}`
                 cell3.innerHTML = `$${i.Amount}`
 
 
@@ -78,9 +113,10 @@ function getClass(list, cls) {
         //     default: arrayHome
         // } = await import('./Home.js');
         // arrayHome;
-        arrayHome()
+       
     }
 })();
+
 
 //Add Friends//
 (async () => {
@@ -521,8 +557,12 @@ $('.addBtn').on('click', () => {
 
         add_friend_btn.addEventListener('click', () => {
 
-            friendsArr.push({"dueDate": '21/11/2021', "To": name.value, "Amount": '300'});
-           // console.log(friendsArr);
+            friendsArr.push({
+                "dueDate": '21/11/2021',
+                "To": name.value,
+                "Amount": '300'
+            });
+            // console.log(friendsArr);
             var content = "";
 
             document.getElementById('fourthdiv').innerHTML = content;
@@ -534,11 +574,11 @@ $('.addBtn').on('click', () => {
                 content = "<div id='addiv_" + i + "'><p id='addpar_" + i + "'>" + friendsArr[i]["To"] + "</p><input id='addtext_" + i + "' type='text' placeholder='$'></div>"
                 document.getElementById('fourthdiv').innerHTML += content;
             }
-           
+
             usersCount++;
 
-            localStorage.setItem("friendsArray",JSON.stringify(friendsArr));
-            
+            localStorage.setItem("friendsArray", JSON.stringify(friendsArr));
+
         })
 
 
@@ -598,7 +638,6 @@ $('.addBtn').on('click', () => {
                 window.stream = stream;
             } catch (error) {
                 console.log(error.toString());
-                console.log('line 601')
             }
         }
 
@@ -635,7 +674,7 @@ $('.addBtn').on('click', () => {
 
 //Split History//
 (async () => {
-    
+
     if (getClass(mainClass, 'split-history')) {
         console.log('this is Split History page');
 
@@ -643,24 +682,24 @@ $('.addBtn').on('click', () => {
             bill_splitter__history_array = JSON.parse(localStorage.getItem("friendsArray"));
             for (let i of bill_splitter__history_array) {
 
-console.log(i)
+                console.log(i)
 
-                let row1 = document.getElementById("hisTable").insertRow(i+ 1)
+                let row1 = document.getElementById("hisTable").insertRow(i + 1)
                 let cell1 = row1.insertCell(0);
                 let cell2 = row1.insertCell(1);
                 let cell3 = row1.insertCell(2);
 
                 cell1.innerHTML = `${i.dueDate}`
                 cell2.innerHTML = `${i.To}`
-                cell3.innerHTML = `${i.Amount}`
+                cell3.innerHTML = `$${i.Amount}`
 
 
             }
 
-            
+
         }
 
-        historyTable();   
+        historyTable();
     }
 })();
 
