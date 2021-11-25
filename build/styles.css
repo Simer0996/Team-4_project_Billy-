@@ -424,6 +424,8 @@ text-align: center; */
     color: white;
     border-radius: 10px;
     text-align: center;
+    font-weight: 900;
+    font-size: 12pt;
 }
 
 
@@ -827,7 +829,7 @@ text-align: center; */
 .signupwrapper .signuptitle {
     font-size: 40px;
     margin-left: 80px;
-    margin-bottom:40px;
+    margin-bottom: 40px;
     color: #66cc99;
 }
 
@@ -862,7 +864,7 @@ text-align: center; */
     margin-top: 50px;
     color: white;
     background-color: #66cc99;
-}    
+}
 
 .inputfield:last-child {
     margin-bottom: 10px;
@@ -983,7 +985,7 @@ text-align: center; */
 .loginform .inputfield p {
     margin-left: 110px;
 }
- 
+
 .loginform .forgot a {
     text-decoration: none;
     color: gray;
@@ -1060,7 +1062,7 @@ text-align: center; */
     padding: 30px;
 }
 
-.forgotcontainer .header{
+.forgotcontainer .header {
     text-align: center;
 }
 
@@ -1431,15 +1433,13 @@ textarea {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
 #myTable td {
     color: #536FE0;
     margin: 0 2em;
     font-weight: 900;
-    
-   
 }
 
 
@@ -1521,14 +1521,14 @@ textarea {
 }
 
 /***************History*****************/
-.history #tableOutput {
-    width: 100%;
-    padding: 1em;
-}
-
 .history .header {
     color: #66CC99;
     text-align: center;
+}
+
+.history #tableOutput {
+    width: 100%;
+    padding: 1em;
 }
 
 .history #tableOutput tr:first-child {
@@ -1567,14 +1567,15 @@ textarea {
 }
 
 /* 16_Bill_Splitter_request */
-.splitHistory {
+.billRequestTitle {
     color: #66cc99;
     font-weight: bold;
     margin-bottom: 1.5em;
     text-align: center;
 }
 
-.billRequestFirstDiv, .billRequestSecondDiv {
+.billRequestFirstDiv,
+.billRequestSecondDiv {
     text-align: center;
     margin: 2rem;
 }
@@ -1584,7 +1585,7 @@ textarea {
     margin-bottom: 0;
 }
 
-.billRequestSecondDiv p input{
+.billRequestSecondDiv p input {
     padding: 15px 10px;
     margin-top: 0;
 }
@@ -1624,12 +1625,44 @@ textarea {
 }
 
 /* 18_Bill_Splitter_history */
-.billRequestTitle {
+.splitHistory {
     color: #66cc99;
     font-weight: bold;
     margin-bottom: 1.5em;
+    margin-left: 1em;
     text-align: center;
 }
+
+.split-history #content {
+    width: 90%;
+    padding: 1em .5em;
+   
+}
+
+
+.split-history #content th {
+    font-weight: bold;
+    font-size: 14pt;
+    color: #536FE0;
+}
+
+.split-history #hisTable {
+    width: 80%;
+    padding: 0 1em;
+    text-align: left;
+    margin-left: 8%;
+}
+
+.split-history #hisTable tr td:nth-child(2) {
+    padding-left: 3%;
+}
+
+
+.split-history #hisTable tr td:nth-child(3) {
+    padding-left: 3%;
+}
+
+
 
 /* 19_Bill_Splitter_payment */
 .billPaymentTitle {
@@ -1637,4 +1670,43 @@ textarea {
     font-weight: bold;
     margin-bottom: 1.5em;
     text-align: center;
+}
+
+.billPmtContentWrap {
+    margin-left: 4em;
+    font-weight: 600;
+}
+
+.billPmtContentWrap p {
+    margin-bottom: 5px;
+}
+
+.billPmtContentWrap input {
+    width: 80%;
+    height: 25px;
+}
+
+.pmtOptionWrap {
+    margin-top: 2rem;
+}
+
+.pmtOptionWrap select {
+    width: 82%;
+    height: 25px;
+}
+
+.payBtnWrap {
+    text-align: center;
+}
+
+.payButton {
+    width: 50%;
+    margin-top: 20%;
+    padding: 1em 3em;
+    background-color: #66cc99;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 12pt;
 }

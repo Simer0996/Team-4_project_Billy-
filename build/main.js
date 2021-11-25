@@ -649,7 +649,7 @@ console.log(i)
 
                 cell1.innerHTML = `${i.dueDate}`
                 cell2.innerHTML = `${i.To}`
-                cell3.innerHTML = `$${i.Amount}`
+                cell3.innerHTML = `${i.Amount}`
 
 
             }
