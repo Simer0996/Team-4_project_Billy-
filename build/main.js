@@ -26,7 +26,9 @@ function getClass(list, cls) {
             e.preventDefault()
             let bill_object = new AddBill(bills.value, amount.value, date.value, area.value)
             let arr = JSON.parse(localStorage.getItem('bill_array'))
-
+            if (arr == null) {
+                arr = [];
+            }
              arr.push(bill_object)
             console.log(arr)
             outputArea.innerText = "Bill Added!"
@@ -596,6 +598,7 @@ $('.addBtn').on('click', () => {
                 window.stream = stream;
             } catch (error) {
                 console.log(error.toString());
+                console.log('line 601')
             }
         }
 
