@@ -112,6 +112,7 @@
     "fragment-cache": "^0.2.1",
     "fs-mkdirp-stream": "^1.0.0",
     "fs.realpath": "^1.0.0",
+    "fullcalendar": "^5.10.1",
     "function-bind": "^1.1.1",
     "get-caller-file": "^1.0.3",
     "get-intrinsic": "^1.1.1",
