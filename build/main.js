@@ -93,9 +93,6 @@ function getClass(list, cls) {
                 }
             }));
         }
-        
-        renderRows()
-        arrayHome()
 
         function arrayHome() {
             for (let i = 0 ; i < newArray.length ; i++) {
@@ -110,6 +107,8 @@ function getClass(list, cls) {
                 
             }
         }
+        renderRows()
+        arrayHome()
     }
 })();
 
