@@ -26,7 +26,7 @@ export default function createTable() {
       let cell14 = row1.insertCell(3);
    
       cell11.innerHTML = `${i.Date}`
-      cell12.innerHTML = `${i.Catagories}`
+      cell12.innerHTML = `${i.Categories}`
       cell13.innerHTML = `${i.Amount}$`
       cell14.innerHTML = `<input type="checkbox">`
    }
