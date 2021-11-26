@@ -30,6 +30,6 @@ export default function createTable() {
       cell13.innerHTML = `${i.Amount}$`
       cell14.innerHTML = `<input type="checkbox">`
    }
-   }
+   }g
    createTable();
 

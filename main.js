@@ -72,7 +72,6 @@ function getClass(list, cls) {
             
         }
 
-        
         let recoveredString = localStorage.getItem('bill_array');
         console.log(recoveredString);
         let newArray = JSON.parse(recoveredString);
@@ -84,9 +83,9 @@ function getClass(list, cls) {
 
 
         function renderRows() {
-            newArray.forEach(bill_object => {
-                arrayHome(bill_object);
-            })
+            // newArray.forEach(bill_object => {
+            //     arrayHome(bill_object);
+            // })
             draw(newArray.map(obj => {
                 return {
                     title: obj.Categories,
@@ -96,17 +95,19 @@ function getClass(list, cls) {
         }
         
         renderRows()
+        arrayHome()
 
         function arrayHome() {
-            for (let i of newArray) {
+            for (let i = 0 ; i < newArray.length ; i++) {
                 let row1 = document.getElementById("myTable").insertRow(0)
                 let cell1 = row1.insertCell(0);
                 let cell2 = row1.insertCell(1);
                 let cell3 = row1.insertCell(2);
 
-                cell1.innerHTML = `${i.Date}`
-                cell2.innerHTML = `${i.Categories}`
-                cell3.innerHTML = `$${i.Amount}`
+                cell1.innerHTML = `${newArray[i].Date}`
+                cell2.innerHTML = `${newArray[i].Categories}`
+                cell3.innerHTML = `$${newArray[i].Amount}`
+                
             }
         }
     }
