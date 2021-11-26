@@ -91,33 +91,33 @@ text-align: center; */
 /*************************************************/
 /***************** Songhui Park ******************/
 /*************************************************/
-
-/* .firstSplashPage  {
-    max-height: 100%;
-    max-width : 100%
+.splashPageWrap {
+    width: auto;
+    height: 900px;
+    background-image: linear-gradient(to right bottom, #66CC99, #6688CC);
+    overflow: hidden;
+    cursor:pointer;
 }
 
-.firstSplashPage {
-  background:linear-gradient(to right bottom, #66CC99, #6688CC);
-  overflow: hidden;
-} */
-
 /* ******************************** logo *******************************/
-/* .splashLogo {
+.logoSplashPage {
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transform: translate(0, -20%);
+
 }
 
-.splashLogo img{
+.logoSplashPage img {
     max-width: 250px;
     height: auto;
-} */
+}
 
 /* ******************************** circle *****************************/
-/* .topcircle {
+
+.topcircle {
     max-width: 20rem;
     height: auto;
     position: relative;
@@ -144,78 +144,60 @@ text-align: center; */
     top: 27%;
     left: 20%;
     opacity: 0.6;
-} */
+}
 
 /* ******************************** wave *******************************/
-/* 
-.splashBottom { 
-  height: 5%;
-  width:100%;
-  position:absolute;
-  bottom:0;
-  left:0;
-  background: #ffffff;
-  margin-bottom: 0%;
-  padding-bottom: 0%;
+
+.bottomSplash {
+    height: 5%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #ffffff;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
 }
 
 .wave {
-  background: url('images/wave.svg') repeat-x; 
-  position: absolute;
-  top: -198px;
-  width: 6400px;
-  height: 198px;
-  animation: wave 7s cubic-bezier( 0.36, 0.63, 0.45, 0.53) infinite, ease;
-  transform: translate3d(0, 0, 0);
-  opacity: 0.5;
+    background: url('../images/wave.svg') repeat-x;
+    position: absolute;
+    top: -198px;
+    width: 6400px;
+    height: 198px;
+    animation: wave 7s cubic-bezier(0.36, 0.63, 0.45, 0.53) infinite, ease;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.5;
+    overflow: hidden;
 }
 
 .wave:nth-of-type(2) {
-  top: -175px;
-  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
-  opacity: 0.3;
-} */
+    top: -175px;
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 0.3;
+}
 
-/* @keyframes wave {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: -1600px;
-  }
+@keyframes wave {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: -1600px;
+    }
 }
 
 @keyframes swell {
-  0%, 100% {
-    transform: translate3d(0,-25px,0);
-  }
-  50% {
-    transform: translate3d(0,10px,0);
-  }
-} */
 
-/* ******************************** hover ******************************/
+    0%,
+    100% {
+        transform: translate3d(0, -25px, 0);
+    }
 
-/* .overlay {
-    position: absolute; 
-    bottom: 0; 
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1; 
-    width: 100%;
-    transition: .5s ease;
-    opacity:0;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .logo:hover .overlay {
-    opacity: 1;
-  } */
-
-
+    50% {
+        transform: translate3d(0, 10px, 0);
+    }
+}
 
 
 /*************************************************/
@@ -223,7 +205,7 @@ text-align: center; */
 /*************************************************/
 
 /* Splash_Page */
-.splashContainer {
+/* .splashContainer {
     width: auto;
     height: 900px;
     background-image: linear-gradient(to left top, #6b9cd1, #54a4d2, #3fabcf, #33b2c7, #39b7bc, #41b9b4, #4dbbac, #59bca3, #5ebc9e, #63bc99, #68bb94, #6ebb8f);
@@ -243,7 +225,7 @@ text-align: center; */
     padding-left: 5%;
     padding-right: 5%;
     cursor: pointer;
-}
+} */
 
 /*** Add_Friend ***/
 .addFriendsTitle {
@@ -1636,7 +1618,7 @@ textarea {
 .split-history #content {
     width: 90%;
     padding: 1em .5em;
-   
+
 }
 
 
