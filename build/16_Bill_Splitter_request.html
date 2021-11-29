@@ -65,26 +65,18 @@
 
 <body>
 <main class="billRequest">
-
   <i class="fas fa-arrow-circle-left fa-3x billyBackBtn" onclick="location.href='15_Bill_Splitter_menu.html';"></i>
   <h1 class="billRequestTitle">Bill Request</h1>
-
   <div class="billRequestContent">
-
     <div class="billRequestFirstDiv">
       <!-- <img src="images/scan-banner icon.png" alt="scan-banner-icon"> -->
-      <p>Take a photo of your Bill</p>
+      <!-- <p>Take a photo of your Bill</p> -->
+      <b></b><a href="24_Camera_Capture.html">Take a photo of your Bill</a></div></b>
     </div>
-
-    <div class="billRequestBtnDiv">
-      <button class="billRequestSendBtn" type="button" id="send_btn">SEND</button>
-  </div>
-
     <div class="billRequestSecondDiv">
       <p>Total Amount</p>
       <p><input type="text" id="totalAmount" placeholder="$"></p>
     </div>
-
     <div class="billRequestThirdDiv">
       <div class="thirdDiv1">
         <p>Number of people</p>
@@ -99,37 +91,33 @@
         <button type="button" id="add_friend_btn">Add friend</button>
       </div>
     </div>
-    <div class="splitEvenlyBox">
+    <div class="splitEvenlyBox" style="text-align: center;">
       <input type="checkbox" id="chkSplitEvenly"> Split Evenly
     </div>
     <div class="billRequestFourthDiv" id="fourthdiv">
-
       <!--  <div class="fourthdiv2">
-            
             <p>Harsimran Singh</p>
             <input type="text" id="amount1" value="$">
           </div>
           <div class="fourthdiv3">
-           
             <p>Simerjit Singh</p>
             <input type="text" id="amount2" placeholder="$">
           </div> -->
-
-
     </div>
-    <div class="totalAmountDiv">
-      <p>Total Amount</p>
-      <p>$ 120.00</p>
+    <div class="theDueDate">
+      <p>Please enter Due-Date</p>
+      <input type="text" id="the_due_date" placeholder="DD/MM/YYYY">
+      <!-- <p>$ 120.00</p> -->
     </div>
-    
+    <div class="billRequestBtnDiv">
+      <button class="billRequestSendBtn" type="button" id="send_btn">SEND</button>
+  </div>
     <!-- <div class="billRequestBtnDiv">
       <button class="billRequestSendBtn" type="button" id="send_btn">SEND</button>
   </div> -->
   </div>
   </div>
-
 </main>
-
 
 <footer>
     <div class="footerBtns">

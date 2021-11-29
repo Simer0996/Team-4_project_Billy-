@@ -1534,75 +1534,158 @@ textarea {
 /***************** Harsimran Singh ***************/
 /*************************************************/
 
+
 /* 15_Bill_Splitter_menu */
 .splitterOptions {
     text-align: center;
-    color: #66cc99;
+    color: #66CC99;
 }
-
 .optionsLink {
     margin: 4em 40%;
     width: 100%;
     display: flex;
     flex-direction: column;
 }
-
 .optionsLink a {
     font-size: 20px;
     margin: 20px -40px;
     text-decoration: none;
     color: black;
 }
-
 /* 16_Bill_Splitter_request */
-.billRequestTitle {
-    color: #66cc99;
+.splitHistory {
+    color: #66CC99;
     font-weight: bold;
     margin-bottom: 1.5em;
     text-align: center;
 }
-
-.billRequestFirstDiv,
-.billRequestSecondDiv {
+.billRequestFirstDiv, .billRequestSecondDiv {
     text-align: center;
-    margin: 2rem;
+    margin: 5px;
 }
-
+.billRequestSecondDiv {
+    display: flex;
+    justify-content: center;
+}
 .billRequestSecondDiv p {
     font-weight: 900;
     margin-bottom: 0;
 }
-
-.billRequestSecondDiv p input {
+.billRequestSecondDiv p input{
     padding: 15px 10px;
     margin-top: 0;
 }
-
 .billRequestThirdDiv {
     margin-left: 40px;
+    text-align: center;
 }
-
+.thirdDiv1 {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}
+.thirdDiv1 #sub{
+    width: 100px;
+    height: 50px;
+    border-radius: 75px;
+    background-color: #66CC99;
+    color: white;
+    margin: 5px;
+    cursor: pointer;
+}
+.thirdDiv1 #add{
+    width: 100px;
+    height: 50px;
+    border-radius: 75px;
+    background-color: #66CC99;
+    color: white;
+    margin: 5px;
+    cursor: pointer;
+}
+.thirdDiv2 {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}
+.thirdDiv2 #add_friend_btn{
+    width: 100px;
+    height: 50px;
+    border-radius: 75px;
+    background-color: #66CC99;
+    color: white;
+    margin: 5px;
+    cursor: pointer;
+}
 .billRequestFourthDiv {
-    margin-left: 40px;
+    text-align: center;
 }
-
 .splitEvenlyBox {
-    width: 400px;
-    height: 150px;
-    background-color: #5ebc9e;
-    margin-left: 40px;
-    margin-top: 30px;
+    display: none;
 }
-
 .totalAmountDiv {
     text-align: center;
 }
-
 .billRequestBtnDiv {
     text-align: center;
 }
-
+.theDueDate {
+    display: flex;
+    justify-content: center;
+}
 .billRequestSendBtn {
+    width: 100px;
+    height: 50px;
+    border-radius: 75px;
+    background-color: #66CC99;
+    color: white;
+    margin: 5px;
+    cursor: pointer;
+}
+.dynamicDiv {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 5px;
+}
+/* 18_Bill_Splitter_history */
+.billRequestTitle {
+    color: #66CC99;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+/* .split-history .content #theHeading{
+    font-weight: bold;
+    font-size: 20px;
+    color: #536FE0;
+} */
+ #content{
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+    color: #536FE0;
+}
+#hisTable{
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+}
+/* .split-history .historyTable #hisTable td{
+    text-align: center;
+} */
+/* 19_Bill_Splitter_payment */
+.billPaymentTitle {
+    color: #66CC99;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+/* 24_Camera_Capture */
+.two_buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.snap {
     width: 100px;
     height: 50px;
     border-radius: 75px;
@@ -1611,90 +1694,12 @@ textarea {
     margin-top: 30px;
     cursor: pointer;
 }
-
-/* 18_Bill_Splitter_history */
-.splitHistory {
-    color: #66cc99;
-    font-weight: bold;
-    margin-bottom: 1.5em;
-    margin-left: 1em;
-    text-align: center;
-}
-
-.split-history #content {
-    width: 90%;
-    padding: 1em .5em;
-
-}
-
-
-.split-history #content th {
-    font-weight: bold;
-    font-size: 14pt;
-    color: #536FE0;
-}
-
-.split-history #hisTable {
-    width: 80%;
-    padding: 0 1em;
-    text-align: left;
-    margin-left: 8%;
-}
-
-.split-history #hisTable tr td:nth-child(2) {
-    padding-left: 3%;
-}
-
-
-.split-history #hisTable tr td:nth-child(3) {
-    padding-left: 3%;
-}
-
-
-
-/* 19_Bill_Splitter_payment */
-.billPaymentTitle {
-    color: #66cc99;
-    font-weight: bold;
-    margin-bottom: 1.5em;
-    text-align: center;
-}
-
-.billPmtContentWrap {
-    margin-left: 4em;
-    font-weight: 600;
-}
-
-.billPmtContentWrap p {
-    margin-bottom: 5px;
-}
-
-.billPmtContentWrap input {
-    width: 80%;
-    height: 25px;
-}
-
-.pmtOptionWrap {
-    margin-top: 2rem;
-}
-
-.pmtOptionWrap select {
-    width: 82%;
-    height: 25px;
-}
-
-.payBtnWrap {
-    text-align: center;
-}
-
-.payButton {
-    width: 50%;
-    margin-top: 20%;
-    padding: 1em 3em;
-    background-color: #66cc99;
+.saveButton {
+    width: 100px;
+    height: 50px;
+    border-radius: 75px;
+    background-color: #66CC99;
     color: white;
-    border-radius: 10px;
-    text-align: center;
-    font-weight: 900;
-    font-size: 12pt;
+    margin-top: 30px;
+    cursor: pointer;
 }

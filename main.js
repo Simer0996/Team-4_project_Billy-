@@ -393,7 +393,6 @@ $('.addBtn').on('click', () => {
         let addBtn = document.querySelector('#add');
         let subBtn = document.querySelector('#sub');
         let qty = document.querySelector('#qtyBox');
-
         let theAmount = document.getElementById('totalAmount');
         let am1 = document.getElementById('amount1');
         let am2 = document.getElementById('amount2');
@@ -401,39 +400,29 @@ $('.addBtn').on('click', () => {
         let send = document.getElementById('send_btn');
         let name = document.getElementById('name');
         let chkSplit = document.getElementById('chkSplitEvenly');
-
+        let theduedate = document.getElementById('the_due_date');
         var usersCount = 0;
-
         chkSplit.addEventListener('change', e => {
-
             if (e.target.checked) {
                 console.log('checked')
             } else {
                 console.log('un checked')
             }
-
             console.log(theAmount.value);
             console.log(usersCount)
-
             console.log(theAmount.value / usersCount);
-
         });
-
-
         addBtn.addEventListener('click', () => {
             console.log("added");
             qty.value = parseInt(qty.value) + 1;
         });
-
         subBtn.addEventListener('click', () => {
-
             if (qty.value <= 0) {
                 qty.value = 0;
             } else {
                 qty.value = parseInt(qty.value) - 1;
             }
         });
-
         function saveData(ref) {
             // const billRef = ref.child('bill');
             ref.set({
@@ -450,7 +439,6 @@ $('.addBtn').on('click', () => {
                     alert("unsuccessful, error");
                 });
         }
-
         function insertData() {
             set(ref(db, "TheData/" + qty.value), {
                     total_amount: theAmount.value,
@@ -459,7 +447,6 @@ $('.addBtn').on('click', () => {
                     amount_2: am2.value,
                     amount_3: am3.value
                 })
-
                 .then(() => {
                     alert("data has been added successfully");
                 })
@@ -467,32 +454,20 @@ $('.addBtn').on('click', () => {
                     alert("unsuccessful, error");
                 });
         }
-
         send.addEventListener('click', () => {
-
             // Check browser support
             // if (typeof (Storage) !== "undefined") {
             //     // Store
-
             //     localStorage.setItem("userCount", usersCount);
-
             //     for (let i = 0; i < usersCount; i++) {
-
             //         console.log("addpar_" + i)
-
             //         console.log(document.getElementById("addpar_" + i))
-
             //         console.log(document.getElementById("addpar_" + i).value)
-
             //         localStorage.setItem(i, document.getElementById("addpar_" + i).value + "16/11" + (theAmount.value / usersCount));
             //     }
             // }
-
             // alert("navigation");
-
-
             window.location.href = '18_Bill_Splitter_history.html';
-
             /* // console.log(JSON.stringify(ref));
              // saveData(ref);
              set(ref(db,'bills/'+ new Date().getTime()),{
@@ -518,26 +493,20 @@ $('.addBtn').on('click', () => {
              //     }
              // );*/
         });
-
         // for(let i=0; i<5; i++) {
         //         <div class="fourthdiv4">
         //         <img src="images/Vector_13.png" alt="">
         //         <p>Namhyung Kim</p>
         //         <input type="text" id="amount3" placeholder="$">
-
         //         </div>
         //         var content = "<div id='addiv_"+i+"'><img id='addimg_"+i+"' src='../images/Vector_13.png' alt=''><p id='addpar_"+i+"'>Namhyung Kim</p><input id='addtext_"+i+"' type='text' placeholder='$'></div>"
-
         //         document.getElementById('fourthdiv').innerHTML += content;
-
-
         //         var new_element = document.createElement('div');
         //         var sp = document.createElement('span');
         //         var br = document.createElement('br');
         //         var img = document.createElement('img');
         //         var text_field = document.createElement('text');
         //         img.setAttribute('src', 'images/Vector_13.png');
-
         //         var span_text = document.createTextNode('hello');
         //         sp.appendChild(span_text);
         //         var my_container = document.getElementById("fourthdiv");
@@ -545,47 +514,26 @@ $('.addBtn').on('click', () => {
         //         my_container.appendChild(sp);
         //         my_container.appendChild(text_field);
         //         my_container.appendChild(br);
-
-
         // }
         let friendsArr = [];
-
         add_friend_btn.addEventListener('click', () => {
-
-            friendsArr.push({
-                "dueDate": '21/11/2021',
-                "To": name.value,
-                "Amount": '300'
-            });
-            // console.log(friendsArr);
+            friendsArr.push({"dueDate": '01/12/2021', "To": name.value, "Amount": '100'});
+           // console.log(friendsArr); style="text-align:center;"
             var content = "";
-
             document.getElementById('fourthdiv').innerHTML = content;
-
             for (let i = 0; i < friendsArr.length; i++) {
-
                 console.log(friendsArr[i]["To"]);
-
-                content = "<div id='addiv_" + i + "'><p id='addpar_" + i + "'>" + friendsArr[i]["To"] + "</p><input id='addtext_" + i + "' type='text' placeholder='$'></div>"
+                content = "<div class='dynamicDiv' id='addiv_" + i + "'><p id='addpar_" + i + "'>" + friendsArr[i]["To"] + "</p><input id='addtext_" + i + "' type='text' placeholder='$'></div>"
                 document.getElementById('fourthdiv').innerHTML += content;
             }
-
             usersCount++;
-
-            localStorage.setItem("friendsArray", JSON.stringify(friendsArr));
-
+            localStorage.setItem("friendsArray",JSON.stringify(friendsArr));
         })
-
-
-
     }
 })();
-
-
 (async () => {
     if (getClass(mainClass, 'camera-capture')) {
         console.log('This is Camera Capture page');
-
         // const Webcam = require("./webcamjs");
         // import Webcam, { set } from "./webcamjs/webcam.min";
         // set({
@@ -595,12 +543,9 @@ $('.addBtn').on('click', () => {
         //     jpeg_quality: 90
         // });
         console.log('Hello Capture');
-
-
         const video = document.getElementById('video');
         const canvas = document.getElementById('canvas');
         const snap = document.getElementById('snap');
-
         const constraints = {
             // audio: true,
             video: {
@@ -624,7 +569,6 @@ $('.addBtn').on('click', () => {
                 }
             }
         }
-
         //Camera Capture
         async function startWebCam() {
             try {
@@ -635,15 +579,15 @@ $('.addBtn').on('click', () => {
                 console.log(error.toString());
             }
         }
-
         var context = canvas.getContext('2d');
-
         snap.addEventListener('click', () => {
-            context.drawImage(video, 0, 0, 640, 480);
+            context.drawImage(video, 0, 0, 450, 400);
+            // Stop all video streams.
+        video.srcObject.getVideoTracks().forEach(track => track.stop());
+        video.style.display = "none";
+        canvas.style.display = "block";
         });
-
         startWebCam();
-
         saveButton.addEventListener('click', (e) => {
             console.log("savebutton function");
             const link = document.createElement('a');
@@ -658,44 +602,28 @@ $('.addBtn').on('click', () => {
             //     document.getElementById('canvas').innerHTML = 
             //        '<img id="imageprev" src="'+data_uri+'"/>';
             // } )
-
             // Webcam.reset();
-
         });
-
-
     }
 })();
-
 //Split History//
 (async () => {
-
     if (getClass(mainClass, 'split-history')) {
         console.log('this is Split History page');
-
         function historyTable() {
             bill_splitter__history_array = JSON.parse(localStorage.getItem("friendsArray"));
             for (let i of bill_splitter__history_array) {
-
-                console.log(i)
-
-                let row1 = document.getElementById("hisTable").insertRow(i + 1)
+console.log(i)
+                let row1 = document.getElementById("hisTable").insertRow(i+ 1)
                 let cell1 = row1.insertCell(0);
                 let cell2 = row1.insertCell(1);
                 let cell3 = row1.insertCell(2);
-
                 cell1.innerHTML = `${i.dueDate}`
                 cell2.innerHTML = `${i.To}`
                 cell3.innerHTML = `$${i.Amount}`
-
-
             }
-
-
         }
-
-        historyTable();
+        historyTable();   
     }
 })();
-
 //

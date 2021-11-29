@@ -64,23 +64,17 @@
 </head>
 
 <body>
-
 <main class="camera-capture">
 <div style="display: flex; align-items: center; flex-direction: column;" >
-
-    <video id="video" style="width: 700px" autoplay></video>
-
-    <button type="button" class="snap" id="snap">Capture</button><br>
-
-    <canvas id="canvas" width="640px" height="480px"></canvas>
-
-    <button type="button" class="saveButton" id="saveButton">save</button>
-    
-
+    <video id="video" style="width: 450px; height: 400px;" autoplay></video>
+    <canvas id="canvas" width="450px" height="400px" style="display: none;"></canvas>
+    <div class="two_buttons">
+    <button type="button" class="snap" id="snap">Capture</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="button" class="saveButton" id="saveButton">Save to Device</button>
+    </div>
 </div>
 </main>
-
-
 
 <footer>
     <div class="footerBtns">
