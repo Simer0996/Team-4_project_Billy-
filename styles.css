@@ -1750,29 +1750,28 @@ textarea {
     text-align: center;
 }
 
-/* .split-history .content #theHeading{
-    font-weight: bold;
-    font-size: 20px;
-    color: #536FE0;
-} */
-
-#content {
+#theHeading {
     width: 100%;
     padding: 1em;
     text-align: center;
     color: #536FE0;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 4em;
+}
+
+#theHeading th {
+    margin-left: 2em;
 }
 
 #hisTable {
-    text-align: center;
     width: 100%;
     margin-left: 0;
 }
 
-/* .split-history .historyTable #hisTable td{
-    text-align: center;
-} */
-
+#hisTable tbody tr{
+    margin-left: 2em;
+}
 
 
 /* 19_Bill_Splitter_payment */
@@ -1794,7 +1793,7 @@ textarea {
 }
 
 .billPmtContentWrap p {
-   font-weight: 900;
+    font-weight: 900;
 }
 
 .dueWrap {
@@ -1809,7 +1808,7 @@ textarea {
     margin-top: 2em;
 }
 
-.pmtOptionWrap select{
+.pmtOptionWrap select {
     width: 375px;
     padding: 10px 10px;
     margin-top: 0;
