@@ -15,6 +15,7 @@ async function includeHTML() {
             '*.css',
             'js_modules/*.js',
             '*.js',
+            '*.webmanifest',
             '!gulpfile.js',
             '!header.html', //ignore
             '!footer.html', //ignore

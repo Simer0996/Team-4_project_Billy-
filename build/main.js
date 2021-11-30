@@ -575,6 +575,7 @@ $('.addBtn').on('click', () => {
                 const stream = await navigator.mediaDevices.getUserMedia(constraints);
                 video.srcObject = stream;
                 window.stream = stream;
+                console.log("camera is working")
             } catch (error) {
                 console.log(error.toString());
             }
