@@ -1743,36 +1743,15 @@ textarea {
 
 
 /* 18_Bill_Splitter_history */
-.billRequestTitle {
-    color: #66CC99;
-    font-weight: bold;
-    margin-bottom: 1.5em;
-    text-align: center;
-}
-
-#theHeading {
-    width: 100%;
-    padding: 1em;
-    text-align: center;
-    color: #536FE0;
-    display: flex;
-    justify-content: space-evenly;
-    margin-left: 4em;
-}
-
-#theHeading th {
-    margin-left: 2em;
-}
 
 #hisTable {
     width: 100%;
-    margin-left: 0;
 }
 
-#hisTable tbody tr{
-    margin-left: 2em;
+#hisTable td {
+   text-align: center;
+   border: 1px solid black;
 }
-
 
 /* 19_Bill_Splitter_payment */
 .billPaymentTitle {

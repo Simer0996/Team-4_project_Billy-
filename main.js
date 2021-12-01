@@ -613,9 +613,18 @@ $('.addBtn').on('click', () => {
         console.log('this is Split History page');
         function historyTable() {
             bill_splitter__history_array = JSON.parse(localStorage.getItem("friendsArray"));
+            let row001 = document.getElementById('hisTable').insertRow(0);
+            let cell001 = row001.insertCell(0);
+            let cell002 = row001.insertCell(1);
+            let cell003 = row001.insertCell(2);
+            
+            cell001.innerHTML = `<b>Due Date</b>`
+            cell002.innerHTML = `<b>To</b>`
+            cell003.innerHTML = `<b>Amount</b>`
+
             for (let i of bill_splitter__history_array) {
 console.log(i)
-                let row1 = document.getElementById("hisTable").insertRow(i+ 1)
+                let row1 = document.getElementById("hisTable").insertRow(1)
                 let cell1 = row1.insertCell(0);
                 let cell2 = row1.insertCell(1);
                 let cell3 = row1.insertCell(2);
