@@ -1584,17 +1584,20 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 .billRequestSecondDiv p {
     font-weight: 900;
     margin-bottom: 0;
+    text-align: left;
+    margin-left: 41px;
 }
 
 .billRequestSecondDiv p input {
     padding: 15px 10px;
     margin-top: 0;
+    width: 275px;
 }
 
 .billRequestThirdDiv {
@@ -1662,7 +1665,7 @@ textarea {
 }
 
 .thirdDiv2 input {
-    width: 250px;
+    width: 280px;
     padding: 10px 10px;
     margin-top: 0;
 }
@@ -1739,8 +1742,31 @@ textarea {
     font-weight: 900;
     font-size: 12pt;
     cursor: pointer;
+    z-index: 999;
 }
 
+@media (min-width:550px) {
+    .billRequest {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .billRequestFirstDiv {
+        display: none;
+    }
+
+    .firstPart {
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border: #e0e0e0 1px solid;
+        border-radius: 10px;
+    }
+
+    .secondPart {
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border: #e0e0e0 1px solid;
+        border-radius: 10px;
+    }
+}
 
 /* 18_Bill_Splitter_history */
 
