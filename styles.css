@@ -149,12 +149,11 @@ text-align: center; */
 /* ******************************** wave *******************************/
 
 .bottomSplash {
-    height: 5%;
-    width: 100%;
+    height: 1%;
+    width: 101%;
     position: absolute;
     bottom: 0;
     left: 0;
-    background: #ffffff;
     margin-bottom: 0%;
     padding-bottom: 0%;
 }
@@ -162,9 +161,9 @@ text-align: center; */
 .wave {
     background: url('../images/wave.svg') repeat-x;
     position: absolute;
-    top: -198px;
+    top: -180px;
     width: 6400px;
-    height: 198px;
+    height: 200px;
     animation: wave 7s cubic-bezier(0.36, 0.63, 0.45, 0.53) infinite, ease;
     transform: translate3d(0, 0, 0);
     opacity: 0.5;
@@ -172,7 +171,7 @@ text-align: center; */
 }
 
 .wave:nth-of-type(2) {
-    top: -175px;
+    top: -180px;
     animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
     opacity: 0.3;
 }
