@@ -1776,7 +1776,30 @@ textarea {
 
 #hisTable td {
    text-align: center;
-   border: 1px solid black;
+   border: #e0e0e0 1px solid;
+   padding: 8px;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+   border: #e0e0e0 1px solid;
+   border-radius: 10px;
+}
+
+@media (min-width:550px) {
+    .theTable {
+        justify-content: center;
+        text-align: center;
+    }
+    .theTable #hisTable{
+        width: 70%;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border: #e0e0e0 1px solid;
+        border-radius: 10px;
+        margin-left: 200px;
+    }
+    #hisTable td {
+        text-align: center;
+        border: #e0e0e0 1px solid;
+        padding: 8px;
+     }
 }
 
 /* 19_Bill_Splitter_payment */
@@ -1836,6 +1859,12 @@ textarea {
     font-weight: 900;
     font-size: 12pt;
     cursor: pointer;
+}
+
+@media (min-width:550px) {
+    .billPmtContentWrap {
+        text-align: center;
+    }
 }
 
 
