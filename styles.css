@@ -1444,6 +1444,27 @@ textarea {
     background-color: white;
 }
 
+/* homepage desktop  */
+
+@media (min-width:550px) {
+    .footerBtns {
+        transform: translateY(-500px) translateX(100px);
+        gap: -100px;
+        position: absolute;
+    }
+
+    .homeLogo {
+        margin-top: 10em;
+        
+    }
+
+    .divider {
+        display: none;
+    }
+
+}
+
+
 /* Setting - User */
 
 .settingUserPage h1 {
@@ -1774,12 +1795,12 @@ textarea {
 }
 
 #hisTable td {
-   text-align: center;
-   border: #e0e0e0 1px solid;
-   padding: 8px;
-   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-   border: #e0e0e0 1px solid;
-   border-radius: 10px;
+    text-align: center;
+    border: #e0e0e0 1px solid;
+    padding: 8px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border: #e0e0e0 1px solid;
+    border-radius: 10px;
 }
 
 @media (min-width:550px) {
@@ -1787,18 +1808,20 @@ textarea {
         justify-content: center;
         text-align: center;
     }
-    .theTable #hisTable{
+
+    .theTable #hisTable {
         width: 70%;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         border: #e0e0e0 1px solid;
         border-radius: 10px;
         margin-left: 200px;
     }
+
     #hisTable td {
         text-align: center;
         border: #e0e0e0 1px solid;
         padding: 8px;
-     }
+    }
 }
 
 /* 19_Bill_Splitter_payment */
