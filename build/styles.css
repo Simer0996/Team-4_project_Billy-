@@ -34,10 +34,9 @@ text-align: center; */
 
 /*Bottom navigation bar START*/
 .footerBtns {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    position: sticky;
+    top: 0;
+    margin-top: 4em;
     z-index: 1000;
     text-align: center;
     display: flex;
@@ -1577,6 +1576,10 @@ textarea {
 
 
 /* 16_Bill_Splitter_request */
+.billRequestTitle {
+    color: #66CC99;
+}
+
 .splitHistory {
     color: #66CC99;
     font-weight: bold;
@@ -1592,7 +1595,6 @@ textarea {
 
 .billRequestFirstDiv a {
     text-decoration: none;
-    color: #66CC99;
     font-weight: 900;
 }
 
