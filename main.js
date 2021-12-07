@@ -81,6 +81,14 @@ function getClass(list, cls) {
             newArray = []
         }
 
+        newArray.sort((a,b)=>{
+            if(a.Date>b.Date) {
+                return -1
+            } else {
+                return 1
+            }
+        });
+
 
         function renderRows() {
             // newArray.forEach(bill_object => {
