@@ -1,31 +1,36 @@
 @@include('./header.html')
 
 <main class="new-bill">
-    <i class="fas fa-arrow-circle-left fa-3x billyBackBtn" onclick= "location.href='4_Home.html';"></i>
+    <i class="fas fa-arrow-circle-left fa-3x billyBackBtn" onclick="location.href='4_Home.html';"></i>
     <h1 class="header">New Bill</h1>
     <form>
         <div class="newBillContainer">
-            <label for="bills">Catagories</label>
-            <select name="bills" id="bills" value="Type of Bill">
-                <option value="BC Hydro">BC Hydro</option>
-                <option value="BC MSP">BC MSP</option>
-                <option value="Mobile">Mobile</option>
-                <option value="Internet">Internet</option>
-                <option value="TV/Cable">TV/Cable</option>
-                <option value="Netflix">Netflix</option>
-                <option value="Credit Card">Credit Card</option>
-                <option value="Add new">Add new</option>
-            </select>
-
-            <div>
-                <label for="amount">Amount</label>
-                <input type="text" id="amount" name="amount">
+            <div class="categoryWrap">
+                <label for="bills">Category</label>
+                <select name="bills" id="bills" value="Type of Bill">
+                    <option value="" disabled selected>Select Category</option>
+                    <option value="BC Hydro">BC Hydro</option>
+                    <option value="BC MSP">BC MSP</option>
+                    <option value="Mobile">Mobile</option>
+                    <option value="Internet">Internet</option>
+                    <option value="TV/Cable">TV/Cable</option>
+                    <option value="Netflix">Netflix</option>
+                    <option value="Credit Card">Credit Card</option>
+                    <option value="Add new">Add new</option>
+                </select>
             </div>
-            <div>
+
+            <div class="amountWrap">
+                <label for="amount">Amount</label>
+                <input type="text" id="amount" name="amount" placeholder="$">
+            </div>
+
+            <div class="dateWrap">
                 <label for="date">Date</label>
                 <input type="date" name="date" id="date">
             </div>
-            <div>
+
+            <div class="areaWrap">
                 <label for="area">Memo</label>
                 <textarea name="area" id="area" cols="30" rows="20"></textarea>
             </div>
