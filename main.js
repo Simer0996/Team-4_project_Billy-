@@ -400,7 +400,9 @@ $('.addBtn').on('click', () => {
         let send = document.getElementById('send_btn');
         let name = document.getElementById('name');
         let chkSplit = document.getElementById('chkSplitEvenly');
-        let theduedate = document.getElementById('the_due_date');
+        let dateDue = document.getElementById('dateDue');
+        let friendsArr = [];
+        console.log(dateDue);
         var usersCount = 0;
         chkSplit.addEventListener('change', e => {
             if (e.target.checked) {
@@ -467,6 +469,17 @@ $('.addBtn').on('click', () => {
             //     }
             // }
             // alert("navigation");
+            //friendsArr.push({"dueDate": theduedate.value, "To": name.value, "Amount": '100'});
+            console.log("Hello Saurabh");
+            let i =0;
+            for (let obj of friendsArr){
+                obj.dueDate = document.getElementById('dateDue').value;
+                obj.Amount = document.getElementById(`addtext_${i}`).value;
+                console.log(`Obj----> ${obj.dueDate}`);
+                i++;
+            }
+            console.log(`----> ${friendsArr}`);
+            localStorage.setItem("friendsArray",JSON.stringify(friendsArr));
             window.location.href = '18_Bill_Splitter_history.html';
             /* // console.log(JSON.stringify(ref));
              // saveData(ref);
@@ -515,9 +528,9 @@ $('.addBtn').on('click', () => {
         //         my_container.appendChild(text_field);
         //         my_container.appendChild(br);
         // }
-        let friendsArr = [];
+        
         add_friend_btn.addEventListener('click', () => {
-            friendsArr.push({"dueDate": '01/12/2021', "To": name.value, "Amount": '100'});
+            friendsArr.push({"dueDate": dateDue.value, "To": name.value, "Amount": '100'});
            // console.log(friendsArr); style="text-align:center;"
             var content = "";
             document.getElementById('fourthdiv').innerHTML = content;
