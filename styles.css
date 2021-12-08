@@ -32,12 +32,19 @@ text-align: center; */
     color: #66cc99;
 }
 
+.desktopHeaderBox {
+    display: none;
+}
+
 /*Bottom navigation bar START*/
 .footerBtns {
-    position: sticky;
-    top: 0;
-    margin-top: .5em;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
     z-index: 1000;
+    margin-top: .5em;
     text-align: center;
     display: flex;
     justify-content: space-evenly;
@@ -863,7 +870,7 @@ text-align: center; */
     color: #66cc99;
 }
 
-@media (min-width:550px) {
+@media (min-width:992px) {
     .signupdesktop {
         display: block;
         height: 100%;
@@ -982,7 +989,7 @@ text-align: center; */
 }
 
 
-@media (min-width:550px) {
+@media (min-width:992px) {
     .logincontainer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -1081,7 +1088,7 @@ text-align: center; */
     display: none;
 }
 
-@media (min-width:550px) {
+@media (min-width:992px) {
     .forgotcontainer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -1136,15 +1143,16 @@ text-align: center; */
 .setimage .header {
     color: #66cc99;
     text-align: center;
-    margin-top: 5px;
+    transform: translateY(17px);
 }
 
-.settingimg {
-    width: 450px;
-    height: 300px;
+.settingBackImg {
+    width: 97%;
+    height: 40%;
     z-index: -1;
     position: absolute;
     border-radius: 10px;
+    opacity: .2;
 }
 
 .fas {
@@ -1154,12 +1162,40 @@ text-align: center; */
 }
 
 .setting {
-    background-color: #66cc99;
-    height: 270px;
+    background-color: #66cc8d;
+    opacity: .9;
+    height: 500px;
     margin-left: 60px;
     margin-right: 60px;
-    margin-top: 200px;
+    padding-top: 7px;
+    transform: translateY(38%);
     border-radius: 10px;
+}
+
+.setting p:first-child {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.setting p {
+    text-align: center;
+    transform: translateY(-20%);
+    margin-top: -10px;
+}
+
+.profileImgWrap {
+    text-align: center;
+}
+
+.settingProfileImg {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    transform: translateX(-50%) translateY(20%);
 }
 
 .setting .inputfield a {
@@ -1168,15 +1204,26 @@ text-align: center; */
 }
 
 .setting .inputfield {
+    transform: translateY(15px);
     margin-left: 80px;
     padding: 15px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.setting .inputfield:last-child {
+    transform: translateY(40px) translateX(30px);
+    font-weight: 300;
+    text-decoration: underline;
+    color: blue;
 }
 
 .logout {
-    margin-left: 70px;
+    margin-left: 20px;
 }
 
-@media (min-width:550px) {
+@media (min-width:992px) {
 
     .settingimg {
         margin-left: 400px;
@@ -1242,7 +1289,7 @@ textarea {
     display: none;
 }
 
-@media (min-width:550px) {
+@media (min-width:992px) {
 
     .desktophelp,
     .helphead {
@@ -1434,29 +1481,38 @@ textarea {
 
 .homeBillAddDiv {
     text-align: right;
-    padding: 3rem;
 }
 
 .homeBillAddBtn {
     text-align: center;
     cursor: pointer;
-    width: 4em;
-    height: 4em;
     color: #59bca3;
     background-color: white;
+    margin-top: -100px;
+}
+
+header .homeLogo img {
+    display: none;
 }
 
 /* Desktop Header Menu Bar  */
-@media (min-width:550px) {
+@media (min-width:992px) {
     .footerBtns {
         position: absolute;
-        top: 3%;
+        top: 3.5%;
         left: 42%;
         margin-right: 40px;
     }
 
     .footerButton {
         margin-left: 20%;
+        transform: translateY(15%);
+        background: rgb(255, 255, 255, 0);
+        color: #4daa7b;
+    }
+
+    .footerButton img {
+        display: none;
     }
 
     .homeLogo {
@@ -1469,6 +1525,7 @@ textarea {
 
     .homeLogo img {
         margin-left: 5%;
+        margin-top: 10px;
     }
 
     .divider {
@@ -1478,19 +1535,37 @@ textarea {
     .logoutBtn {
         display: block;
         text-decoration: underline;
+        color: rgb(40, 48, 75);
     }
 
-    .logoutBtn p{
+    .logoutBtn p {
         width: 70px;
-       transform: translateY(37px);
+    }
+
+    .desktopHeaderBox {
+        display: block;
+        width: auto;
+        height: 130px;
+        background-color: #66cc99;
+        z-index: -1;
+        opacity: .15;
+    }
+
+    .desktopHeaderBox .homeLogo {
+        z-index: 1000;
+        opacity: 1;
+    }
+
+    header .homeLogo img {
+        display: block;
     }
 
 }
 
 /* Homepage Desktop CSS  */
-@media (min-width:550px) {
+@media (min-width:992px) {
     .homeCalendar {
-        margin-top: 20%;
+        margin-top: 10%;
         width: 600px;
         transform: translateX(300px);
     }
@@ -1587,18 +1662,27 @@ textarea {
     color: #436cbe;
 }
 
-.categoryWrap, .amountWrap, .dateWrap, .areaWrap {
+.categoryWrap,
+.amountWrap,
+.dateWrap,
+.areaWrap {
     margin-bottom: 2em;
     display: flex;
     flex-direction: column;
 }
 
-.categoryWrap, .amountWrap, .dateWrap, .areaWrap label{
+.categoryWrap,
+.amountWrap,
+.dateWrap,
+.areaWrap label {
     color: #233457;
     font-weight: 600;
 }
 
-#bills, #amount, #date, #area {
+#bills,
+#amount,
+#date,
+#area {
     height: 32px;
 }
 
@@ -1608,11 +1692,12 @@ textarea {
 
 
 
-@media (min-width:550px) {
+@media (min-width:992px) {
     .new-bill {
         transform: translateY(100px);
     }
-    .new-bill .header{
+
+    .new-bill .header {
         display: none;
     }
 
@@ -1861,7 +1946,7 @@ textarea {
     z-index: 999;
 }
 
-@media (min-width:550px) {
+@media (min-width:992px) {
     .billRequest {
         display: flex;
         justify-content: space-evenly;
@@ -1899,7 +1984,7 @@ textarea {
     border-radius: 10px;
 }
 
-@media (min-width:550px) {
+@media (min-width:992px) {
     .theTable {
         justify-content: center;
         text-align: center;
@@ -1979,7 +2064,7 @@ textarea {
     cursor: pointer;
 }
 
-@media (min-width:550px) {
+@media (min-width:992px) {
     .billPmtContentWrap {
         text-align: center;
     }
