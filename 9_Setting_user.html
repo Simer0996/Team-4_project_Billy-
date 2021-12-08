@@ -1,10 +1,13 @@
 @@include('./header.html')
 <main class="settingUserPage">
     <i class="fas fa-arrow-circle-left fa-3x billyBackBtn" onclick="location.href='8_Setting.html';"></i>
-    <h1>Edit</h1>
+    <h1>User</h1>
 
-   
-    <form>
+    <div class="userImgWrap">
+        <img class="settingProfileImg" src="../images/Songhui.jpeg">
+    </div>
+
+    <form class="userFormWrap"> 
         <div>
             <label for="fullName">Full Name</label>
             <input type="text" name="fullName" id="fullName">
@@ -21,8 +24,8 @@
             <label for="num">Email</label>
             <input type="number" name="num" id="num">
         </div>
-        <div>
-            <button>Submit</button>
+        <div class="userEditBtn">
+            <button>Edit</button>
         </div>
 
     </form>

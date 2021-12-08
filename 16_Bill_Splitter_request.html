@@ -1,44 +1,45 @@
 @@include('./header.html')
-<i class="fas fa-arrow-circle-left fa-3x billyBackBtn" onclick="location.href='15_Bill_Splitter_menu.html';"></i>
-  <h1 class="billRequestTitle" style="text-align: center;">Bill Request</h1>
+
 <main class="billRequest">
+  <i class="fas fa-arrow-circle-left fa-3x billyBackBtn" onclick="location.href='15_Bill_Splitter_menu.html';"></i>
+  <h1 class="billRequestTitle" style="text-align: center;">Bill Request</h1>
 
   <div class="firstPart">
-  <div class="billRequestContent">
-    <div class="billRequestFirstDiv">
-      <i class="fas fa-camera fa-lg"></i> &nbsp;
-      <a href="24_Camera_Capture.html">Take a photo of your Bill</a>
-    </div>
-    <div class="billRequestSecondDiv">
-      <p>Total Amount</p>
-      <p><input type="text" id="totalAmount" placeholder="$ 00.00"></p>
-    </div>
-    <div class="billRequestThirdDiv">
-      <div class="thirdDiv1">
-        <p>Number of people</p>
-        <div class="thirdDivBtnWrap">
-          <input type="text" id="qtyBox" value="0">
-          <div class="subAddBtn">
-            <button type="button" id="sub">SUB</button>
-            <button type="button" id="add">ADD</button>
+    <div class="billRequestContent">
+      <div class="billRequestFirstDiv">
+        <i class="fas fa-camera fa-lg"></i> &nbsp;
+        <a href="24_Camera_Capture.html">Take a photo of your Bill</a>
+      </div>
+      <div class="billRequestSecondDiv">
+        <p>Total Amount</p>
+        <p><input type="text" id="totalAmount" placeholder="$ 00.00"></p>
+      </div>
+      <div class="billRequestThirdDiv">
+        <div class="thirdDiv1">
+          <p>Number of people</p>
+          <div class="thirdDivBtnWrap">
+            <input type="text" id="qtyBox" value="0">
+            <div class="subAddBtn">
+              <button type="button" id="sub">SUB</button>
+              <button type="button" id="add">ADD</button>
+            </div>
+          </div>
+        </div>
+        <div class="thirdDiv2">
+          <p>Add Friend</p>
+          <div class="addFriendWrap">
+            <input type="text" id="name" placeholder="Enter Name">
+            <!-- <img src="images/Add.png" alt="Add">    -->
+            <button type="button" id="add_friend_btn">ADD</button>
           </div>
         </div>
       </div>
-      <div class="thirdDiv2">
-        <p>Add Friend</p>
-        <div class="addFriendWrap">
-          <input type="text" id="name" placeholder="Enter Name">
-          <!-- <img src="images/Add.png" alt="Add">    -->
-          <button type="button" id="add_friend_btn">ADD</button>
-        </div>
+      <div class="splitEvenlyBox" style="text-align: center;">
+        <input type="checkbox" id="chkSplitEvenly"> Split Evenly
       </div>
     </div>
-    <div class="splitEvenlyBox" style="text-align: center;">
-      <input type="checkbox" id="chkSplitEvenly"> Split Evenly
-    </div>
   </div>
-    </div>
-    <div class="secondPart">
+  <div class="secondPart">
     <div class="billRequestFourthDiv" id="fourthdiv">
       <!--  <div class="fourthdiv2">
             <p>Harsimran Singh</p>
@@ -58,7 +59,7 @@
       <button class="billRequestSendBtn" type="button" id="send_btn">SEND</button>
     </div>
   </div>
-    <!-- <div class="billRequestBtnDiv">
+  <!-- <div class="billRequestBtnDiv">
       <button class="billRequestSendBtn" type="button" id="send_btn">SEND</button>
   </div> -->
   </div>
