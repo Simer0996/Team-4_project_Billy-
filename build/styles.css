@@ -1834,6 +1834,24 @@ label {
     font-weight: 600;
 }
 
+@media (min-width:992px) {
+
+    
+    .optionsLink {
+        text-align: center;
+        margin: 0;
+    }
+    
+    .optionsLink a {
+        font-size: 20px;
+        margin: 20px -40px;
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+    }
+
+}
+
 
 /* 16_Bill_Splitter_request */
 .billRequestTitle {
