@@ -12,10 +12,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css">
   <link rel="manifest" href="./manifest.webmanifest">
 
-
-  <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-firestore-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-auth-compat.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
       // Register a service worker hosted at the root of the
@@ -30,6 +26,11 @@
     }
   </script>
 
+  <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-auth-compat.js"></script>
+ 
+  <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-database-compat.js"></script>
 
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -46,18 +47,20 @@
     // https://firebase.google.com/docs/web/setup#available-libraries
 
     // Your web app's Firebase configuration
-    const firebaseApp = firebase.initializeApp({
-      apiKey: "AIzaSyA588GyaRwUeolD6zmxbjvS8EU7Lq-EF_s",
-      authDomain: "billy-payment-app.firebaseapp.com",
-      databaseURL: "https://billy-payment-app-default-rtdb.firebaseio.com",
-      projectId: "billy-payment-app",
-      storageBucket: "billy-payment-app.appspot.com",
-      messagingSenderId: "716948441529",
-      appId: "1:716948441529:web:d7d954ed60d569ddcf0e68"
-    });
+
+    const firebaseConfig = {
+            apiKey: "AIzaSyA588GyaRwUeolD6zmxbjvS8EU7Lq-EF_s",
+            authDomain: "billy-payment-app.firebaseapp.com",
+            databaseURL: "https://billy-payment-app-default-rtdb.firebaseio.com",
+            projectId: "billy-payment-app",
+            storageBucket: "billy-payment-app.appspot.com",
+            messagingSenderId: "716948441529",
+            appId: "1:716948441529:web:d7d954ed60d569ddcf0e68"
+        }
+    const firebaseApp = firebase.initializeApp(firebaseConfig);
+    const db = firebase.database();
 
     // Initialize Firebase
-    //const db = firebaseApp.filestore();
     const auth = firebaseApp.auth();
   </script>
 
@@ -79,12 +82,6 @@
 </head>
 
 <body>
-  <header>
-    <div class="homeLogo">
-      <img src="./images/logo_original.png" alt="Logo">
-    </div>
-    <div class="desktopHeaderBox"></div>
-  </header>
 
 
 <main class="friendsList">

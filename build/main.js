@@ -24,7 +24,7 @@ function getClass(list, cls) {
         } = await import('./Add_bill.js');
         btn2.addEventListener('click', (e) => {
             e.preventDefault()
-            let bill_object = new AddBill(bills.value, amount.value, date.value, area.value)
+            let bill_object = new AddBill(bills.value, amount.value, date.value, area.value, false)
             let arr = JSON.parse(localStorage.getItem('bill_array'))
             if (arr == null) {
                 arr = [];
@@ -69,7 +69,7 @@ function getClass(list, cls) {
                 events: data
             });
             calendar.render();
-            
+
         }
 
         let recoveredString = localStorage.getItem('bill_array');
@@ -81,8 +81,8 @@ function getClass(list, cls) {
             newArray = []
         }
 
-        newArray.sort((a,b)=>{
-            if(a.Date>b.Date) {
+        newArray.sort((a, b) => {
+            if (a.Date > b.Date) {
                 return -1
             } else {
                 return 1
@@ -103,7 +103,7 @@ function getClass(list, cls) {
         }
 
         function arrayHome() {
-            for (let i = 0 ; i < newArray.length ; i++) {
+            for (let i = 0; i < newArray.length; i++) {
                 let row1 = document.getElementById("myTable").insertRow(0)
                 let cell1 = row1.insertCell(0);
                 let cell2 = row1.insertCell(1);
@@ -112,7 +112,7 @@ function getClass(list, cls) {
                 cell1.innerHTML = `${newArray[i].Date}`
                 cell2.innerHTML = `${newArray[i].Categories}`
                 cell3.innerHTML = `$${newArray[i].Amount}`
-                
+
             }
         }
         renderRows()
@@ -206,19 +206,29 @@ function getClass(list, cls) {
 (async () => {
     if (getClass(mainClass, 'chat2Page')) {
         console.log('this is Chat 2 page');
-        const {
-            default: putSelectedFriendName
-        } = await import('./Chat_page_2.js');
-        putSelectedFriendName
+        const username = prompt("What's your name?");
 
-        document.addEventListener('DOMContentLoaded', function () {
-            putSelectedFriendName;
-        });
+        document.getElementById("send-message").addEventListener("submit", postChat);
+        function postChat(e) {
+            e.preventDefault();
+            const timestamp = Date.now();
+            const chatTxt = document.getElementById("chat-txt");
+            const message = chatTxt.value;
+            chatTxt.value = "";
+            db.ref("messages/" + timestamp).set({
+                usr: username,
+                msg: message,
+            });
 
-        // Redirect to Chat Page-1
-        $('.icon-back').on('click', () => {
-            location.href = './22_Chat_page_1.html'
-        })
+            const fetchChat = db.ref("messages/");
+            fetchChat.on("child_added", function (snapshot) {
+                const messages = snapshot.val();
+                const msg = "<li>" + messages.usr + " : " + messages.msg + "</li>";
+                document.getElementById("messages").innerHTML += msg;
+            });
+        }
+
+
 
     }
 })();
@@ -360,8 +370,8 @@ $('.addBtn').on('click', () => {
         logg.addEventListener('click', (e) => {
             e.preventDefault();
             auth.signOut().then(() => {
-                    window.location.href = "./1_Login_Page.html";
-                })
+                window.location.href = "./1_Login_Page.html";
+            })
                 .catch((error) => {
                     console.log('error signput', error);
                 })
@@ -436,12 +446,12 @@ $('.addBtn').on('click', () => {
         function saveData(ref) {
             // const billRef = ref.child('bill');
             ref.set({
-                    'total_amount': theAmount.value,
-                    'no_of_people': qty.value,
-                    'amount_1': am1.value,
-                    'amount_2': am2.value,
-                    'amount_3': am3.value
-                })
+                'total_amount': theAmount.value,
+                'no_of_people': qty.value,
+                'amount_1': am1.value,
+                'amount_2': am2.value,
+                'amount_3': am3.value
+            })
                 .then(() => {
                     alert("data has been added successfully");
                 })
@@ -451,12 +461,12 @@ $('.addBtn').on('click', () => {
         }
         function insertData() {
             set(ref(db, "TheData/" + qty.value), {
-                    total_amount: theAmount.value,
-                    no_of_people: qty.value,
-                    amount_1: am1.value,
-                    amount_2: am2.value,
-                    amount_3: am3.value
-                })
+                total_amount: theAmount.value,
+                no_of_people: qty.value,
+                amount_1: am1.value,
+                amount_2: am2.value,
+                amount_3: am3.value
+            })
                 .then(() => {
                     alert("data has been added successfully");
                 })
@@ -479,15 +489,15 @@ $('.addBtn').on('click', () => {
             // alert("navigation");
             //friendsArr.push({"dueDate": theduedate.value, "To": name.value, "Amount": '100'});
             console.log("Hello Saurabh");
-            let i =0;
-            for (let obj of friendsArr){
+            let i = 0;
+            for (let obj of friendsArr) {
                 obj.dueDate = document.getElementById('dateDue').value;
                 obj.Amount = document.getElementById(`addtext_${i}`).value;
                 console.log(`Obj----> ${obj.dueDate}`);
                 i++;
             }
             console.log(`----> ${friendsArr}`);
-            localStorage.setItem("friendsArray",JSON.stringify(friendsArr));
+            localStorage.setItem("friendsArray", JSON.stringify(friendsArr));
             window.location.href = '18_Bill_Splitter_history.html';
             /* // console.log(JSON.stringify(ref));
              // saveData(ref);
@@ -536,10 +546,10 @@ $('.addBtn').on('click', () => {
         //         my_container.appendChild(text_field);
         //         my_container.appendChild(br);
         // }
-        
+
         add_friend_btn.addEventListener('click', () => {
-            friendsArr.push({"dueDate": dateDue.value, "To": name.value, "Amount": '100'});
-           // console.log(friendsArr); style="text-align:center;"
+            friendsArr.push({ "dueDate": dateDue.value, "To": name.value, "Amount": '100' });
+            // console.log(friendsArr); style="text-align:center;"
             var content = "";
             document.getElementById('fourthdiv').innerHTML = content;
             for (let i = 0; i < friendsArr.length; i++) {
@@ -548,7 +558,7 @@ $('.addBtn').on('click', () => {
                 document.getElementById('fourthdiv').innerHTML += content;
             }
             usersCount++;
-            localStorage.setItem("friendsArray",JSON.stringify(friendsArr));
+            localStorage.setItem("friendsArray", JSON.stringify(friendsArr));
         })
     }
 })();
@@ -605,9 +615,9 @@ $('.addBtn').on('click', () => {
         snap.addEventListener('click', () => {
             context.drawImage(video, 0, 0, 450, 400);
             // Stop all video streams.
-        video.srcObject.getVideoTracks().forEach(track => track.stop());
-        video.style.display = "none";
-        canvas.style.display = "block";
+            video.srcObject.getVideoTracks().forEach(track => track.stop());
+            video.style.display = "none";
+            canvas.style.display = "block";
         });
         startWebCam();
         saveButton.addEventListener('click', (e) => {
@@ -638,13 +648,13 @@ $('.addBtn').on('click', () => {
             let cell001 = row001.insertCell(0);
             let cell002 = row001.insertCell(1);
             let cell003 = row001.insertCell(2);
-            
+
             cell001.innerHTML = `<b>Due Date</b>`
             cell002.innerHTML = `<b>To</b>`
             cell003.innerHTML = `<b>Amount</b>`
 
             for (let i of bill_splitter__history_array) {
-console.log(i)
+                console.log(i)
                 let row1 = document.getElementById("hisTable").insertRow(1)
                 let cell1 = row1.insertCell(0);
                 let cell2 = row1.insertCell(1);
@@ -654,7 +664,6 @@ console.log(i)
                 cell3.innerHTML = `$${i.Amount}`
             }
         }
-        historyTable();   
+        historyTable();
     }
 })();
-//
