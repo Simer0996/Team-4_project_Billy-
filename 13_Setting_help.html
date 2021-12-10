@@ -1,39 +1,36 @@
 @@include('header.html')
 
-   
+
 <main class="helpmain">
-    <div class="helphead">
-        <img src="../images/logo_original1.png">
-        <a href="4_Home.html">Home</a>
-        <a href="6_History.html">History</a>
-        <a href="14_Bill_Splitter.html">Split</a>
-        <a href="8_Setting.html">Setting</a>
-    </div>    
+
     <div class="helpmaincontainer">
         <div class="desktophelp">
             <img src="../images/setting-image.jpg">
-    </div>
+        </div>
 
-<div class="helpcontainer">
-<div class="help">
-    <i class="fas fa-arrow-circle-left fa-3x billyBackBtn" onclick="location.href='8_Setting.html';"></i>
-    <h1 class="header">Help</h1>
-    <div class="inputfield">
-        <label>Subject</label>
-        <input type="text" class="input" id="subject">
-    </div> 
-    <div class="inputfield">
-        <label>Message</label>
-    </div>  
-    <div class="inputfield">
-        <textarea id="input" name="message" rows="10" cols="45"></textarea>
-    </div>    
-    <div>
-        <input type="submit" value="SEND" class="send-btn" id="sett">
-    </div>   
-</div>    
-</div>
-</div>
+        <div class="helpcontainer">
+            <div class="help">
+                <i class="fas fa-arrow-circle-left fa-3x billyBackBtn" onclick="location.href='8_Setting.html';"></i>
+                <h1 class="header">Help</h1>
+
+                <div class="helpInputWrap">
+                    <div class="inputfield">
+                        <label>Subject</label>
+                        <input type="text" class="input" id="subject">
+                    </div>
+                    <div class="inputfield">
+                        <label>Message</label>
+                    </div>
+                    <div class="inputfield">
+                        <textarea id="input" name="message" rows="10" cols="45"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="SEND" class="send-btn" id="sett">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 
 @@include('./footer.html')

@@ -97,6 +97,10 @@ text-align: center; */
     height: 5%;
 }
 
+.footerBtns .footerLogo {
+    display: none;
+}
+
 
 @media (min-width:992px) {
     main h1:first-of-type {
@@ -104,13 +108,16 @@ text-align: center; */
     }
 
     main {
-        transform: translateY(20px);
+        transform: translateY(40px);
     }
 
     .fa-arrow-circle-left {
         display: none;
     }
 
+    .footerLogo {
+        transform: translateY(15px);
+    }
 }
 
 /*************************************************/
@@ -227,29 +234,6 @@ text-align: center; */
 /*************************************************/
 /***************** Namhyung Kim ******************/
 /*************************************************/
-
-/* Splash_Page */
-/* .splashContainer {
-    width: auto;
-    height: 900px;
-    background-image: linear-gradient(to left top, #6b9cd1, #54a4d2, #3fabcf, #33b2c7, #39b7bc, #41b9b4, #4dbbac, #59bca3, #5ebc9e, #63bc99, #68bb94, #6ebb8f);
-
-}
-
-.splashContainer p {
-    color: white;
-    font-size: 24pt;
-    text-align: center;
-}
-
-.splashLogoImg {
-    max-width: 90%;
-    max-height: 100%;
-    padding-top: 60%;
-    padding-left: 5%;
-    padding-right: 5%;
-    cursor: pointer;
-} */
 
 /*** Add_Friend ***/
 .addFriendsTitle {
@@ -1025,7 +1009,6 @@ text-align: center; */
     .desktoplogin {
         height: 110%;
         border: 30px solid #66cc99;
-        /* width:100%; */
     }
 
     .desktoplogin img {
@@ -1034,11 +1017,6 @@ text-align: center; */
         margin-left: 100px;
         margin-top: 200px;
     }
-
-    /* .container .loginform{
-        width:100%;  
-         margin-left:550px; 
-    }  */
 
     .logintitle {
         text-align: center;
@@ -1248,10 +1226,24 @@ text-align: center; */
     .setting {
         width: 300px;
         margin-left: 480px;
+        transform: translateY(38%) translateX(40px);
     }
 
     .logout {
-        margin-left: 40px;
+        margin-left: -10px;
+    }
+
+    .inputfield {
+        transform: translateX(-30px) translateY(10px);
+    }
+
+    .settingBackImg {
+        display: none;
+    }
+
+    .settingProfileImg {
+        transform: scale(140%) translateX(-50px) translateY(5px);
+        
     }
 }
 
@@ -1260,9 +1252,22 @@ text-align: center; */
 .helpmain .header {
     color: #66cc99;
     margin-top: 7px;
-    /* position: relative; */
     text-align: center;
 }
+
+.helpmaincontainer {
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+.helpInputWrap {
+    transform: translateY(30px);
+}
+
+.inputfield{
+    margin-top: 10px;
+}
+
 
 .help {
     height: 200px;
@@ -1300,16 +1305,15 @@ textarea {
     background-color: #66cc99;
 }
 
-.desktophelp,
-.helphead {
+.desktophelp img {
     display: none;
 }
 
 @media (min-width:992px) {
 
-    .desktophelp,
-    .helphead {
+    .desktophelp img {
         display: block;
+        opacity: .8;
     }
 
     .helpmaincontainer {
@@ -1317,31 +1321,14 @@ textarea {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
         height: 100%;
-    }
-
-    .helphead {
-        display: flex;
-    }
-
-    .helphead a {
-        padding: 20px;
-        margin-left: 200px;
-        text-decoration: none;
-        color: darkcyan;
-    }
-
-    .helphead img {
-        height: 40px;
-        width: 40px;
-        margin-top: 5px;
-        margin-left: 10px;
+        transform: translateY(-40px);
     }
 
     .desktophelp img {
         width: 400px;
         height: 400px;
         margin-left: 100px;
-        margin-top: 50px;
+        margin-top: 20px;
         border-radius: 10px;
     }
 
@@ -1353,6 +1340,8 @@ textarea {
     .send-btn {
         margin-left: 220px;
     }
+
+
 }
 
 /*************************************************/
@@ -1516,7 +1505,7 @@ header .homeLogo img {
     .footerBtns {
         position: absolute;
         top: 3.5%;
-        left: 35%;
+        left: 38%;
         justify-content: center;
         transform: translateX(-80px) translateY(10px);
     }
@@ -1532,17 +1521,12 @@ header .homeLogo img {
         display: none;
     }
 
-    .homeLogo {
+    .footerBtns .footerLogo {
+        display: block;
         position: absolute;
-        width: 450px;
-        top: 4%;
-        left: 2%;
-        text-align: left;
-    }
-
-    .homeLogo img {
-        margin-left: 5%;
-        margin-top: 10px;
+        width: 140px;
+        left: -356px;
+        top: -17px;
     }
 
     .divider {
@@ -1566,15 +1550,6 @@ header .homeLogo img {
         background-color: #66cc99;
         z-index: -1;
         opacity: .15;
-    }
-
-    .desktopHeaderBox .homeLogo {
-        z-index: 1000;
-        opacity: 1;
-    }
-
-    header .homeLogo img {
-        display: block;
     }
 
 }
@@ -1674,6 +1649,33 @@ header .homeLogo img {
     cursor: pointer;
     font-weight: 900;
     transform: translateX(100px);
+}
+
+.paymentLinkAll a {
+    text-decoration: none;
+}
+
+
+
+@media (min-width:992px) {
+    .userImgWrap {
+        transform: translateY(40px);
+    }
+
+    .userFormWrap {
+        width: 50%;
+        transform: translateX(340px) translateY(240px);
+        z-index: -1;
+    }
+
+    .userEditBtn button{
+        transform: translateX(190px);
+    }
+
+    .allPmtRowWrap {
+        width: 50%;
+        transform: translateX(50%);
+    }
 }
 
 
@@ -1807,6 +1809,24 @@ label {
 
 
 
+@media (min-width:992px) {
+
+    .historyDesktopWrap {
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border: #e0e0e0 1px solid;
+        border-radius: 10px;
+        height: 400px;
+        width: 1000px;
+        transform: translateX(20%);
+        padding-left: -30px;
+    }
+
+}
+
+
+
+
+
 
 /*************************************************/
 /***************** Harsimran Singh ***************/
@@ -1836,12 +1856,12 @@ label {
 
 @media (min-width:992px) {
 
-    
+
     .optionsLink {
         text-align: center;
         margin: 0;
     }
-    
+
     .optionsLink a {
         font-size: 20px;
         margin: 20px -40px;
@@ -2059,12 +2079,15 @@ label {
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         border: #e0e0e0 1px solid;
         border-radius: 10px;
+        height: 400px;
+        width: 550px;
     }
 
     .secondPart {
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         border: #e0e0e0 1px solid;
         border-radius: 10px;
+        transform: translateX(-20px);
     }
 }
 
@@ -2167,6 +2190,15 @@ label {
     .billPmtContentWrap {
         text-align: center;
     }
+
+    .amountWrap input {
+        margin-left: 35.5%;
+    }
+
+    .payBtnWrap {
+        transform: translateX(18px) translateY(-50px);
+    }
+
 }
 
 
