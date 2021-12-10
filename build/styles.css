@@ -1433,7 +1433,7 @@ textarea {
 #myTable {
     margin-left: auto;
     margin-right: auto;
-
+    transform: translateX(-15px);
 }
 
 #myTable tr {
@@ -1547,7 +1547,7 @@ textarea {
 
     .homeBillAddDiv {
         text-align: left;
-        transform: translateX(350px) translateY(-680px);
+        transform: translateX(385px) translateY(-650px);
     }
 
 
@@ -1698,6 +1698,7 @@ textarea {
     margin-top: 50px;
     font-size: 24pt;
     color: #436cbe;
+    display: none;
 }
 
 .categoryWrap,
