@@ -48,6 +48,7 @@ text-align: center; */
     text-align: center;
     display: flex;
     justify-content: space-evenly;
+    transform: translateY(20px);
 }
 
 .logoutBtn {
@@ -138,7 +139,7 @@ text-align: center; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transform: translate(0, -20%);
+    transform: translate(0, -32%);
 
 }
 
@@ -231,6 +232,17 @@ text-align: center; */
 }
 
 
+@media (min-width:992px) {
+    .splashPageWrap {
+        position: absolute;
+        z-index: 1000;
+        width: 1340px;
+        height: 720px;
+        transform: translateY(-180px);
+    }
+}
+
+
 /*************************************************/
 /***************** Namhyung Kim ******************/
 /*************************************************/
@@ -267,6 +279,7 @@ text-align: center; */
 .showContactList {
     margin-right: 2.5em;
     display: none;
+    transform: translateY(-20px);
 }
 
 .showContactList ul {
@@ -290,7 +303,7 @@ text-align: center; */
 .addFriendBtn {
     background-color: #66cc99;
     color: white;
-    margin-top: 120px;
+    margin-top: 20px;
     padding: 10px 150px;
     border-radius: 45px;
     box-shadow: 0px 8px 15px rgba(209, 209, 209, 0.945);
@@ -300,7 +313,27 @@ text-align: center; */
 .pickedName {
     text-align: center;
     font-size: 20pt;
-    margin-top: 3em;
+    margin-top: 1em;
+}
+
+@media (min-width:992px) {
+    .fa-id-badge {
+        transform: translateX(400px) translateY(-78px);
+    }
+
+    .addFriendBtn {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .showContactList ul {
+        width: 600px;
+        transform: translateX(300px);
+    }
+
+    .pickedName {
+        margin-top: 0;
+    }
 }
 
 
@@ -363,7 +396,6 @@ text-align: center; */
 }
 
 .addFriendNameList li {
-    background-color: #e0e0e0;
     text-align: left;
     padding-left: 1em;
     padding-top: 0.5em;
@@ -372,6 +404,16 @@ text-align: center; */
     list-style-type: none;
     font-family: cursive;
 }
+
+@media (min-width:992px) {
+    .friendsList {
+        width: 600px;
+        transform: translateX(80%) translateY(20px);
+        font-size: 20px;
+       
+    }
+}
+
 
 
 /* Chat_page_1 CSS */
@@ -514,6 +556,8 @@ text-align: center; */
 
 
 /* Setting_payment_link_1  */
+
+
 .paymentLinkAll h1 {
     color: #66cc99;
     font-weight: bold;
@@ -687,6 +731,9 @@ text-align: center; */
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    font-size: 16px;
+    font-weight: 600;
+    transform: translateY(-20px);
 }
 
 .reminder {
@@ -1158,11 +1205,11 @@ text-align: center; */
 .setting {
     background-color: #66cc8d;
     opacity: .9;
-    height: 500px;
+    height: 400px;
     margin-left: 60px;
     margin-right: 60px;
     padding-top: 7px;
-    transform: translateY(38%);
+    transform: translateY(30%);
     border-radius: 10px;
 }
 
@@ -1171,12 +1218,14 @@ text-align: center; */
     font-weight: 600;
     text-align: center;
     margin-top: 20px;
+    transform: translateY(20px);
 }
 
 .setting p {
     text-align: center;
     transform: translateY(-20%);
     margin-top: -10px;
+    transform: translateY(20px);
 }
 
 .profileImgWrap {
@@ -1189,7 +1238,8 @@ text-align: center; */
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    transform: translateX(-50%) translateY(20%);
+    transform: translateX(-50%) translateY(10%);
+    z-index: 1000;
 }
 
 .setting .inputfield a {
@@ -1198,10 +1248,10 @@ text-align: center; */
 }
 
 .setting .inputfield {
-    transform: translateY(15px);
+    transform: translateY(20px);
     margin-left: 80px;
     padding: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 18px;
     font-weight: 600;
 }
@@ -1213,9 +1263,14 @@ text-align: center; */
     color: blue;
 }
 
-.logout {
-    margin-left: 20px;
+.logoutWrap {
+    text-align: center;
+    margin-top: 38px;
+    font-weight: 600;
 }
+
+
+
 
 @media (min-width:992px) {
 
@@ -1242,8 +1297,8 @@ text-align: center; */
     }
 
     .settingProfileImg {
-        transform: scale(140%) translateX(-50px) translateY(5px);
-        
+        transform: scale(140%) translateX(-30px) translateY(5px);
+
     }
 }
 
@@ -1264,7 +1319,7 @@ text-align: center; */
     transform: translateY(30px);
 }
 
-.inputfield{
+.inputfield {
     margin-top: 10px;
 }
 
@@ -1359,107 +1414,19 @@ textarea {
     max-height: 30%;
 }
 
-/* calendar */
 .homeCalendar {
     text-align: center;
+    width: 90%;
+    height: 80%;
+    transform: translateX(7%) translateY(-2%);
 }
 
-.calendar {
-    display: inline-grid;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-
+.myTableWrap {
+    margin: 1rem;
 }
-
-.month {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 20px;
-    margin-bottom: 20px;
-    font-weight: 300;
-}
-
-.year {
-    font-weight: 600;
-    margin-left: 10px;
-}
-
-.calendarNav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    width: 40px;
-    height: 40px;
-    border-radius: 40px;
-    transition-duration: .2s;
-    position: relative;
-}
-
-.fas {
-    color: #66cc99;
-}
-
-.days {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: repeat(7, 1fr);
-    color: #999;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-.days span {
-    width: 50px;
-    justify-self: center;
-    align-self: center;
-    text-align: center;
-}
-
-
-.dates {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-}
-
-.dates button {
-    cursor: pointer;
-    outline: 0;
-    border: 0;
-    background: transparent;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    justify-self: center;
-    align-self: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    margin: 2px;
-    transition-duration: .2s;
-}
-
-
-.dates button:first-child {
-    grid-column: 3;
-}
-
-.dates button:hover {
-    background: #eee;
-}
-
-.dates button:focus {
-    background: #66cc99;
-    color: #fff;
-    font-weight: 600;
-}
-
-/* Calendar End */
 
 .loadBillSection div {
-    margin: 2rem;
+    margin: 1rem;
 
 }
 
@@ -1486,6 +1453,7 @@ textarea {
 
 .homeBillAddDiv {
     text-align: right;
+
 }
 
 .homeBillAddBtn {
@@ -1493,12 +1461,12 @@ textarea {
     cursor: pointer;
     color: #59bca3;
     background-color: white;
-    margin-top: -100px;
 }
 
-header .homeLogo img {
-    display: none;
+.homeBillAddBtn i {
+    transform: translateY(-30px) translateX(-10px);
 }
+
 
 /* Desktop Header Menu Bar  */
 @media (min-width:992px) {
@@ -1559,7 +1527,7 @@ header .homeLogo img {
     .homeCalendar {
         margin-top: 10%;
         width: 600px;
-        transform: translateX(300px);
+        transform: translateX(250px);
     }
 
     #calendar {
@@ -1579,7 +1547,7 @@ header .homeLogo img {
 
     .homeBillAddDiv {
         text-align: left;
-        transform: translateX(350px) translateY(-700px);
+        transform: translateX(350px) translateY(-680px);
     }
 
 
@@ -1612,7 +1580,7 @@ header .homeLogo img {
 }
 
 .userFormWrap {
-    transform: translateY(200px);
+    transform: translateY(150px);
     text-align: center;
 }
 
@@ -1636,7 +1604,7 @@ header .homeLogo img {
 }
 
 .userEditBtn {
-    margin-top: 60px;
+    margin-top: 40px;
     width: 150px;
 }
 
@@ -1668,7 +1636,7 @@ header .homeLogo img {
         z-index: -1;
     }
 
-    .userEditBtn button{
+    .userEditBtn button {
         transform: translateX(190px);
     }
 
@@ -1697,7 +1665,7 @@ header .homeLogo img {
 .new-bill .buttons {
     display: flex;
     justify-content: space-between;
-    transform: translateY(10px);
+    transform: translateY(5px);
 }
 
 .new-bill .buttons #btn1 {
@@ -1736,7 +1704,7 @@ header .homeLogo img {
 .amountWrap,
 .dateWrap,
 .areaWrap {
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
     display: flex;
     flex-direction: column;
 }
@@ -1764,23 +1732,37 @@ label {
     margin-bottom: 7px;
 }
 
+.areaWrap textarea {
+    resize: none;
+}
+
+#outputArea {
+    transform: translateY(-10px);
+}
 
 @media (min-width:992px) {
+
+    .newBillContainer {
+        width: 500px;
+        transform: translateX(360px) translateY(40px);
+    }
 
     .new-bill {
         transform: translateY(-15px);
     }
 
     .new-bill .buttons #btn1 {
-        margin-left: 300px;
+        margin-left: 360px;
         width: 200px;
         border-radius: 10px;
+        transform: translateY(40px);
     }
 
     .new-bill .buttons #btn2 {
-        margin-right: 300px;
+        margin-right: 360px;
         width: 200px;
         border-radius: 10px;
+        transform: translateY(40px);
     }
 
 }
@@ -1805,6 +1787,7 @@ label {
 
 #tableOutput tbody td {
     text-align: center;
+    padding-top: 10px;
 }
 
 
@@ -1812,20 +1795,15 @@ label {
 @media (min-width:992px) {
 
     .historyDesktopWrap {
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
         border: #e0e0e0 1px solid;
         border-radius: 10px;
-        height: 400px;
         width: 1000px;
-        transform: translateX(20%);
+        transform: translateX(15%);
         padding-left: -30px;
     }
 
 }
-
-
-
-
 
 
 /*************************************************/
@@ -1840,7 +1818,7 @@ label {
 }
 
 .optionsLink {
-    margin: 4em 40%;
+    margin: 3em 40%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1936,6 +1914,7 @@ label {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transform: translateY(-18px);
 }
 
 .thirdDiv1 input {
@@ -1982,6 +1961,7 @@ label {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transform: translateY(-15px);
 }
 
 .thirdDiv2 input {
@@ -2027,6 +2007,7 @@ label {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transform: translateY(-12px);
 }
 
 .theDueDate p {
@@ -2053,7 +2034,7 @@ label {
 }
 
 .billRequestSendBtn {
-    margin-top: 4em;
+    margin-top: 2em;
     padding: 1em 4em;
     background-color: #66cc99;
     color: white;
@@ -2095,15 +2076,22 @@ label {
 
 #hisTable {
     width: 100%;
+    transform: translateY(-20px);
 }
 
 #hisTable td {
     text-align: center;
-    border: #e0e0e0 1px solid;
     padding: 8px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border: #e0e0e0 1px solid;
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+    /* border: #e0e0e0 1px solid; */
     border-radius: 10px;
+    padding-top: -10px;
+}
+
+#hisTable td b {
+    font-weight: bold;
+    font-size: 20px;
+    color: #536FE0;
 }
 
 @media (min-width:992px) {
@@ -2114,17 +2102,20 @@ label {
 
     .theTable #hisTable {
         width: 70%;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
         border: #e0e0e0 1px solid;
         border-radius: 10px;
         margin-left: 200px;
+        transform: translateY(20px);
     }
 
     #hisTable td {
         text-align: center;
-        border: #e0e0e0 1px solid;
+        /* border: #e0e0e0 1px solid; */
         padding: 8px;
     }
+
+    
 }
 
 /* 19_Bill_Splitter_payment */
@@ -2169,13 +2160,13 @@ label {
 
 
 .payBtnWrap {
-    margin-top: 4em;
+    margin-top: 1.5em;
     text-align: center;
     margin-left: -2em;
 }
 
 .payButton {
-    margin-top: 4em;
+    margin-top: 2em;
     padding: 1em 4em;
     background-color: #66cc99;
     color: white;
@@ -2191,12 +2182,12 @@ label {
         text-align: center;
     }
 
-    .amountWrap input {
-        margin-left: 35.5%;
+    .payBtnWrap {
+        transform: translateX(18px) translateY(-50px);
     }
 
     .payBtnWrap {
-        transform: translateX(18px) translateY(-50px);
+        margin-top: 70px;
     }
 
 }
@@ -2210,21 +2201,25 @@ label {
 }
 
 .snap {
-    width: 100px;
-    height: 50px;
+    width: 120px;
+    height: 60px;
     border-radius: 75px;
     background-color: #66CC99;
     color: white;
     margin-top: 30px;
     cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
 }
 
 .saveButton {
-    width: 100px;
-    height: 50px;
+    width: 120px;
+    height: 60px;
     border-radius: 75px;
     background-color: #66CC99;
     color: white;
     margin-top: 30px;
     cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
 }

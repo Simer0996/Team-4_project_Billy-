@@ -1,11 +1,14 @@
+// window.addEventListener('resize', function(){
+//     let fixedWidth = 500;
+//     let fixedHeight = 800;
+
+//     window.resizeTo(fixedWidth, fixedHeight);
+// });
+
+
 //Add Bill
-let bill_array = []; //Array storage
+let bill_array = []; 
 let bill_splitter__history_array = []
-// let add = document.getElementById("btn2")//Add button function
-
-// import AddBill from "./js_modules/Add_bill.js"; //imported the class of dynamic object
-//Object creation
-
 let mainClass = Array.from(document.querySelector('main').classList);
 console.log('main class', mainClass);
 
