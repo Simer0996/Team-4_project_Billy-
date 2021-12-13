@@ -1,13 +1,5 @@
-// window.addEventListener('resize', function(){
-//     let fixedWidth = 500;
-//     let fixedHeight = 800;
-
-//     window.resizeTo(fixedWidth, fixedHeight);
-// });
-
-
-//Add Bill
-let bill_array = []; 
+//Add Bill page
+let bill_array = [];
 let bill_splitter__history_array = []
 let mainClass = Array.from(document.querySelector('main').classList);
 console.log('main class', mainClass);
@@ -190,52 +182,6 @@ function getClass(list, cls) {
     }
 })();
 
-// Chat page//
-(async () => {
-    if (getClass(mainClass, 'chat1Page')) {
-        console.log('this is Chat 1 page');
-        const {
-            default: startChatting
-        } = await import('./Chat_page_1.js');
-        document.addEventListener('DOMContentLoaded', function () {
-            startChatting;
-        });
-
-
-    }
-})();
-
-
-(async () => {
-    if (getClass(mainClass, 'chat2Page')) {
-        console.log('this is Chat 2 page');
-        const username = prompt("What's your name?");
-
-        document.getElementById("send-message").addEventListener("submit", postChat);
-        function postChat(e) {
-            e.preventDefault();
-            const timestamp = Date.now();
-            const chatTxt = document.getElementById("chat-txt");
-            const message = chatTxt.value;
-            chatTxt.value = "";
-            db.ref("messages/" + timestamp).set({
-                usr: username,
-                msg: message,
-            });
-
-            const fetchChat = db.ref("messages/");
-            fetchChat.on("child_added", function (snapshot) {
-                const messages = snapshot.val();
-                const msg = "<li>" + messages.usr + " : " + messages.msg + "</li>";
-                document.getElementById("messages").innerHTML += msg;
-            });
-        }
-
-
-
-    }
-})();
-
 
 // Friends List page//
 let createTablePutName = function () {
@@ -251,6 +197,61 @@ document.addEventListener('DOMContentLoaded', function () {
 $('.addBtn').on('click', () => {
     location.href = './21_Add_friend.html'
 });
+
+
+// Chat page//
+(async () => {
+    if (getClass(mainClass, 'chat1Page')) {
+        console.log('this is Chat 1 page');
+        const {
+            default: startChatting
+        } = await import('./Chat_page_1.js');
+        document.addEventListener('DOMContentLoaded', function () {
+            startChatting;
+        });
+
+
+    }
+})();
+
+(async () => {
+    if (getClass(mainClass, 'chat2Page')) {
+        console.log('this is Chat 2 page');
+        const {
+            default: putSelectedFriendName
+        } = await import('./Chat_page_2.js');
+        putSelectedFriendName
+
+        document.addEventListener('DOMContentLoaded', function () {
+            putSelectedFriendName;
+        });
+
+        // User Input Msg display on Chat-box
+        $(".chatMsgSendBtn").on('click', () => {
+            let userMessage = $('.userWriteMsg').val();
+            let addPInMeDiv = document.createElement("p");
+            let addDivInChatBox = document.createElement("div");
+            let addPInChatBox = document.createElement("p");
+            let addMe = "Me: "
+            $(".inner").append("<p>Test</p>");
+
+            $('.chatBoxForMsg').append(addDivInChatBox);
+            addDivInChatBox.append(addPInChatBox);
+            addPInChatBox.append(addPInMeDiv);
+            addPInMeDiv.append(addMe);
+            addPInChatBox.append(userMessage);
+            addPInChatBox.setAttribute('id', 'msgCloudBox');
+        });
+
+
+        // Redirect to Chat Page-1
+        $('.icon-back').on('click', () => {
+            location.href = './22_Chat_page_1.html'
+        })
+
+    }
+})();
+
 
 
 //Setting payment
@@ -373,8 +374,8 @@ $('.addBtn').on('click', () => {
         logg.addEventListener('click', (e) => {
             e.preventDefault();
             auth.signOut().then(() => {
-                window.location.href = "./1_Login_Page.html";
-            })
+                    window.location.href = "./1_Login_Page.html";
+                })
                 .catch((error) => {
                     console.log('error signput', error);
                 })
@@ -446,15 +447,16 @@ $('.addBtn').on('click', () => {
                 qty.value = parseInt(qty.value) - 1;
             }
         });
+
         function saveData(ref) {
             // const billRef = ref.child('bill');
             ref.set({
-                'total_amount': theAmount.value,
-                'no_of_people': qty.value,
-                'amount_1': am1.value,
-                'amount_2': am2.value,
-                'amount_3': am3.value
-            })
+                    'total_amount': theAmount.value,
+                    'no_of_people': qty.value,
+                    'amount_1': am1.value,
+                    'amount_2': am2.value,
+                    'amount_3': am3.value
+                })
                 .then(() => {
                     alert("data has been added successfully");
                 })
@@ -462,14 +464,15 @@ $('.addBtn').on('click', () => {
                     alert("unsuccessful, error");
                 });
         }
+
         function insertData() {
             set(ref(db, "TheData/" + qty.value), {
-                total_amount: theAmount.value,
-                no_of_people: qty.value,
-                amount_1: am1.value,
-                amount_2: am2.value,
-                amount_3: am3.value
-            })
+                    total_amount: theAmount.value,
+                    no_of_people: qty.value,
+                    amount_1: am1.value,
+                    amount_2: am2.value,
+                    amount_3: am3.value
+                })
                 .then(() => {
                     alert("data has been added successfully");
                 })
@@ -551,7 +554,11 @@ $('.addBtn').on('click', () => {
         // }
 
         add_friend_btn.addEventListener('click', () => {
-            friendsArr.push({ "dueDate": dateDue.value, "To": name.value, "Amount": '100' });
+            friendsArr.push({
+                "dueDate": dateDue.value,
+                "To": name.value,
+                "Amount": '100'
+            });
             // console.log(friendsArr); style="text-align:center;"
             var content = "";
             document.getElementById('fourthdiv').innerHTML = content;
@@ -645,6 +652,7 @@ $('.addBtn').on('click', () => {
 (async () => {
     if (getClass(mainClass, 'split-history')) {
         console.log('this is Split History page');
+
         function historyTable() {
             bill_splitter__history_array = JSON.parse(localStorage.getItem("friendsArray"));
             let row001 = document.getElementById('hisTable').insertRow(0);
