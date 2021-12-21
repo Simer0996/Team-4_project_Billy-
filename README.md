@@ -1,2 +1,2 @@
 # project_Billy
-Universal Payment Application
+Bill Reminder & Splitter PWA
