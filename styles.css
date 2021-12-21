@@ -1,0 +1,2241 @@
+/*************************************************/
+/***************** Global Variable ***************/
+/*************************************************/
+
+* {
+    font-family: 'Lato';
+}
+
+/* font-weight 400 for Body Text and .addBtn**
+***font-weight 700 for Subheading for pages***
+***font-weight 900 for Heading for pages *****/
+
+
+/* For H1 Title
+
+color: #66cc99;
+font-weight: bold;
+margin-bottom: 1.5em;
+text-align: center; */
+
+
+/*************************************************/
+/***************** Header & Footer ***************/
+/*************************************************/
+
+/* Header Back Btn */
+.billyBackBtn {
+    position: fixed;
+    margin-left: 0.5em;
+    margin-top: -0.1em;
+    cursor: pointer;
+    color: #66cc99;
+}
+
+.desktopHeaderBox {
+    display: none;
+}
+
+/*Bottom navigation bar START*/
+.footerBtns {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    margin-top: .5em;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    transform: translateY(20px);
+}
+
+.logoutBtn {
+    display: none;
+}
+
+.footerButton {
+    cursor: pointer;
+    height: 70px;
+    width: 100px;
+    padding: 5px;
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+.divider {
+    border-right: 2px solid #66cc99;
+    height: 40px;
+    margin-top: 18px;
+}
+
+.footerBtns .button4 {
+    border-right: none;
+}
+
+.footerButton>img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.footerButton>p {
+    margin-top: .1rem;
+    font-size: 16pt;
+}
+
+.parentdiv img {
+    width: 6%;
+    height: 8%;
+    padding-left: 30px;
+    padding-top: 45px;
+    cursor: pointer;
+}
+
+
+.firstdiv>img {
+    width: 5%;
+    height: 5%;
+}
+
+.footerBtns .footerLogo {
+    display: none;
+}
+
+
+@media (min-width:992px) {
+    main h1:first-of-type {
+        display: none;
+    }
+
+    main {
+        transform: translateY(40px);
+    }
+
+    .fa-arrow-circle-left {
+        display: none;
+    }
+
+    .footerLogo {
+        transform: translateY(15px);
+    }
+}
+
+/*************************************************/
+/***************** Songhui Park ******************/
+/*************************************************/
+.splashPageWrap {
+    width: auto;
+    height: 900px;
+    background-image: linear-gradient(to right bottom, #66CC99, #6688CC);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* ******************************** logo *******************************/
+.logoSplashPage {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0, -32%);
+
+}
+
+.logoSplashPage img {
+    max-width: 250px;
+    height: auto;
+}
+
+/* ******************************** circle *****************************/
+
+.topcircle {
+    max-width: 20rem;
+    height: auto;
+    position: relative;
+    top: 0;
+    margin: -10% -5%;
+    opacity: 0.5;
+}
+
+.circle {
+    width: 3rem;
+    height: auto;
+    margin: 0 auto;
+    position: absolute;
+    top: 25%;
+    left: 18%;
+    opacity: 0.3;
+}
+
+.circle:nth-of-type(2) {
+    width: 5rem;
+    height: auto;
+    margin: 0 auto;
+    position: absolute;
+    top: 27%;
+    left: 20%;
+    opacity: 0.6;
+}
+
+/* ******************************** wave *******************************/
+
+.bottomSplash {
+    height: 1%;
+    width: 101%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
+
+.wave {
+    background: url('../images/wave.svg') repeat-x;
+    position: absolute;
+    top: -180px;
+    width: 6400px;
+    height: 200px;
+    animation: wave 7s cubic-bezier(0.36, 0.63, 0.45, 0.53) infinite, ease;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.5;
+    overflow: hidden;
+}
+
+.wave:nth-of-type(2) {
+    top: -180px;
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 0.3;
+}
+
+@keyframes wave {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: -1600px;
+    }
+}
+
+@keyframes swell {
+
+    0%,
+    100% {
+        transform: translate3d(0, -25px, 0);
+    }
+
+    50% {
+        transform: translate3d(0, 10px, 0);
+    }
+}
+
+
+@media (min-width:992px) {
+    .splashPageWrap {
+        position: absolute;
+        z-index: 1000;
+        width: 1340px;
+        height: 720px;
+        transform: translateY(-180px);
+    }
+}
+
+
+/*************************************************/
+/***************** Namhyung Kim ******************/
+/*************************************************/
+
+/*** Add_Friend ***/
+.addFriendsTitle {
+    text-align: center;
+}
+
+.addFriendsTitle h1 {
+    color: #66cc99;
+}
+
+.fromContacts {
+    background-color: white;
+    margin: 0 30px;
+    padding: 10px;
+    text-align: center;
+    display: inline;
+}
+
+.fromContacts h3 {
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.fromContacts .far {
+    position: absolute;
+    top: 5.6em;
+    left: 6em;
+}
+
+.showContactList {
+    margin-right: 2.5em;
+    display: none;
+    transform: translateY(-20px);
+}
+
+.showContactList ul {
+    list-style-type: none;
+}
+
+.showContactList ul li {
+    padding: 10px;
+    border: solid 1px #b2b3b8;
+}
+
+.showContactList ul li div {
+    text-align: center;
+    cursor: pointer;
+}
+
+.addBtnContainer {
+    text-align: center;
+}
+
+.addFriendBtn {
+    background-color: #66cc99;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 150px;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(209, 209, 209, 0.945);
+
+}
+
+.pickedName {
+    text-align: center;
+    font-size: 20pt;
+    margin-top: 1em;
+}
+
+@media (min-width:992px) {
+    .fa-id-badge {
+        transform: translateX(400px) translateY(-78px);
+    }
+
+    .addFriendBtn {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .showContactList ul {
+        width: 600px;
+        transform: translateX(300px);
+    }
+
+    .pickedName {
+        margin-top: 0;
+    }
+}
+
+
+
+/* Friends_list CSS */
+.friendsListTitle {
+    text-align: center;
+    color: #66cc99;
+}
+
+.allFriends h4 {
+    text-align: left;
+    margin: 10px 30px;
+    color: #66cc99;
+}
+
+.allFriends {
+    margin-top: 30px;
+}
+
+.addBtn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: white;
+    cursor: pointer;
+    border: 2px solid #66cc99;
+    margin-left: 35px;
+    border-radius: 50%;
+}
+
+.addBtn:after {
+    content: '';
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 4px;
+    width: 50%;
+    background: #66cc99;
+    top: 50%;
+    left: 50%;
+}
+
+.addBtn:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: #66cc99;
+    height: 50%;
+    width: 4px;
+}
+
+.addFriendText {
+    padding-top: 20px;
+    text-align: left;
+    padding-left: 100px;
+}
+
+.addFriendNameList li {
+    text-align: left;
+    padding-left: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin: 30px 30px;
+    list-style-type: none;
+    font-family: cursive;
+}
+
+@media (min-width:992px) {
+    .friendsList {
+        width: 600px;
+        transform: translateX(80%) translateY(20px);
+        font-size: 20px;
+       
+    }
+}
+
+
+
+/* Chat_page_1 CSS */
+.chatPage1Title {
+    text-align: center;
+    color: #66cc99;
+}
+
+.dropDownWrap {
+    text-align: center;
+}
+
+.friendsDropDown {
+    margin-top: 4em;
+    margin-left: 1em;
+    font-size: 12pt;
+    /* arrow */
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), 100% 0;
+    background-size: 5px 5px,
+        5px 5px,
+        2.5em 2.5em;
+    cursor: pointer;
+    width: 400px;
+    height: 30px;
+}
+
+.friendsDropDown option {
+    color: black;
+    background-color: white;
+}
+
+.chatBtnWrap {
+    text-align: center;
+}
+
+.startChatBtn {
+    margin-top: 20em;
+    padding: 1em 3em;
+    background-color: #66cc99;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 12pt;
+}
+
+
+/* Chat_page_2 CSS  */
+.chatPage2Title {
+    text-align: center;
+    color: #66cc99;
+}
+
+.mobileFirst {
+    border-radius: 10px;
+    width: 275px;
+    height: 500px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 16px 5px;
+    transform: translateY(-20px);
+}
+
+.friendNameBox {
+    padding: 0.8em 1em;
+}
+
+.chatFriendName {
+    color: #070606;
+    text-align: left;
+    font-weight: bold;
+    color: #66cc99;
+    font-size: 16pt;
+    padding-left: 0.3em;
+}
+
+.chatBoxForMsg {
+    width: 100%;
+    height: 85%;
+    border-radius: 7px;
+    background-color: #eeeeeefa;
+    opacity: .5;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.chatMsgInput {
+    border-radius: 50px;
+    -webkit-box-shadow: 0 1px 11px #646464;
+    box-shadow: 0 1px 11px #646464;
+    padding: 10px;
+    width: calc(100% + -72px);
+    margin: 5px 0 0 8px;
+    float: left;
+}
+
+.chatMsgInput * {
+    font-family: helvetica;
+    outline: none;
+    border: none;
+    caret-color: #00966c;
+}
+
+.chatMsgInput *::-webkit-input-placeholder {
+    color: #929292;
+}
+
+.chatMsgInput *:-ms-input-placeholder {
+    color: #929292;
+}
+
+.chatMsgInput *::-ms-input-placeholder {
+    color: #929292;
+}
+
+.chatMsgInput *::placeholder {
+    color: #929292;
+}
+
+
+.fa-paper-plane {
+    margin-left: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#msgCloudBox {
+    background-color: #536FE0;
+    width: 50%;
+    max-height: 50%;
+    margin: 0.5em;
+    margin-left: 7em;
+    padding-left: 0.5em;
+    padding-bottom: 0.5em;
+    border-radius: 0.5em;
+    color: white;
+}
+
+
+/* Setting_payment_link_1  */
+
+
+.paymentLinkAll h1 {
+    color: #66cc99;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.paymentLinkAll {
+    cursor: pointer;
+}
+
+.firstRow {
+    display: flex;
+    justify-content: center;
+}
+
+.firstRow .addNew {
+    flex-grow: 1;
+    flex-basis: 30px;
+    padding: 60px 20px;
+    margin: 10px;
+    background-color: #66cc99;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.firstRow .bcHydro {
+    flex-grow: 1;
+    flex-basis: 30px;
+    padding: 60px 20px;
+    margin: 10px;
+    background-color: #d1eeecdc;
+    text-align: center;
+    font-weight: bold;
+}
+
+.secondRow {
+    display: flex;
+    justify-content: center;
+}
+
+.secondRow .mobile {
+    flex-grow: 1;
+    flex-basis: 30px;
+    padding: 60px 20px;
+    margin: 10px;
+    background-color: #a7b3e6;
+    text-align: center;
+    font-weight: bold;
+}
+
+.secondRow .netflix {
+    flex-grow: 1;
+    flex-basis: 30px;
+    padding: 60px 20px;
+    margin: 10px;
+    background-color: #a7b3e6;
+    text-align: center;
+    font-weight: bold;
+}
+
+.thirdRow {
+    display: flex;
+    justify-content: center;
+}
+
+.thirdRow .creditCard {
+    flex-grow: 1;
+    flex-basis: 30px;
+    padding: 60px 20px;
+    margin: 10px;
+    background-color: #d1eeecdc;
+    text-align: center;
+    font-weight: bold;
+}
+
+.fourthRow {
+    display: flex;
+    justify-content: center;
+}
+
+.fourthRow .internet {
+    flex-grow: 1;
+    flex-basis: 30px;
+    padding: 60px 20px;
+    margin: 10px;
+    background-color: #a7b3e6;
+    text-align: center;
+    font-weight: bold;
+}
+
+.fourthRow .cable {
+    flex-grow: 1;
+    flex-basis: 30px;
+    padding: 60px 20px;
+    margin: 10px;
+    background-color: #a7b3e6;
+    text-align: center;
+    font-weight: bold;
+    opacity: 0;
+}
+
+
+/* Setting_payment_link_2 */
+.settingPayment2 h1 {
+    color: #66cc99;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.cableBoxDiv {
+    display: flex;
+}
+
+.cableBox {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 50px auto;
+    background-color: #a7b3e6;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cableBox h4 {
+    margin-top: 2.3em;
+}
+
+.cableURLDiv {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+    font-weight: 700;
+}
+
+.cableURL {
+    margin: .5rem 0;
+    padding: .5rem;
+}
+
+.SaveBtnContainer {
+    text-align: center;
+}
+
+.pmtLinkSaveBtn {
+    margin-top: 12rem;
+    padding: 1rem 6rem;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, .4);
+    background-color: #66cc99;
+    border-radius: 10px;
+    color: white;
+    font-size: 14pt;
+}
+
+
+/* Setting_notification CSS */
+.notificationTitle {
+    color: #66cc99;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.contentsWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 600;
+    transform: translateY(-20px);
+}
+
+.reminder {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.newMessageDiv {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.paymentRequestDiv {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.paymentReceivedDiv {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.newFeaturesDiv {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 20px;
+    margin: 20px;
+}
+
+#reminderSet {
+    width: 20%;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.contentsWrap input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.contentsWrap label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 50px;
+    height: 25px;
+    background: #837f7f;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+.contentsWrap label:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    width: 20px;
+    height: 18px;
+    background: white;
+    border-radius: 50px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.contentsWrap input:checked+label {
+    background: #36ad7b;
+}
+
+.contentsWrap input:checked+label:after {
+    left: calc(100% - 5px);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+
+
+/*************************************************/
+/***************** Harinder **********************/
+/*************************************************/
+
+/* SignUp Page*/
+.sign-up {
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand"sans-serif;
+}
+
+.desktoptitle {
+    display: none;
+}
+
+.signupdesktop {
+    display: none;
+}
+
+.signupwrapper .signuptitle {
+    font-size: 40px;
+    margin-left: 80px;
+    margin-bottom: 40px;
+    color: #66cc99;
+}
+
+.signupwrapper {
+    margin-left: 50px;
+    margin-top: 70px;
+}
+
+.inputfield label {
+    font-size: 15px;
+    color: gray;
+}
+
+.inputfield .input {
+    width: 400px;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    margin: 5px 0 0px;
+}
+
+.signbtn1 {
+    width: 180px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+    text-align: center;
+    margin-left: 120px;
+    margin-top: 50px;
+    color: white;
+    background-color: #66cc99;
+}
+
+.inputfield:last-child {
+    margin-bottom: 10px;
+}
+
+.inputfield p {
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.inputfield a {
+    text-decoration: none;
+    color: #66cc99;
+}
+
+@media (min-width:992px) {
+    .signupdesktop {
+        display: block;
+        height: 100%;
+        border: 30px solid #66cc99;
+        margin-left: 0;
+    }
+
+    .signupmain {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        height: 100%;
+    }
+
+    .inputfield .input {
+        width: 570px;
+    }
+
+    .signuptitle {
+        display: none;
+    }
+
+    .desktoptitle {
+        display: block;
+        font-size: 40px;
+        margin-top: 10px;
+        text-align: center;
+        color: #66cc99;
+    }
+
+    .inputfield p {
+        display: none;
+    }
+
+    .signbtn1 {
+        margin-left: 200px;
+    }
+
+    .signupdesktop img {
+        width: 400px;
+        height: 200px;
+        margin-left: 100px;
+        margin-top: 200px;
+    }
+}
+
+/*Login Page*/
+.loginmain {
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand"sans-serif;
+}
+
+/* .logoImgContainer {
+    text-align: center;
+} */
+
+.logincontainer .header {
+    text-align: center;
+}
+
+.loginmain .header img {
+    max-width: 70%;
+    max-height: 70%;
+    padding: 30px;
+}
+
+.container {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.loginform .inputfield label {
+    font-size: 15px;
+    color: gray;
+}
+
+.loginform .inputfield .input {
+    width: 400px;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    margin: 5px 0 0px;
+}
+
+.loginbtn2 {
+    width: 180px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    margin-left: 120px;
+    margin-top: 50px;
+    color: white;
+    background-color: #66cc99;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.loginform .inputfield p {
+    margin-left: 110px;
+}
+
+.loginform .forgot a {
+    text-decoration: none;
+    color: gray;
+    margin-top: 100px;
+    margin-left: 300px;
+}
+
+.logintitle,
+.desktoplogin {
+    display: none;
+}
+
+
+@media (min-width:992px) {
+    .logincontainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .loginmain .header {
+        display: none;
+    }
+
+    .logintitle,
+    .desktoplogin {
+        display: block;
+    }
+
+    .desktoplogin {
+        height: 110%;
+        border: 30px solid #66cc99;
+    }
+
+    .desktoplogin img {
+        width: 400px;
+        height: 200px;
+        margin-left: 100px;
+        margin-top: 200px;
+    }
+
+    .logintitle {
+        text-align: center;
+        color: #66cc99;
+        font-size: 40px;
+        margin-top: 120px;
+    }
+
+    .loginform .inputfield .input {
+        width: 570px;
+    }
+
+    .loginbtn2 {
+        margin-left: 200px;
+        margin-top: 100px;
+    }
+
+    .loginform .forgot {
+        margin-left: 180px;
+    }
+
+    .loginform .forgot a {
+       margin-left: 0%;
+       position: absolute;
+       top: 280px;
+       left: 1150px;
+    }
+}
+
+/*Forgot Password*/
+.forgotmain .header img {
+    height: 70%;
+    width: 70%;
+    padding: 30px;
+}
+
+.forgotcontainer .header {
+    text-align: center;
+}
+
+.forgotbtn3 {
+    width: 180px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+    text-align: center;
+    margin-left: 120px;
+    margin-top: 50px;
+    color: white;
+    background-color: #66cc99;
+}
+
+.forgotloginlink a {
+    text-decoration: none;
+    color: white;
+    border: 1px black solid;
+    background-color: #66cc99;
+    margin-left: 180px;
+}
+
+.forgotloginlink {
+    margin-top: 70px;
+}
+
+.forgottitle,
+.desktopforgot {
+    display: none;
+}
+
+@media (min-width:992px) {
+    .forgotcontainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        height: 100%;
+    }
+
+    .forgotmain .header,
+    .forgotloginlink {
+        display: none;
+    }
+
+    .desktopforgot,
+    .forgottitle {
+        display: block;
+    }
+
+    .desktopforgot {
+        height: 125%;
+        border: 30px solid #66cc99;
+    }
+
+    .desktopforgot img {
+        width: 400px;
+        height: 200px;
+        margin-left: 100px;
+        margin-top: 200px;
+    }
+
+    .forgotcontainer .container .forgot {
+        margin-left: 50px;
+    }
+
+    .forgottitle {
+        text-align: center;
+        color: #66cc99;
+        font-size: 40px;
+        margin-top: 120px;
+    }
+
+    .forgot .inputfield .input {
+        width: 570px;
+    }
+
+    .forgotbtn3 {
+        margin-left: 200px;
+        margin-top: 100px;
+    }
+}
+
+/*Settings Page*/
+.setimage .header {
+    color: #66cc99;
+    text-align: center;
+    transform: translateY(17px);
+}
+
+.settingBackImg {
+    width: 97%;
+    height: 40%;
+    z-index: -1;
+    position: absolute;
+    border-radius: 10px;
+    opacity: .2;
+}
+
+.fas {
+    color: #66cc99;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.setting {
+    background-color: #66cc8d;
+    opacity: .9;
+    height: 400px;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-top: 7px;
+    transform: translateY(30%);
+    border-radius: 10px;
+}
+
+.setting p:first-child {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+    transform: translateY(20px);
+}
+
+.setting p {
+    text-align: center;
+    transform: translateY(-20%);
+    margin-top: -10px;
+    transform: translateY(20px);
+}
+
+.profileImgWrap {
+    text-align: center;
+}
+
+.settingProfileImg {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    transform: translateX(-50%) translateY(10%);
+    z-index: 1000;
+}
+
+.setting .inputfield a {
+    color: black;
+    text-align: center;
+}
+
+.setting .inputfield {
+    transform: translateY(20px);
+    margin-left: 80px;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.setting .inputfield:last-child {
+    transform: translateY(40px) translateX(30px);
+    font-weight: 300;
+    text-decoration: underline;
+    color: blue;
+}
+
+.logoutWrap {
+    text-align: center;
+    margin-top: 38px;
+    font-weight: 600;
+}
+
+
+
+
+@media (min-width:992px) {
+
+    .settingimg {
+        margin-left: 400px;
+    }
+
+    .setting {
+        width: 300px;
+        margin-left: 480px;
+        transform: translateY(38%) translateX(40px);
+    }
+
+    .logout {
+        margin-left: -10px;
+    }
+
+    .inputfield {
+        transform: translateX(-30px) translateY(10px);
+    }
+
+    .settingBackImg {
+        display: none;
+    }
+
+    .settingProfileImg {
+        transform: scale(140%) translateX(-30px) translateY(5px);
+
+    }
+}
+
+
+/*Setting help*/
+.helpmain .header {
+    color: #66cc99;
+    margin-top: 7px;
+    text-align: center;
+}
+
+.helpmaincontainer {
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+.helpInputWrap {
+    transform: translateY(30px);
+}
+
+.inputfield {
+    margin-top: 10px;
+}
+
+
+.help {
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.help .inputfield label {
+    font-size: 15px;
+    color: gray;
+}
+
+.help .inputfield .input,
+textarea {
+    width: 430px;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    margin: 5px 0 0px;
+}
+
+.send-btn {
+    width: 180px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+    text-align: center;
+    margin-left: 120px;
+    margin-top: 30px;
+    color: white;
+    background-color: #66cc99;
+}
+
+.desktophelp img {
+    display: none;
+}
+
+@media (min-width:992px) {
+
+    .desktophelp img {
+        display: block;
+        opacity: .8;
+    }
+
+    .helpmaincontainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        height: 100%;
+        transform: translateY(-40px);
+    }
+
+    .desktophelp img {
+        width: 400px;
+        height: 400px;
+        margin-left: 100px;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+
+    .help .inputfield .input,
+    textarea {
+        width: 590px;
+    }
+
+    .send-btn {
+        margin-left: 220px;
+    }
+
+
+}
+
+/*************************************************/
+/******************* Simer Singh *****************/
+/*************************************************/
+
+/***** 4_Home Page *****/
+.homeLogo {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.homeLogo img {
+    max-width: 30%;
+    max-height: 30%;
+}
+
+.homeCalendar {
+    text-align: center;
+    width: 90%;
+    height: 80%;
+    transform: translateX(7%) translateY(-2%);
+}
+
+.myTableWrap {
+    margin: 1rem;
+}
+
+.loadBillSection div {
+    margin: 1rem;
+
+}
+
+#myTable {
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(-15px);
+}
+
+#myTable tr {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#myTable td {
+    color: #536FE0;
+    margin: 0 2em;
+    font-weight: 900;
+}
+
+
+.homeBillAddDiv {
+    text-align: right;
+
+}
+
+.homeBillAddBtn {
+    text-align: center;
+    cursor: pointer;
+    color: #59bca3;
+    background-color: white;
+}
+
+.homeBillAddBtn i {
+    transform: translateY(-30px) translateX(-10px);
+}
+
+
+/* Desktop Header Menu Bar  */
+@media (min-width:992px) {
+    .footerBtns {
+        position: absolute;
+        top: 3.5%;
+        left: 38%;
+        justify-content: center;
+        transform: translateX(-80px) translateY(10px);
+    }
+
+    .footerButton {
+        margin-right: 80px;
+        transform: translateY(15%) translateX(-200px);
+        background: rgb(255, 255, 255, 0);
+        color: #4daa7b;
+    }
+
+    .footerButton img {
+        display: none;
+    }
+
+    .footerBtns .footerLogo {
+        display: block;
+        position: absolute;
+        width: 140px;
+        left: -356px;
+        top: -17px;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .logoutBtn {
+        display: block;
+        text-decoration: underline;
+        color: rgb(40, 48, 75);
+    }
+
+    .logoutBtn p {
+        width: 70px;
+    }
+
+    .desktopHeaderBox {
+        display: block;
+        width: auto;
+        height: 130px;
+        background-color: #66cc99;
+        z-index: -1;
+        opacity: .15;
+    }
+
+}
+
+/* Homepage Desktop CSS  */
+@media (min-width:992px) {
+    .homeCalendar {
+        margin-top: 10%;
+        width: 600px;
+        transform: translateX(250px);
+    }
+
+    #calendar {
+        width: 700px;
+        transform: translateX(300px) translateY(-100px);
+    }
+
+    .myTableWrap {
+        transform: translateX(-440px) translateY(-660px);
+    }
+
+    #myTable td {
+        font-size: 17pt;
+        font-weight: 600;
+        margin-top: 18px;
+    }
+
+    .homeBillAddDiv {
+        text-align: left;
+        transform: translateX(385px) translateY(-650px);
+    }
+
+
+    .loadBillSection {
+        height: 0;
+    }
+
+    .homeTitle .homeLogo img:first-of-type {
+        display: none;
+    }
+
+}
+
+
+/* Setting - User */
+
+.settingUserPage h1 {
+    color: #66cc99;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.userImgWrap {
+    text-align: center;
+}
+
+.userImgWrap img {
+    margin-top: -40px;
+}
+
+.userFormWrap {
+    transform: translateY(150px);
+    text-align: center;
+}
+
+.userFormWrap div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    text-align: left;
+    margin-left: 80px;
+    margin-right: 80px;
+    transform: translateY(-20px);
+}
+
+.userFormWrap div label {
+    color: rgb(52, 52, 80);
+    font-weight: 600;
+}
+
+.userFormWrap div input {
+    height: 25px;
+}
+
+.userEditBtn {
+    margin-top: 40px;
+    width: 150px;
+}
+
+.userEditBtn button {
+    width: 120px;
+    height: 50px;
+    border-radius: 75px;
+    background-color: #66CC99;
+    color: white;
+    cursor: pointer;
+    font-weight: 900;
+    transform: translateX(100px);
+}
+
+.paymentLinkAll a {
+    text-decoration: none;
+}
+
+
+
+@media (min-width:992px) {
+    .userImgWrap {
+        transform: translateY(40px);
+    }
+
+    .userFormWrap {
+        width: 50%;
+        transform: translateX(340px) translateY(240px);
+        z-index: -1;
+    }
+
+    .userEditBtn button {
+        transform: translateX(190px);
+    }
+
+    .allPmtRowWrap {
+        width: 50%;
+        transform: translateX(50%);
+    }
+}
+
+
+/*New Bill*/
+.newBillContainer {
+    text-align: left;
+    transform: translateY(30px);
+}
+
+.new-bill .header {
+    text-align: center;
+    color: #66CC99;
+}
+
+.new-bill {
+    margin: 2em;
+}
+
+.new-bill .buttons {
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(5px);
+}
+
+.new-bill .buttons #btn1 {
+    width: 120px;
+    height: 50px;
+    border-radius: 75px;
+    color: #66CC99;
+    background-color: white;
+    margin-top: 35px;
+    margin-left: 35px;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.new-bill .buttons #btn2 {
+    width: 120px;
+    height: 50px;
+    border-radius: 75px;
+    background-color: #66CC99;
+    color: white;
+    margin-top: 35px;
+    margin-right: 35px;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+#outputArea {
+    text-align: center;
+    font-weight: 900;
+    margin-top: 50px;
+    font-size: 24pt;
+    color: #436cbe;
+    display: none;
+}
+
+.categoryWrap,
+.amountWrap,
+.dateWrap,
+.areaWrap {
+    margin-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.categoryWrap,
+.amountWrap,
+.dateWrap,
+.areaWrap label {
+    color: #233457;
+    font-weight: 600;
+}
+
+#bills,
+#amount,
+#date,
+#area {
+    height: 32px;
+}
+
+#area {
+    width: auto;
+}
+
+label {
+    margin-bottom: 7px;
+}
+
+.areaWrap textarea {
+    resize: none;
+}
+
+#outputArea {
+    transform: translateY(-10px);
+}
+
+@media (min-width:992px) {
+
+    .newBillContainer {
+        width: 500px;
+        transform: translateX(360px) translateY(40px);
+    }
+
+    .new-bill {
+        transform: translateY(-15px);
+    }
+
+    .new-bill .buttons #btn1 {
+        margin-left: 360px;
+        width: 200px;
+        border-radius: 10px;
+        transform: translateY(40px);
+    }
+
+    .new-bill .buttons #btn2 {
+        margin-right: 360px;
+        width: 200px;
+        border-radius: 10px;
+        transform: translateY(40px);
+    }
+
+}
+
+
+/***************History*****************/
+.history .header {
+    color: #66CC99;
+    text-align: center;
+}
+
+.history #tableOutput {
+    width: 100%;
+    padding: 1em;
+}
+
+.history #tableOutput tr:first-child {
+    font-weight: bold;
+    font-size: 20px;
+    color: #536FE0;
+}
+
+#tableOutput tbody td {
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+
+@media (min-width:992px) {
+
+    .historyDesktopWrap {
+    
+        border: #e0e0e0 1px solid;
+        border-radius: 10px;
+        width: 1000px;
+        transform: translateX(15%);
+        padding-left: -30px;
+    }
+
+}
+
+
+/*************************************************/
+/***************** Harsimran Singh ***************/
+/*************************************************/
+
+
+/* 15_Bill_Splitter_menu */
+.splitterOptions {
+    text-align: center;
+    color: #66CC99;
+}
+
+.optionsLink {
+    margin: 3em 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.optionsLink a {
+    font-size: 20px;
+    margin: 20px -40px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+@media (min-width:992px) {
+
+
+    .optionsLink {
+        text-align: center;
+        margin: 0;
+    }
+
+    .optionsLink a {
+        font-size: 20px;
+        margin: 20px -40px;
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+    }
+
+}
+
+
+/* 16_Bill_Splitter_request */
+.billRequestTitle {
+    color: #66CC99;
+}
+
+.splitHistory {
+    color: #66CC99;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.billRequestFirstDiv,
+.billRequestSecondDiv {
+    text-align: center;
+    margin: 5px;
+}
+
+.billRequestFirstDiv a {
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.billRequestFirstDiv i {
+    color: black;
+}
+
+.billRequestSecondDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.billRequestSecondDiv p {
+    font-weight: 900;
+    margin-bottom: 0;
+    text-align: left;
+    margin-left: 41px;
+}
+
+.billRequestSecondDiv p input {
+    padding: 15px 10px;
+    margin-top: 0;
+    width: 275px;
+}
+
+.billRequestThirdDiv {
+    margin-left: 40px;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.billRequestThirdDiv p {
+    text-align: left;
+    font-weight: 900;
+}
+
+.thirdDiv1 {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateY(-18px);
+}
+
+.thirdDiv1 input {
+    width: 280px;
+    padding: 10px 10px;
+    margin-top: 0;
+}
+
+.thirdDivBtnWrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.subAddBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: .7em;
+}
+
+.thirdDiv1 #sub {
+    width: 70px;
+    height: 35px;
+    border-radius: 75px;
+    background-color: #66CC99;
+    color: white;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.thirdDiv1 #add {
+    width: 70px;
+    height: 35px;
+    border-radius: 75px;
+    background-color: #66CC99;
+    color: white;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.thirdDiv2 {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateY(-15px);
+}
+
+.thirdDiv2 input {
+    width: 280px;
+    padding: 10px 10px;
+    margin-top: 0;
+}
+
+.addFriendWrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.thirdDiv2 #add_friend_btn {
+    width: 70px;
+    height: 35px;
+    border-radius: 75px;
+    background-color: #66CC99;
+    color: white;
+    margin: 5px;
+    cursor: pointer;
+    margin-left: 4em;
+}
+
+.billRequestFourthDiv {
+    text-align: center;
+}
+
+.splitEvenlyBox {
+    display: none;
+}
+
+.totalAmountDiv {
+    text-align: center;
+}
+
+.billRequestBtnDiv {
+    text-align: center;
+}
+
+.theDueDate {
+    margin: 5px 2.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateY(-12px);
+}
+
+.theDueDate p {
+    font-weight: 900;
+}
+
+.theDueDate input {
+    font-weight: 900;
+    width: 240px;
+    padding: 10px 10px;
+    margin-top: 0;
+}
+
+.dynamicDiv {
+    background-color: #66CC99;
+    margin-top: 5px;
+    margin-left: 2.8em;
+    width: 275px;
+    padding: 5px 0;
+}
+
+.dynamicDiv p {
+    margin: 5px 0;
+}
+
+.billRequestSendBtn {
+    margin-top: 2em;
+    padding: 1em 4em;
+    background-color: #66cc99;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 12pt;
+    cursor: pointer;
+    z-index: 999;
+}
+
+@media (min-width:992px) {
+    .billRequest {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .billRequestFirstDiv {
+        display: none;
+    }
+
+    .firstPart {
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border: #e0e0e0 1px solid;
+        border-radius: 10px;
+        height: 400px;
+        width: 550px;
+    }
+
+    .secondPart {
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border: #e0e0e0 1px solid;
+        border-radius: 10px;
+        transform: translateX(-20px);
+    }
+
+    .billRequestFirstDiv a {
+        position: absolute;
+        top: 100px;
+        left: 200px;
+    }
+}
+
+/* 18_Bill_Splitter_history */
+
+#hisTable {
+    width: 100%;
+    transform: translateY(-20px);
+}
+
+#hisTable td {
+    text-align: center;
+    padding: 8px;
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+    /* border: #e0e0e0 1px solid; */
+    border-radius: 10px;
+    padding-top: -10px;
+}
+
+#hisTable td b {
+    font-weight: bold;
+    font-size: 20px;
+    color: #536FE0;
+}
+
+@media (min-width:992px) {
+    .theTable {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .theTable #hisTable {
+        width: 70%;
+        /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+        border: #e0e0e0 1px solid;
+        border-radius: 10px;
+        margin-left: 200px;
+        transform: translateY(20px);
+    }
+
+    #hisTable td {
+        text-align: center;
+        /* border: #e0e0e0 1px solid; */
+        padding: 8px;
+    }
+
+    
+}
+
+/* 19_Bill_Splitter_payment */
+.billPaymentTitle {
+    color: #66CC99;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.billPmtContentWrap {
+    margin-left: 3.5em;
+}
+
+.billPmtContentWrap input {
+    width: 350px;
+    padding: 10px 10px;
+    margin-top: 0;
+}
+
+.billPmtContentWrap p {
+    font-weight: 900;
+}
+
+.dueWrap {
+    margin-top: 2em;
+}
+
+.payToWrap {
+    margin-top: 2em;
+}
+
+.pmtOptionWrap {
+    margin-top: 2em;
+}
+
+.pmtOptionWrap select {
+    width: 375px;
+    padding: 10px 10px;
+    margin-top: 0;
+}
+
+
+.payBtnWrap {
+    margin-top: 1.5em;
+    text-align: center;
+    margin-left: -2em;
+}
+
+.payButton {
+    margin-top: 2em;
+    padding: 1em 4em;
+    background-color: #66cc99;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 12pt;
+    cursor: pointer;
+}
+
+@media (min-width:992px) {
+    .billPmtContentWrap {
+        text-align: center;
+    }
+
+    .payBtnWrap {
+        transform: translateX(18px) translateY(-50px);
+    }
+
+    .payBtnWrap {
+        margin-top: 70px;
+    }
+
+}
+
+
+
+/* 24_Camera_Capture */
+.two_buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.snap {
+    width: 120px;
+    height: 60px;
+    border-radius: 75px;
+    background-color: #66CC99;
+    color: white;
+    margin-top: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.saveButton {
+    width: 120px;
+    height: 60px;
+    border-radius: 75px;
+    background-color: #66CC99;
+    color: white;
+    margin-top: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+}

@@ -1,0 +1,40 @@
+@@include('./header.html')
+<main class="billPayment">
+
+    <i class="fas fa-arrow-circle-left fa-3x billyBackBtn" onclick="location.href='15_Bill_Splitter_menu.html';"></i>
+    <h1 class="billPaymentTitle">Bill Payment</h1>
+
+    <div class="billPmtContentWrap">
+        <div class="PmtAmountWrap">
+            <p>Amount</p>
+            <input type="text" placeholder="$150">
+        </div>
+
+        <div class="dueWrap">
+            <p>Due</p>
+            <input type="text" placeholder="12/10">
+        </div>
+
+        <div class="payToWrap">
+            <p>Pay to</p>
+            <input type="text" placeholder="Paula Valero">
+        </div>
+
+        <div class="pmtOptionWrap">
+            <p>Payment option</p>
+            <select>
+                <option value="One">Google Pay</option>
+                <option value="two">Debit Card</option>
+                <option value="three">Credit Card</option>
+                <option value="four">Master Card</option>
+            </select>
+        </div>
+
+        <div class="payBtnWrap">
+            <button class="payButton">PAY</button>
+        </div>
+    </div>
+
+</main>
+
+@@include('./footer.html')

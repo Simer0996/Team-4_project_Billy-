@@ -1,0 +1,30 @@
+{
+"name": "Billy",
+"short_name" : "Payment" ,
+"start_url" : "." ,
+"display" : "standalone" ,
+
+
+"description" : "A payment App.",
+"icons" : [
+    {
+        "src": "images/favicon/favicon512x512.png",
+        "sizes": "512x511",
+        "type": "image/png",
+        "purpose" : "any"
+    },
+    {
+        "src": "images/favicon/favicon192x192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose" : "any"
+    },
+
+    {
+        "src": "images/favicon/favicon144x144.png",
+        "sizes": "144x144",
+        "type": "image/png",
+        "purpose" : "any"
+    }
+]
+}
